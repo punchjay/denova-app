@@ -1,21 +1,22 @@
 import PropTypes from 'prop-types'
+import Card from './Card'
 import HeaderOne from './HeaderOne'
 import ParagraphOne from './ParagraphOne'
 import ImageIcon from './ImageIcon'
 
-const SectionContainer = ({ appData }) => {
+const CardOne = ({ appData }) => {
   return (
-    <>
+    <Card>
       <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
       <ParagraphOne leadIn>{appData.PAR_ONE}</ParagraphOne>
       <ParagraphOne>{appData.PAR_TWO}</ParagraphOne>
       <ImageIcon src={appData.GEAR_IMG} />
-    </>
+    </Card>
   )
 }
 
-SectionContainer.propTypes = {
+CardOne.propTypes = {
   appData: PropTypes.object.isRequired,
 }
 
-export default SectionContainer
+export default CardOne
