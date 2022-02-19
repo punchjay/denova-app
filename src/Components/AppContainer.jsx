@@ -5,7 +5,7 @@ const AppContainer = styled.div`
   color: #b1b3b4;
   text-align: center;
   margin: 0;
-  padding: 9.25rem 0 3rem;
+  padding: 8rem 0 3rem;
   //overflow: hidden;
   position: relative;
   white-space: normal;
