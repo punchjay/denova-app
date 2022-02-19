@@ -9,7 +9,7 @@ const CardTwo = ({ appData }) => {
     <Card>
       <HeaderOne>{appData.HEADER_TWO}</HeaderOne>
       <ParagraphOne>{appData.PAR_THREE}</ParagraphOne>
-      <ImageIcon src={appData.GEAR_IMG} />
+      <ImageIcon src={appData.IMG_GEAR} />
     </Card>
   )
 }

@@ -1,20 +1,21 @@
 import PropTypes from 'prop-types'
 import ParagraphFooter from './ParagraphFooter'
 import LinkFooter from './LinkFooter'
+import ImageFooter from './ImageFooter'
 
 const Footer = ({ appData }) => {
   return (
     <>
       <ParagraphFooter>
-        {'\u00A9'} {new Date().getFullYear()} {appData.APP} |{' '}
+        {'\u00A9'} {new Date().getFullYear()} {appData.APP_NAME} |{' '}
         <LinkFooter
           href={`mailto:${appData.EMAIL}?Subject=Hello!`}
           target="_top"
         >
           {appData.EMAIL}
         </LinkFooter>
-        <LinkFooter href="https://instagram.com/punchjay" target="_blank">
-          <img src={appData.IMG_INSTA} width="20" />
+        <LinkFooter href={appData.LINK} target="_blank">
+          <ImageFooter src={appData.IMG_INSTA} />
         </LinkFooter>
       </ParagraphFooter>
     </>
