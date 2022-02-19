@@ -1,14 +1,4 @@
 import styled from 'styled-components'
-import SectionContainer from './Components/SectionContainer'
-import constant from './Constants'
-
-const App = () => {
-  return (
-    <AppContainer>
-      <SectionContainer appData={constant} />
-    </AppContainer>
-  )
-}
 
 const AppContainer = styled.div`
   background: #1b1e22;
@@ -23,4 +13,4 @@ const AppContainer = styled.div`
   //height: auto;
 `
 
-export default App
+export default AppContainer
