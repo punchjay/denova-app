@@ -7,4 +7,5 @@ const ImageFooter = styled.img`
   vertical-align: middle;
   max-width: 100%;
 `
+
 export default ImageFooter
