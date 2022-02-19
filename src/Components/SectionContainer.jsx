@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types'
-import Header from './Header'
-import ParOne from './ParOne'
-import Image from './Image'
+import HeaderOne from './HeaderOne'
+import ParagraphOne from './ParagraphOne'
+import ImageIcon from './ImageIcon'
 
 const SectionContainer = ({ appData }) => {
   return (
     <>
-      <Header>{appData.HEADER_ONE}</Header>
-      <ParOne leadIn>{appData.PAR_ONE}</ParOne>
-      <ParOne>{appData.PAR_TWO}</ParOne>
-      <Image src={appData.GEAR_IMG} />
+      <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
+      <ParagraphOne leadIn>{appData.PAR_ONE}</ParagraphOne>
+      <ParagraphOne>{appData.PAR_TWO}</ParagraphOne>
+      <ImageIcon src={appData.GEAR_IMG} />
     </>
   )
 }

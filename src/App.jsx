@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import SectionContainer from './Components/SectionContainer'
+import AppContainer from './Components/AppContainer'
 import constant from './Constants'
 
 const App = () => {
@@ -9,18 +9,5 @@ const App = () => {
     </AppContainer>
   )
 }
-
-const AppContainer = styled.div`
-  background: #1b1e22;
-  color: #b1b3b4;
-  text-align: center;
-  margin: 0;
-  padding: 9.25rem 0 3rem;
-  //overflow: hidden;
-  position: relative;
-  white-space: normal;
-  //z-index: 100;
-  //height: auto;
-`
 
 export default App

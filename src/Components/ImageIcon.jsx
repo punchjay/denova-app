@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Image = styled.img`
+const ImageIcon = styled.img`
   width: 6rem;
 `
-export default Image
+export default ImageIcon
