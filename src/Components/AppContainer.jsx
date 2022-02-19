@@ -5,12 +5,9 @@ const AppContainer = styled.div`
   color: #b1b3b4;
   text-align: center;
   margin: 0;
-  padding: 8rem 0 3rem;
-  //overflow: hidden;
+  padding: 7rem 0 3rem;
   position: relative;
   white-space: normal;
-  //z-index: 100;
-  //height: auto;
 `
 
 export default AppContainer
