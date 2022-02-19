@@ -6,7 +6,7 @@ const HeaderOne = styled.h1`
   font-weight: 300;
   color: #20bbfc;
   margin: 0 auto;
-  padding: 0 0 30px 0;
+  padding: 0 0 1.8rem 0;
 `
 
 export default HeaderOne
