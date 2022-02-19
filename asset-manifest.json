@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/denova-app/static/css/main.b5f49655.css",
-    "main.js": "/denova-app/static/js/main.ebed560a.js",
+    "main.js": "/denova-app/static/js/main.6fc21cea.js",
     "static/js/787.2d20e50e.chunk.js": "/denova-app/static/js/787.2d20e50e.chunk.js",
     "index.html": "/denova-app/index.html",
     "main.b5f49655.css.map": "/denova-app/static/css/main.b5f49655.css.map",
-    "main.ebed560a.js.map": "/denova-app/static/js/main.ebed560a.js.map",
+    "main.6fc21cea.js.map": "/denova-app/static/js/main.6fc21cea.js.map",
     "787.2d20e50e.chunk.js.map": "/denova-app/static/js/787.2d20e50e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5f49655.css",
-    "static/js/main.ebed560a.js"
+    "static/js/main.6fc21cea.js"
   ]
 }
