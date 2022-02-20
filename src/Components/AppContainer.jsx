@@ -9,7 +9,7 @@ const AppContainer = styled.div`
   background: #1b1e22;
   color: #b1b3b4;
   text-align: center;
-  animation: ${fadeIn} 0.8s both 1s ease-out;
+  animation: ${fadeIn} 0.4s both 1s ease-out;
 `
 
 export default AppContainer
