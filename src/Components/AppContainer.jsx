@@ -5,7 +5,7 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 7rem 0 3rem;
+  padding: 6.5rem 0 3rem;
   background: #1b1e22;
   color: #b1b3b4;
   text-align: center;
