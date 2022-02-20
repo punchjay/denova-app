@@ -1,15 +1,21 @@
 {
   "files": {
     "main.css": "/denova-app/static/css/main.b5f49655.css",
-    "main.js": "/denova-app/static/js/main.6c2b4a2a.js",
+    "main.js": "/denova-app/static/js/main.8ec2d87f.js",
     "static/js/787.2d20e50e.chunk.js": "/denova-app/static/js/787.2d20e50e.chunk.js",
+    "static/media/yahoo02-ss.png": "/denova-app/static/media/yahoo02-ss.23243ad8782fa7884ae0.png",
+    "static/media/jcrew-ss.png": "/denova-app/static/media/jcrew-ss.8dece5317864eb9123f4.png",
+    "static/media/secs01-ss.png": "/denova-app/static/media/secs01-ss.8a81f2e2a2d6385c7513.png",
+    "static/media/ion-ss.png": "/denova-app/static/media/ion-ss.c31bd7f00a5e3165a391.png",
+    "static/media/xbox-ss.png": "/denova-app/static/media/xbox-ss.382ff7700621b756cccf.png",
+    "static/media/secs02-ss.png": "/denova-app/static/media/secs02-ss.47ae6fa4b3f14782da88.png",
     "index.html": "/denova-app/index.html",
     "main.b5f49655.css.map": "/denova-app/static/css/main.b5f49655.css.map",
-    "main.6c2b4a2a.js.map": "/denova-app/static/js/main.6c2b4a2a.js.map",
+    "main.8ec2d87f.js.map": "/denova-app/static/js/main.8ec2d87f.js.map",
     "787.2d20e50e.chunk.js.map": "/denova-app/static/js/787.2d20e50e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5f49655.css",
-    "static/js/main.6c2b4a2a.js"
+    "static/js/main.8ec2d87f.js"
   ]
 }
