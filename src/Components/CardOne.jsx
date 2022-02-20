@@ -10,7 +10,7 @@ const CardOne = ({ appData }) => {
       <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
       <ParagraphOne leadIn>{appData.PAR_ONE}</ParagraphOne>
       <ParagraphOne>{appData.PAR_TWO}</ParagraphOne>
-      <ImageIcon src={appData.IMG_GEAR} />
+      <ImageIcon alt="Icon" src={appData.IMG_GEAR} title="Icon" />
     </Card>
   )
 }
