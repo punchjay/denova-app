@@ -11,7 +11,7 @@ import ImgYahoo from './Img/yahoo02-ss.png'
 export const appData = {
   cardOne: {
     HEADER_ONE: "Hello, I'm a...",
-    PAR_ONE: 'Software Developer, Building and Maintaining React Apps.',
+    PAR_ONE: 'Software Developer, Building and Maintaining React Apps',
     LEAD_IN: true,
     PAR_TWO:
       'Wiring up .NET high level APIs into front-end containers and reducers. Building reusable React user interfaces and shared component libraries. Developed web-based interactive training for Microsoft, Yahoo!, Amazon, J.Crew, and Agilent Technologies.',
