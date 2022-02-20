@@ -20,6 +20,14 @@ export const appData = {
     HEADER_TWO: 'Stuff',
     PAR_THREE:
       'Full portfolio available upon request (Non Disclosure Agreements).',
+    GALLERY_DATA: [
+      { name: 'Xbox', image: ImgXbox },
+      { name: 'JCrew', image: ImgJcrew },
+      { name: 'Second Step', image: ImgSec01 },
+      { name: 'Second Step', image: ImgSec02 },
+      { name: 'Agilent', image: ImgIon },
+      { name: 'Yahoo!', image: ImgYahoo },
+    ],
   },
   cardThree: {
     HEADER_THREE: 'Tools',
@@ -37,4 +45,4 @@ export const appData = {
   },
 }
 
-export const imgData = [ImgXbox, ImgJcrew, ImgSec01, ImgSec02, ImgIon, ImgYahoo]
+export default appData
