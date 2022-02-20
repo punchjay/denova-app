@@ -5,9 +5,9 @@ const ParOne = styled.p`
   font-size: 1.11rem;
   line-height: 1.67rem;
   margin: 0 auto;
-  max-width: 690px;
+  max-width: 43rem;
   text-align: center;
-  padding: 0 0 30px 0;
+  padding: 0 0 1.875rem 0;
 `
 
 export default ParOne

@@ -1,9 +1,14 @@
 import Gear from './Img/gear.png'
 import Tool from './Img/tool.png'
-
 import Insta from './Img/instagram-icon.png'
+import ImgXbox from './Img/xbox-ss.png'
+import ImgJcrew from './Img/jcrew-ss.png'
+import ImgSec01 from './Img/secs01-ss.png'
+import ImgSec02 from './Img/secs02-ss.png'
+import ImgIon from './Img/ion-ss.png'
+import ImgYahoo from './Img/yahoo02-ss.png'
 
-const appData = {
+export const appData = {
   cardOne: {
     HEADER_ONE: "Hello, I'm a...",
     PAR_ONE: 'Software Developer, Building and Maintaining React Apps.',
@@ -32,4 +37,4 @@ const appData = {
   },
 }
 
-export default appData
+export const imgData = [ImgXbox, ImgJcrew, ImgSec01, ImgSec02, ImgIon, ImgYahoo]
