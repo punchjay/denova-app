@@ -8,8 +8,8 @@ import ImageGallery from './ImageGallery'
 const CardTwo = ({ appData }) => {
   return (
     <Card>
-      <HeaderOne>{appData.HEADER_TWO}</HeaderOne>
-      <ParagraphOne>{appData.PAR_THREE}</ParagraphOne>
+      <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
+      <ParagraphOne>{appData.PAR_ONE}</ParagraphOne>
       <GalleryContainer>
         {appData.GALLERY_DATA.map((img) => (
           <ImageGallery

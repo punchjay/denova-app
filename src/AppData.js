@@ -12,36 +12,37 @@ export const appData = {
   cardOne: {
     HEADER_ONE: "Hello, I'm a...",
     PAR_ONE: 'Software Developer, Building and Maintaining React Apps.',
+    LEAD_IN: true,
     PAR_TWO:
       'Wiring up .NET high level APIs into front-end containers and reducers. Building reusable React user interfaces and shared component libraries. Developed web-based interactive training for Microsoft, Yahoo!, Amazon, J.Crew, and Agilent Technologies.',
-    IMG_GEAR: Gear,
+    IMG_ICON: Gear,
   },
   cardTwo: {
-    HEADER_TWO: 'Stuff',
-    PAR_THREE:
+    HEADER_ONE: 'Stuff',
+    PAR_ONE:
       'Full portfolio available upon request (Non Disclosure Agreements).',
     GALLERY_DATA: [
       { name: 'Xbox', image: ImgXbox },
       { name: 'JCrew', image: ImgJcrew },
       { name: 'Second Step', image: ImgSec01 },
-      { name: 'Second Step', image: ImgSec02 },
+      { name: 'Second Step Dashboard', image: ImgSec02 },
       { name: 'Agilent', image: ImgIon },
       { name: 'Yahoo!', image: ImgYahoo },
     ],
   },
   cardThree: {
-    HEADER_THREE: 'Tools',
-    PAR_FOUR:
+    HEADER_ONE: 'Tools',
+    PAR_ONE:
       'React.js, Redux, Styled Components, JavaScript, Git, Jest, Azure, DevOps, Teraform, SQL, Mongo DB, and some pair programming .NET Core',
-    PAR_FIVE:
+    PAR_TWO:
       'Closely collaborating with back-end Engineers and Designers, as a sole front-end Developer or in high velocity Agile Teams.',
-    IMG_TOOL: Tool,
+    IMG_ICON: Tool,
   },
   footer: {
     APP_NAME: 'Denova',
     EMAIL: 'edwardgibble@gmail.com',
     LINK: 'https://instagram.com/punchjay',
-    IMG_INSTA: Insta,
+    IMG_ICON: Insta,
   },
 }
 

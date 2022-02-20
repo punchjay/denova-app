@@ -7,10 +7,10 @@ import ImageIcon from './ImageIcon'
 const CardThree = ({ appData }) => {
   return (
     <Card>
-      <HeaderOne>{appData.HEADER_THREE}</HeaderOne>
-      <ParagraphOne>{appData.PAR_FOUR}</ParagraphOne>
-      <ParagraphOne>{appData.PAR_FIVE}</ParagraphOne>
-      <ImageIcon alt="Icon" src={appData.IMG_TOOL} title="Icon" />
+      <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
+      <ParagraphOne>{appData.PAR_ONE}</ParagraphOne>
+      <ParagraphOne>{appData.PAR_TWO}</ParagraphOne>
+      <ImageIcon alt="Icon" src={appData.IMG_ICON} title="Icon" />
     </Card>
   )
 }
