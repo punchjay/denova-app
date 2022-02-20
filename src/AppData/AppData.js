@@ -33,7 +33,7 @@ export const appData = {
   cardThree: {
     HEADER_ONE: 'Tools',
     PAR_ONE:
-      'React.js, Redux, Styled Components, JavaScript, Git, Jest, Azure, DevOps, Teraform, SQL, Mongo DB, and some pair programming .NET Core',
+      'React.js, Redux, Styled Components, JavaScript, Git, Jest, Azure, DevOps, Teraform, SQL, Mongo DB, and pair programming .NET Core',
     PAR_TWO:
       'Closely collaborating with back-end Engineers and Designers, as a sole front-end Developer or in high velocity Agile Teams.',
     IMG_ICON: Tool,
