@@ -1,13 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`
+import styled from 'styled-components'
+import { fadeIn } from './keyFrames'
 
 const AppContainer = styled.div`
   background: #1b1e22;
