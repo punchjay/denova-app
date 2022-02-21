@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const ParOne = styled.p`
+const ParagraphOne = styled.p`
   margin: 0 auto;
   padding: 0 0 1.875rem 0;
   max-width: 43rem;
@@ -10,4 +10,4 @@ const ParOne = styled.p`
   color: ${(props) => (props.leadIn ? '#fff' : 'b1b3b4')};
 `
 
-export default ParOne
+export default ParagraphOne
