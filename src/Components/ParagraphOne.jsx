@@ -12,7 +12,7 @@ const ParagraphOne = styled.p`
 `
 
 ParagraphOne.propTypes = {
-  appData: PropTypes.bool,
+  leadIn: PropTypes.bool,
 }
 
 export default ParagraphOne
