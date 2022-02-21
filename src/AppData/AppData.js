@@ -14,7 +14,7 @@ export const appData = {
     PAR_ONE: 'Software Developer, Building and Maintaining React\u00a0Apps',
     LEAD_IN: true,
     PAR_TWO:
-      'Building reusable React user interfaces and shared component\u00a0libraries. Wiring up .NET high level APIs into front-end containers and\u00a0reducers. Developed web-based interactive training for\u00a0Microsoft, Yahoo!, Amazon, J.Crew, and Agilent\u00a0Technologies.',
+      'Building reusable React user interfaces and shared component\u00a0libraries. Wiring up .NET high level APIs into front-end containers and\u00a0reducers. Developed web-based interactive training for Microsoft, Yahoo!, Amazon, J.Crew, and Agilent\u00a0Technologies.',
     IMG_ICON: Gear,
   },
   cardTwo: {
