@@ -36,7 +36,7 @@ export const appData = {
       'React.js, Redux, Styled Components, JavaScript, Git, Jest, Azure, DevOps, Teraform, SQL, Mongo DB, and pair programming .NET Core',
     LEAD_IN: true,
     PAR_TWO:
-      'Closely collaborating with back-end Engineers and Designers, as a sole front-end Developer or in high velocity Agile Teams.',
+      'Closely collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile Teams.',
     IMG_ICON: Tool,
   },
   footer: {
