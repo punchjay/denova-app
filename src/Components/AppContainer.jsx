@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { fadeIn } from './keyFrames'
+import { fadeIn } from './keyFrames.style'
 
 const AppContainer = styled.div`
   display: flex;
