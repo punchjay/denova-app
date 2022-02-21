@@ -11,16 +11,16 @@ import ImgYahoo from './Img/yahoo02-ss.png'
 export const appData = {
   cardOne: {
     HEADER_ONE: "Hello! I'm a...",
-    PAR_ONE: 'Software Developer, Building and Maintaining React Apps',
+    PAR_ONE: 'Software Developer, Building and Maintaining React\u00a0Apps',
     LEAD_IN: true,
     PAR_TWO:
-      'Building reusable React user interfaces and shared component libraries. Wiring up .NET high level APIs into front-end containers and reducers. Developed web-based interactive training for Microsoft, Yahoo!, Amazon, J.Crew, and Agilent Technologies.',
+      'Building reusable React user interfaces and shared component\u00a0libraries. Wiring up .NET high level APIs into front-end containers and\u00a0reducers. Developed web-based interactive training for\u00a0Microsoft, Yahoo!, Amazon, J.Crew, and Agilent\u00a0Technologies.',
     IMG_ICON: Gear,
   },
   cardTwo: {
     HEADER_ONE: 'Stuff',
     PAR_ONE:
-      'Full portfolio available upon request (Non Disclosure Agreements).',
+      'Full portfolio available upon request (Non Disclosure\u00a0Agreements).',
     GALLERY_DATA: [
       { name: 'Xbox', image: ImgXbox },
       { name: 'JCrew', image: ImgJcrew },
@@ -33,10 +33,10 @@ export const appData = {
   cardThree: {
     HEADER_ONE: 'Tools',
     PAR_ONE:
-      'React.js, Redux, Styled Components, JavaScript, Git, Jest, Azure, DevOps, Teraform, SQL, Mongo DB, and pair programming .NET Core',
+      'React.js, Redux, Styled Components, JavaScript, Git, Jest, Azure, DevOps, Teraform, SQL, Mongo DB, and pair programming .NET\u00a0Core',
     LEAD_IN: true,
     PAR_TWO:
-      'Closely collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile Teams.',
+      'Closely collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile\u00a0Teams.',
     IMG_ICON: Tool,
   },
   footer: {
