@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { render, screen } from '@testing-library/react'
+import renderer from 'react-test-renderer'
 import App from '../App'
 
 test('renders intro text', () => {
@@ -14,4 +15,9 @@ test('renders intro text', () => {
 it('renders without crashing', () => {
   const div = document.createElement('div')
   ReactDOM.render(<App />, div)
+})
+
+it('renders correctly', () => {
+  const tree = renderer.create(<App />)
+  expect(tree).toMatchSnapshot()
 })
