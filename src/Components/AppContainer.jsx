@@ -10,6 +10,9 @@ const AppContainer = styled.div`
   color: #b1b3b4;
   text-align: center;
   animation: ${fadeIn} 0.4s both 1s ease-out;
+  @media (min-width: 768px) {
+    padding-top: 9rem;
+  }
 `
 
 export default AppContainer

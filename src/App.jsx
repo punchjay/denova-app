@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import AppContainer from './Components/AppContainer'
 import Loader from './Components/Loader'
 import CardOne from './Components/CardOne'
@@ -8,17 +9,16 @@ import appData from './AppData/AppData'
 const App = () => {
   return (
     <>
-      {!appData && (
+      {!appData.length ? (
         <AppContainer>
           <Loader />
         </AppContainer>
-      )}
-      {appData && (
+      ) : (
         <AppContainer>
-          <CardOne appData={appData.cardOne} />
-          <CardTwo appData={appData.cardTwo} />
-          <CardOne appData={appData.cardThree} />
-          <Footer appData={appData.footer} />
+          <CardOne appData={appData[0]} />
+          <CardTwo appData={appData[1]} />
+          <CardOne appData={appData[2]} />
+          <Footer appData={appData[3]} />
         </AppContainer>
       )}
     </>

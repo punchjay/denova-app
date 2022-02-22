@@ -5,10 +5,10 @@ import CardTwo from '../Components/CardTwo'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<CardTwo appData={mockData.cardTwo} />, div)
+  ReactDOM.render(<CardTwo appData={mockData[1]} />, div)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<CardTwo appData={mockData.cardTwo} />)
+  const tree = renderer.create(<CardTwo appData={mockData[1]} />)
   expect(tree).toMatchSnapshot()
 })
