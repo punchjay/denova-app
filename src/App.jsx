@@ -31,9 +31,7 @@ const App = () => {
   return (
     <>
       {isloading ? (
-        <AppContainer>
-          <Loader />
-        </AppContainer>
+        <Loader />
       ) : (
         <AppContainer>
           <CardOne appData={appData[0]} />
