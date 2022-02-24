@@ -15,7 +15,7 @@ const CardTwo = ({ appData }) => {
           <ImageGallery
             alt={img.name}
             key={img.name}
-            src={img.image}
+            src={require(`../AppData/Img/${img.image}.png`)}
             title={img.name}
           />
         ))}

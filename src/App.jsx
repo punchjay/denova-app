@@ -4,7 +4,6 @@ import Loader from './Components/Loader'
 import CardOne from './Components/CardOne'
 import CardTwo from './Components/CardTwo'
 import Footer from './Components/Footer'
-import { appData as data } from './AppData/AppData'
 
 const App = () => {
   const [appData, setAppData] = useState(null)
@@ -12,10 +11,18 @@ const App = () => {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    const getAppData = () => {
+    const getData = async () => {
       try {
-        const response = data
-        setAppData(response)
+        const response = await fetch(
+          `https://1f932751-aee9-4df3-960c-1f7023b4cb31.mock.pstmn.io/v1/app-data`,
+        )
+        if (!response.ok) {
+          throw new Error(
+            `This is an HTTP error: The status is ${response.status}`,
+          )
+        }
+        let appData = await response.json()
+        setAppData(appData)
         setError(null)
       } catch (err) {
         setError(err.message)
@@ -25,7 +32,7 @@ const App = () => {
         setLoading(false)
       }
     }
-    getAppData()
+    getData()
   }, [])
 
   return (

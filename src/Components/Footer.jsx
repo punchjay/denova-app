@@ -11,7 +11,11 @@ const Footer = ({ appData }) => {
         {appData.EMAIL}
       </LinkFooter>
       <LinkFooter href={appData.LINK} target="_blank">
-        <ImageFooter alt="Icon" src={appData.IMG_ICON} title="Icon" />
+        <ImageFooter
+          alt="Icon"
+          src={require(`../AppData/Img/${appData.IMG_ICON}.png`)}
+          title="Icon"
+        />
       </LinkFooter>
     </ParagraphFooter>
   )
