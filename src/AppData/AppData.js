@@ -1,6 +1,6 @@
 export const appData = [
   {
-    HEADER_ONE: 'Hello! I\u2019m a...',
+    HEADER_ONE: 'Hello! I\u0027m a...',
     PAR_ONE: 'Software Developer, Building and Maintaining React\u00a0Apps',
     LEAD_IN: true,
     PAR_TWO:
