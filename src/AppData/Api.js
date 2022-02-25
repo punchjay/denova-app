@@ -6,7 +6,8 @@ const fetchApi = async () => {
   if (!response.ok) {
     throw new Error(`This is an HTTP error: The status is ${response.status}`)
   }
-  let data = await response.json()
+  const data = await response.json()
+
   return data
 }
 

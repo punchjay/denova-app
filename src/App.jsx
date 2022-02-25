@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     ;(async () => {
       try {
-        let data = await fetchApi()
+        const data = await fetchApi()
         setAppData(data)
         setError(null)
       } catch (err) {
