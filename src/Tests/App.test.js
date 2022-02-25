@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom'
-import { render, screen } from '@testing-library/react'
 import renderer from 'react-test-renderer'
-import App from '../App'
+import App from '../Components/App'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import AppContainer from './Components/AppContainer'
-import Loader from './Components/Loader'
-import CardOne from './Components/CardOne'
-import CardTwo from './Components/CardTwo'
-import Footer from './Components/Footer'
-import fetchApi from './AppData/Api'
+import AppContainer from './AppContainer'
+import Loader from './Loader'
+import CardOne from './CardOne'
+import CardTwo from './CardTwo'
+import Footer from './Footer'
+import fetchApi from '../AppData/Api'
 
 const App = () => {
   const [appData, setAppData] = useState(null)
