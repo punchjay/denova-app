@@ -12,16 +12,10 @@ const App = () => {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    const getAppData = async () => {
+    ;(async () => {
       try {
-        const response = await fetchApi()
-        if (!response.ok) {
-          throw new Error(
-            `This is an HTTP error: The status is ${response.status}`,
-          )
-        }
-        let appData = await response.json()
-        setAppData(appData)
+        let data = await fetchApi()
+        setAppData(data)
         setError(null)
       } catch (err) {
         setAppData(null)
@@ -30,8 +24,7 @@ const App = () => {
       } finally {
         setIsLoading(false)
       }
-    }
-    getAppData()
+    })()
   }, [])
 
   return (
