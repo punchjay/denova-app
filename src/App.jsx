@@ -8,7 +8,7 @@ import fetchApi from './AppData/Api'
 
 const App = () => {
   const [appData, setAppData] = useState(null)
-  const [isloading, setLoading] = useState(true)
+  const [isloading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const App = () => {
         setError(err.message)
         console.error(error)
       } finally {
-        setLoading(false)
+        setIsLoading(false)
       }
     }
     getAppData()
