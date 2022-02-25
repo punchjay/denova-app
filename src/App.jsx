@@ -4,7 +4,7 @@ import Loader from './Components/Loader'
 import CardOne from './Components/CardOne'
 import CardTwo from './Components/CardTwo'
 import Footer from './Components/Footer'
-import getApi from './AppData/Api'
+import fetchApi from './AppData/Api'
 
 const App = () => {
   const [appData, setAppData] = useState(null)
@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const getAppData = async () => {
       try {
-        const response = await getApi()
+        const response = await fetchApi()
         if (!response.ok) {
           throw new Error(
             `This is an HTTP error: The status is ${response.status}`,
