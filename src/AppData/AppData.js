@@ -4,13 +4,12 @@ export const appData = [
     PAR_ONE: 'Software Developer, Building and Maintaining React\u00a0Apps',
     LEAD_IN: true,
     PAR_TWO:
-      'Building reusable React user interfaces and shared component\u00a0libraries. Wiring up .NET high level APIs into front-end containers and\u00a0reducers. Developed web-based interactive training for Microsoft, Yahoo!, Amazon, J.Crew, and Agilent\u00a0Technologies.',
+      'Building reusable React user interfaces and shared component\u00a0libraries. Wiring up .NET high level APIs into front-end containers and\u00a0reducers.',
     IMG_ICON: 'gear',
   },
   {
     HEADER_ONE: 'Stuff',
-    PAR_ONE:
-      'Full portfolio available upon request (Non Disclosure\u00a0Agreements).',
+    PAR_ONE: 'Full portfolio available upon request.',
     GALLERY_DATA: [
       { name: 'Xbox', image: 'xbox-ss' },
       { name: 'JCrew', image: 'jcrew-ss' },
