@@ -20,7 +20,7 @@ export const appData = [
     ],
   },
   {
-    HEADER_ONE: 'Tools',
+    HEADER_ONE: 'Tools & Tech',
     PAR_ONE:
       'React.js, Redux, Styled Components, JavaScript, Git, Jest, Azure, DevOps, Teraform, SQL, Mongo DB, and pair programming .NET\u00a0Core',
     LEAD_IN: true,
