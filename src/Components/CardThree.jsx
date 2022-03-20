@@ -9,7 +9,6 @@ const CardThree = ({ appData }) => {
   return (
     <Card>
       <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
-      <ParagraphOne>{appData.PAR_ONE}</ParagraphOne>
       <GalleryContainer>
         {appData.GALLERY_DATA.map((img) => (
           <ImageGallery
@@ -20,6 +19,7 @@ const CardThree = ({ appData }) => {
           />
         ))}
       </GalleryContainer>
+      <ParagraphOne>{appData.PAR_ONE}</ParagraphOne>
     </Card>
   )
 }
