@@ -1,9 +1,8 @@
 import styled from 'styled-components'
+import ToolGallery from './ToolGallery'
 
-const ImageGallery = styled.img`
-  margin: 0.625rem 0.3rem 0 0.3rem;
+const ImageGallery = styled(ToolGallery)`
   width: 18.75rem;
-  max-width: 100%;
   border: solid 4px #fff;
 `
 
