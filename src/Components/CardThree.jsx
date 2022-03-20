@@ -3,15 +3,16 @@ import Card from './Card'
 import HeaderOne from './HeaderOne'
 import ParagraphOne from './ParagraphOne'
 import GalleryContainer from './GalleryContainer'
-import ToolGallery from './ToolGallery'
+import ImageGallery from './ImageGallery'
 
-const CardTwo = ({ appData }) => {
+const CardThree = ({ appData }) => {
   return (
     <Card>
       <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
+      <ParagraphOne>{appData.PAR_ONE}</ParagraphOne>
       <GalleryContainer>
         {appData.GALLERY_DATA.map((img) => (
-          <ToolGallery
+          <ImageGallery
             alt={img.name}
             key={img.name}
             src={require(`../AppData/Img/${img.image}.png`)}
@@ -19,13 +20,12 @@ const CardTwo = ({ appData }) => {
           />
         ))}
       </GalleryContainer>
-      <ParagraphOne>{appData.PAR_ONE}</ParagraphOne>
     </Card>
   )
 }
 
-CardTwo.propTypes = {
+CardThree.propTypes = {
   appData: PropTypes.object.isRequired,
 }
 
-export default CardTwo
+export default CardThree

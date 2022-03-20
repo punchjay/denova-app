@@ -4,12 +4,27 @@ export const appData = [
     PAR_ONE: 'Software Developer, Building and Maintaining React\u00a0Apps',
     LEAD_IN: true,
     PAR_TWO:
-      'Building reusable React user interfaces and shared component\u00a0libraries. Wiring up .NET high level APIs into front-end containers and\u00a0reducers.',
+      'Building reusable React user interfaces and shared component\u00a0libraries. Closely collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile\u00a0Teams.',
     IMG_ICON: 'gear',
   },
   {
-    HEADER_ONE: 'Stuff',
-    PAR_ONE: 'Full portfolio available upon request.',
+    HEADER_ONE: 'Tools & Stuff',
+    PAR_ONE:
+      'React, Styled Components, Redux, JavaScript, Git, Jest, Azure, DevOps, SQL, Mongo DB, and pair programming .NET\u00a0Core',
+    GALLERY_DATA: [
+      { name: 'React', image: 'react' },
+      { name: 'Styled Components', image: 'styled' },
+      { name: 'Redux', image: 'redux' },
+      { name: 'JavaScript', image: 'js' },
+      { name: 'Git', image: 'git' },
+      { name: 'GitHub', image: 'github' },
+      { name: '.Net', image: 'net' },
+      { name: 'Azure', image: 'azure' },
+    ],
+  },
+  {
+    HEADER_ONE: 'Projects',
+    PAR_ONE: 'Project portfolio available upon request.',
     GALLERY_DATA: [
       { name: 'Xbox', image: 'xbox-ss' },
       { name: 'JCrew', image: 'jcrew-ss' },
@@ -18,15 +33,6 @@ export const appData = [
       { name: 'Agilent', image: 'ion-ss' },
       { name: 'Yahoo!', image: 'yahoo02-ss' },
     ],
-  },
-  {
-    HEADER_ONE: 'Tools',
-    PAR_ONE:
-      'React, Redux, Styled Components, JavaScript, Git, Jest, Azure, DevOps, Teraform, SQL, Mongo DB, and pair programming .NET\u00a0Core',
-    LEAD_IN: true,
-    PAR_TWO:
-      'Closely collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile\u00a0Teams.',
-    IMG_ICON: 'tool',
   },
   {
     APP_NAME: 'Denova',

@@ -5,6 +5,7 @@ const GalleryContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding-bottom: 2.2rem;
   max-width: 40rem;
 `
 

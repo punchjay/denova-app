@@ -3,6 +3,7 @@ import AppContainer from './AppContainer'
 import Loader from './Loader'
 import CardOne from './CardOne'
 import CardTwo from './CardTwo'
+import CardThree from './CardThree'
 import Footer from './Footer'
 import fetchApi from '../AppData/Api'
 
@@ -35,7 +36,7 @@ const App = () => {
         <AppContainer>
           <CardOne appData={appData[0]} />
           <CardTwo appData={appData[1]} />
-          <CardOne appData={appData[2]} />
+          <CardThree appData={appData[2]} />
           <Footer appData={appData[3]} />
         </AppContainer>
       )}
