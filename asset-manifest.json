@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/denova-app/static/css/main.b5f49655.css",
+    "main.css": "/denova-app/static/css/main.26b973b7.css",
     "main.js": "/denova-app/static/js/main.9ea0ec55.js",
     "static/media/jcrew-ss.png": "/denova-app/static/media/jcrew-ss.8dece5317864eb9123f4.png",
     "static/media/ion-ss.png": "/denova-app/static/media/ion-ss.c31bd7f00a5e3165a391.png",
@@ -9,11 +9,11 @@
     "static/media/js.png": "/denova-app/static/media/js.3dfb665e058d08c99f28.png",
     "static/media/styled.png": "/denova-app/static/media/styled.09c14df9d2eb05ab6033.png",
     "index.html": "/denova-app/index.html",
-    "main.b5f49655.css.map": "/denova-app/static/css/main.b5f49655.css.map",
+    "main.26b973b7.css.map": "/denova-app/static/css/main.26b973b7.css.map",
     "main.9ea0ec55.js.map": "/denova-app/static/js/main.9ea0ec55.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5f49655.css",
+    "static/css/main.26b973b7.css",
     "static/js/main.9ea0ec55.js"
   ]
 }
