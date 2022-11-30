@@ -10,7 +10,7 @@ export const appData = [
   {
     HEADER_ONE: 'Tools & Stuff',
     PAR_ONE:
-      'React, Styled Components, Redux, JavaScript, Git, Jest, Azure, DevOps, SQL, Mongo DB, and pair programming .NET\u00a0Core',
+      'React, Styled Components, Redux, JavaScript, Git, Jest, Azure, DevOps, SQL, Mongo DB, and pair programming .NET',
     GALLERY_DATA: [
       { name: 'React', image: 'react' },
       { name: 'Styled Components', image: 'styled' },
