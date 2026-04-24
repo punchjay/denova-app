@@ -5,10 +5,10 @@ import CardThree from '../Components/CardThree'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
-  ReactDOM.render(<CardThree appData={mockData[1]} />, div)
+  ReactDOM.render(<CardThree appData={mockData[2]} />, div)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<CardThree appData={mockData[1]} />)
+  const tree = renderer.create(<CardThree appData={mockData[2]} />)
   expect(tree).toMatchSnapshot()
 })

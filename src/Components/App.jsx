@@ -9,7 +9,7 @@ import fetchApi from '../AppData/Api'
 
 const App = () => {
   const [appData, setAppData] = useState(null)
-  const [isloading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
 
   useEffect(() => {
@@ -21,26 +21,23 @@ const App = () => {
       } catch (err) {
         setAppData(null)
         setError(err.message)
-        console.error(error)
+        console.error(err)
       } finally {
         setIsLoading(false)
       }
     })()
   }, [])
 
+  if (isLoading) return <Loader />
+  if (error) return <p style={{ color: '#fff', textAlign: 'center', padding: '2rem' }}>{error}</p>
+
   return (
-    <>
-      {isloading ? (
-        <Loader />
-      ) : (
-        <AppContainer>
-          <CardOne appData={appData[0]} />
-          <CardTwo appData={appData[1]} />
-          <CardThree appData={appData[2]} />
-          <Footer appData={appData[3]} />
-        </AppContainer>
-      )}
-    </>
+    <AppContainer>
+      <CardOne appData={appData[0]} />
+      <CardTwo appData={appData[1]} />
+      <CardThree appData={appData[2]} />
+      <Footer appData={appData[3]} />
+    </AppContainer>
   )
 }
 
