@@ -8,7 +8,7 @@ const CardOne = ({ appData }) => {
   return (
     <Card>
       <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
-      <ParagraphOne leadIn={appData.LEAD_IN}>{appData.PAR_ONE}</ParagraphOne>
+      <ParagraphOne $leadIn={appData.LEAD_IN}>{appData.PAR_ONE}</ParagraphOne>
       <ParagraphOne>{appData.PAR_TWO}</ParagraphOne>
       <ImageIcon
         alt="Icon"

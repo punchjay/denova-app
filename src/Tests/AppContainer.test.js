@@ -1,13 +1,11 @@
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import AppContainer from '../Components/AppContainer'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<AppContainer />, div)
+  render(<AppContainer />)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<AppContainer />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<AppContainer />)
+  expect(asFragment()).toMatchSnapshot()
 })

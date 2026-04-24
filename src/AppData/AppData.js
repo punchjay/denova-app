@@ -28,8 +28,8 @@ export const appData = [
     GALLERY_DATA: [
       { name: 'Xbox', image: 'xbox-ss' },
       { name: 'JCrew', image: 'jcrew-ss' },
-      { name: 'Second Step', image: 'secs01-ss' },
-      { name: 'Second Step Dashboard', image: 'secs01-ss' },
+      { name: 'Second Step', image: 'secs02-ss' },
+      { name: 'Second Step Dashboard', image: 'secs02-ss' },
       { name: 'Agilent', image: 'ion-ss' },
       { name: 'Yahoo!', image: 'yahoo02-ss' },
     ],

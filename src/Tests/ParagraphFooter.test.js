@@ -1,13 +1,11 @@
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import ParagraphFooter from '../Components/ParagraphFooter'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<ParagraphFooter />, div)
+  render(<ParagraphFooter />)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<ParagraphFooter />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<ParagraphFooter />)
+  expect(asFragment()).toMatchSnapshot()
 })

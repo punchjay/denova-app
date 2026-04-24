@@ -10,7 +10,7 @@ const Footer = ({ appData }) => {
       <LinkFooter href={`mailto:${appData.EMAIL}?Subject=Hello!`} target="_top">
         {appData.EMAIL}
       </LinkFooter>
-      <LinkFooter href={appData.LINK} target="_blank">
+      <LinkFooter href={appData.LINK} target="_blank" rel="noopener noreferrer">
         <ImageFooter
           alt="Icon"
           src={require(`../AppData/Img/${appData.IMG_ICON}.png`)}

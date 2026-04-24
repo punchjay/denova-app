@@ -1,13 +1,11 @@
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import HeaderOne from '../Components/HeaderOne'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<HeaderOne />, div)
+  render(<HeaderOne />)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<HeaderOne />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<HeaderOne />)
+  expect(asFragment()).toMatchSnapshot()
 })

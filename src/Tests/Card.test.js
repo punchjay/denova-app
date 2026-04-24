@@ -1,13 +1,11 @@
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import Card from '../Components/Card'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<Card />, div)
+  render(<Card />)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Card />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<Card />)
+  expect(asFragment()).toMatchSnapshot()
 })

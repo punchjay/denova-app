@@ -1,14 +1,12 @@
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import { appData as mockData } from '../AppData/AppData'
 import CardOne from '../Components/CardOne'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<CardOne appData={mockData[0]} />, div)
+  render(<CardOne appData={mockData[0]} />)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<CardOne appData={mockData[0]} />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<CardOne appData={mockData[0]} />)
+  expect(asFragment()).toMatchSnapshot()
 })
