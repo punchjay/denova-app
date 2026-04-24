@@ -42,9 +42,9 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 ## Vite config notes
 
-`vite.config.js` contains three plugins:
+`vite.config.mjs` contains three plugins:
 1. `jsxInJsPlugin` — runs esbuild JSX transform on `.js` files in `src/`
 2. `react()` — standard `@vitejs/plugin-react`
 3. `dynamicRequirePlugin` — converts template-literal `require()` calls to `import.meta.glob`
 
-Vitest config is also in `vite.config.js` (`test:` key) with `jsdom` environment and `globals: true`.
+Vitest config is also in `vite.config.mjs` (`test:` key) with `jsdom` environment and `globals: true`.
