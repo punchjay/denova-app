@@ -7,7 +7,7 @@ const Loader = () => {
   return (
     <LoaderContainer>
       <LoaderIcon alt="Icon" src={gear} title="Icon" />
-      <ParagraphOne leadIn>Loading...</ParagraphOne>
+      <ParagraphOne $leadIn>Loading...</ParagraphOne>
     </LoaderContainer>
   )
 }

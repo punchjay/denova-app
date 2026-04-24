@@ -1,13 +1,11 @@
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import LoaderContainer from '../Components/LoaderContainer'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<LoaderContainer />, div)
+  render(<LoaderContainer />)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<LoaderContainer />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<LoaderContainer />)
+  expect(asFragment()).toMatchSnapshot()
 })

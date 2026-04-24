@@ -1,13 +1,11 @@
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import ImageGallery from '../Components/ImageGallery'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<ImageGallery />, div)
+  render(<ImageGallery />)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<ImageGallery />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<ImageGallery />)
+  expect(asFragment()).toMatchSnapshot()
 })

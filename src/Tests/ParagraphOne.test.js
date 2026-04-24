@@ -1,13 +1,11 @@
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import ParagraphOne from '../Components/ParagraphOne'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<ParagraphOne />, div)
+  render(<ParagraphOne />)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<ParagraphOne />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<ParagraphOne />)
+  expect(asFragment()).toMatchSnapshot()
 })

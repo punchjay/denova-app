@@ -1,13 +1,11 @@
-import ReactDOM from 'react-dom'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import LinkFooter from '../Components/LinkFooter'
 
 it('renders without crashing', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<LinkFooter />, div)
+  render(<LinkFooter />)
 })
 
 it('renders correctly', () => {
-  const tree = renderer.create(<LinkFooter />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<LinkFooter />)
+  expect(asFragment()).toMatchSnapshot()
 })
