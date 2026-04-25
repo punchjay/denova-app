@@ -4,7 +4,7 @@ export const appData = [
     PAR_ONE: 'Front End Developer, Building and Maintaining React\u00a0Apps',
     LEAD_IN: true,
     PAR_TWO:
-      'Building reusable React user interfaces and shared component\u00a0libraries. Closely\u00a0collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile\u00a0Teams.',
+      'Building reusable React user interfaces and shared component\u00a0libraries. Closely\u00a0collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile\u00a0Teams.  Pair Programing with Humans and Claude.ai.',
     IMG_ICON: 'gear',
   },
   {
