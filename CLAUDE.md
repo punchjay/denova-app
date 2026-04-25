@@ -38,7 +38,17 @@ src={require(`../AppData/Img/${variable}.png`)}
 ```
 These are intentionally kept as `require()`. A custom Vite plugin in `vite.config.mjs` (`dynamicRequirePlugin`) transforms them to `import.meta.glob` at build time. The `require` function is declared as a global in `src/vite-env.d.ts`. Do not convert them to static imports.
 
+**Lazy loading** — images below the fold (`CardTwo`, `CardThree`, `Footer`) use `loading="lazy"`. The `CardOne` gear icon is above the fold and must not be lazy loaded.
+
 **Data sources** — `src/AppData/AppData.ts` is local mock data used only in tests. The live app fetches from `src/AppData/Api.ts` (Postman mock API). The two sources have slightly different content; the API response is authoritative.
+
+**ErrorBoundary** — `ErrorBoundary.tsx` is a class component wrapping `<App>`. It shows the error message and a Retry button (which reloads the page) when a child throws. The retry reloads the page because `appDataPromise` is module-level and cannot be re-fetched without a fresh load.
+
+## Testing conventions
+
+- Every component has a test in `src/Tests/` with two cases: `renders without crashing` and `renders correctly` (snapshot).
+- `App.test.tsx` mocks `../AppData/Api` via `vi.mock` and wraps renders in `await act()` to handle the Suspense/`use()` hook correctly.
+- Snapshots are gitignored — run `npx vitest run -u` to update them after UI changes.
 
 ## Vite config notes
 
