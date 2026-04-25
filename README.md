@@ -43,20 +43,17 @@ Runs the test suite once with Vitest.
 npm run test:watch
 ```
 Runs tests in watch mode.  
-
 <br>
 ```bash
 npm run build
 ```
-Builds the app for production to the `dist` folder.  
+Builds the app for production to the `dist` folder.    
 
-<br>
 ```bash
 npm run preview
 ```
 Serves the production build locally for preview.  
 
-<br>
 ```bash
 npm run deploy
 ```
