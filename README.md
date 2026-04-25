@@ -1,6 +1,6 @@
 # Denova React App
 
-Portfolio App built with React.js and Styled Components.
+Portfolio App built with React 19 and Styled Components.
 
 [https://punchjay.github.io/denova-app](https://punchjay.github.io/denova-app)
 
