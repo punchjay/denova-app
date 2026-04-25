@@ -50,3 +50,19 @@ it('renders correctly with an error', () => {
   )
   expect(asFragment()).toMatchSnapshot()
 })
+
+it('calls window.location.reload when Retry is clicked', () => {
+  const reload = vi.fn()
+  vi.stubGlobal('location', { reload })
+
+  const { getByText } = render(
+    <ErrorBoundary>
+      <Throws message="Something went wrong" />
+    </ErrorBoundary>
+  )
+
+  getByText('Retry').click()
+  expect(reload).toHaveBeenCalledOnce()
+
+  vi.unstubAllGlobals()
+})

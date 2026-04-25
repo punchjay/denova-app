@@ -18,3 +18,11 @@ it('renders correctly', async () => {
   const { asFragment } = await act(async () => render(<App />))
   expect(asFragment()).toMatchSnapshot()
 })
+
+it('renders content from all four sections', async () => {
+  const { getByText } = await act(async () => render(<App />))
+  expect(getByText("Hello! I'm a...")).toBeInTheDocument()
+  expect(getByText('Tools & Stuff')).toBeInTheDocument()
+  expect(getByText('Projects')).toBeInTheDocument()
+  expect(getByText('edwardgibble@gmail.com')).toBeInTheDocument()
+})
