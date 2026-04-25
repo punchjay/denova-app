@@ -1,4 +1,4 @@
-# Denova React App
+# Denova App
 
 Portfolio App built with **React 19** using **TypeScript** and **Styled Components**, showcasing projects, skills, and experience.
 
