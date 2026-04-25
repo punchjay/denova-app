@@ -15,9 +15,9 @@ const CardOne = ({ appData }: Props) => {
       <ParagraphOne $leadIn={appData.LEAD_IN}>{appData.PAR_ONE}</ParagraphOne>
       <ParagraphOne>{appData.PAR_TWO}</ParagraphOne>
       <ImageIcon
-        alt="Icon"
+        alt="Skills gear icon"
         src={require(`../AppData/Img/${appData.IMG_ICON}.png`)}
-        title="Icon"
+        title="Skills gear icon"
       />
     </Card>
   )

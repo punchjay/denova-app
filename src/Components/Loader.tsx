@@ -6,7 +6,7 @@ import gear from '../AppData/Img/gear.png'
 const Loader = () => {
   return (
     <LoaderContainer>
-      <LoaderIcon alt="Icon" src={gear} title="Icon" />
+      <LoaderIcon alt="Loading" src={gear} title="Loading" />
       <ParagraphOne $leadIn>Loading...</ParagraphOne>
     </LoaderContainer>
   )
