@@ -13,6 +13,7 @@ npm run deploy     # build + push to GitHub Pages (gh-pages -d dist)
 ```
 
 To run a single test file:
+
 ```bash
 npx vitest run src/Tests/CardOne.test.tsx
 ```
@@ -33,9 +34,11 @@ Portfolio single-page app. `App.tsx` fetches from a Postman mock API on mount vi
 **TypeScript types** — shared data-shape interfaces live in `src/AppData/types.ts`. Components use these instead of prop-types.
 
 **Dynamic image requires** — `CardOne`, `CardTwo`, `CardThree`, and `Footer` load images with template literal `require()` calls:
+
 ```tsx
 src={require(`../AppData/Img/${variable}.png`)}
 ```
+
 These are intentionally kept as `require()`. A custom Vite plugin in `vite.config.mjs` (`dynamicRequirePlugin`) transforms them to `import.meta.glob` at build time. The `require` function is declared as a global in `src/vite-env.d.ts`. Do not convert them to static imports.
 
 **Lazy loading** — images below the fold (`CardTwo`, `CardThree`, `Footer`) use `loading="lazy"`. The `CardOne` gear icon is above the fold and must not be lazy loaded.
@@ -53,6 +56,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 ## Vite config notes
 
 `vite.config.mjs` contains two plugins:
+
 1. `react()` — standard `@vitejs/plugin-react`
 2. `dynamicRequirePlugin` — converts template-literal `require()` calls to `import.meta.glob`
 
