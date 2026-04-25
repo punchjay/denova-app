@@ -1,11 +1,15 @@
-import PropTypes from 'prop-types'
 import Card from './Card'
 import HeaderOne from './HeaderOne'
 import ParagraphOne from './ParagraphOne'
 import GalleryContainer from './GalleryContainer'
 import ImageGallery from './ImageGallery'
+import type { CardThreeData } from '../AppData/types'
 
-const CardThree = ({ appData }) => {
+interface Props {
+  appData: CardThreeData
+}
+
+const CardThree = ({ appData }: Props) => {
   return (
     <Card>
       <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
@@ -22,10 +26,6 @@ const CardThree = ({ appData }) => {
       <ParagraphOne>{appData.PAR_ONE}</ParagraphOne>
     </Card>
   )
-}
-
-CardThree.propTypes = {
-  appData: PropTypes.object.isRequired,
 }
 
 export default CardThree
