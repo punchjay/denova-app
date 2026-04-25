@@ -1,12 +1,16 @@
-import PropTypes from 'prop-types'
 import ParagraphFooter from './ParagraphFooter'
 import LinkFooter from './LinkFooter'
 import ImageFooter from './ImageFooter'
+import type { FooterData } from '../AppData/types'
 
-const Footer = ({ appData }) => {
+interface Props {
+  appData: FooterData
+}
+
+const Footer = ({ appData }: Props) => {
   return (
     <ParagraphFooter>
-      {'\u00A9'} {new Date().getFullYear()} {appData.APP_NAME} |{' '}
+      {'©'} {new Date().getFullYear()} {appData.APP_NAME} |{' '}
       <LinkFooter href={`mailto:${appData.EMAIL}?Subject=Hello!`} target="_top">
         {appData.EMAIL}
       </LinkFooter>
@@ -19,10 +23,6 @@ const Footer = ({ appData }) => {
       </LinkFooter>
     </ParagraphFooter>
   )
-}
-
-Footer.propTypes = {
-  appData: PropTypes.object.isRequired,
 }
 
 export default Footer

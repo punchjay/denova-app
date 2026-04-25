@@ -1,10 +1,12 @@
-export const appData = [
+import type { AppData } from './types'
+
+export const appData: AppData = [
   {
-    HEADER_ONE: 'Hello! I\u0027m a...',
-    PAR_ONE: 'Front End Developer, Building and Maintaining React\u00a0Apps',
+    HEADER_ONE: "Hello! I'm a...",
+    PAR_ONE: 'Front End Developer, Building and Maintaining React Apps',
     LEAD_IN: true,
     PAR_TWO:
-      'Building reusable React user interfaces and shared component\u00a0libraries. Closely\u00a0collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile\u00a0Teams.  Pair Programing with Humans and Claude.ai.',
+      'Building reusable React user interfaces and shared component libraries. Closely collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile Teams.  Pair Programing with Humans and Claude.ai.',
     IMG_ICON: 'gear',
   },
   {
