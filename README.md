@@ -32,8 +32,7 @@ npm start
 ```bash
 npm start
 ```
-
-Runs the app in development mode at [http://localhost:5173](http://localhost:5173)/
+Runs the app in development mode at [http://localhost:5173](http://localhost:5173)
 
 ```bash
 npm test
@@ -42,18 +41,26 @@ npm test
 Runs the test suite once with Vitest.
 
 
-### `npm run test:watch`
+```bash
+npm run test:watch`
+```
 
 Runs tests in watch mode.
 
-### `npm run build`
+```bash
+npm run build`
+```
 
 Builds the app for production to the `dist` folder.
 
-### `npm run preview`
+```bash
+npm run preview`
+```
 
 Serves the production build locally for preview.
 
-### `npm run deploy`
+```bash
+npm run deploy`
+```
 
 Builds and deploys to GitHub Pages.
