@@ -11,14 +11,14 @@ const Footer = ({ appData }: Props) => {
   return (
     <ParagraphFooter>
       {'©'} {new Date().getFullYear()} {appData.APP_NAME} |{' '}
-      <LinkFooter href={`mailto:${appData.EMAIL}?Subject=Hello!`} target="_top">
+      <LinkFooter href={`mailto:${appData.EMAIL}?Subject=Hello!`}>
         {appData.EMAIL}
       </LinkFooter>
       <LinkFooter href={appData.LINK} target="_blank" rel="noopener noreferrer">
         <ImageFooter
-          alt="Icon"
+          alt="GitHub profile"
           src={require(`../AppData/Img/${appData.IMG_ICON}.png`)}
-          title="Icon"
+          title="GitHub profile"
         />
       </LinkFooter>
     </ParagraphFooter>
