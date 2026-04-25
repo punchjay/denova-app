@@ -38,12 +38,12 @@ Runs the app in development mode at [http://localhost:5173](http://localhost:517
 npm test
 ```
 Runs the test suite once with Vitest.  
-<br>
+
 ```bash
 npm run test:watch
 ```
 Runs tests in watch mode.  
-<br>
+
 ```bash
 npm run build
 ```
