@@ -1,36 +1,17 @@
-import { useState, useEffect } from 'react'
+import { use, Suspense } from 'react'
 import AppContainer from './AppContainer'
 import Loader from './Loader'
 import CardOne from './CardOne'
 import CardTwo from './CardTwo'
 import CardThree from './CardThree'
 import Footer from './Footer'
+import ErrorBoundary from './ErrorBoundary'
 import fetchApi from '../AppData/Api'
 
-const App = () => {
-  const [appData, setAppData] = useState(null)
-  const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState(null)
+const appDataPromise = fetchApi()
 
-  useEffect(() => {
-    ;(async () => {
-      try {
-        const data = await fetchApi()
-        setAppData(data)
-        setError(null)
-      } catch (err) {
-        setAppData(null)
-        setError(err.message)
-        console.error(err)
-      } finally {
-        setIsLoading(false)
-      }
-    })()
-  }, [])
-
-  if (isLoading) return <Loader />
-  if (error) return <p style={{ color: '#fff', textAlign: 'center', padding: '2rem' }}>{error}</p>
-
+const AppContent = () => {
+  const appData = use(appDataPromise)
   return (
     <AppContainer>
       <CardOne appData={appData[0]} />
@@ -40,5 +21,13 @@ const App = () => {
     </AppContainer>
   )
 }
+
+const App = () => (
+  <ErrorBoundary>
+    <Suspense fallback={<Loader />}>
+      <AppContent />
+    </Suspense>
+  </ErrorBoundary>
+)
 
 export default App
