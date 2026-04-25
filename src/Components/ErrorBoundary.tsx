@@ -18,9 +18,24 @@ class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.error) {
       return (
-        <p style={{ color: '#fff', textAlign: 'center', padding: '2rem' }}>
-          {this.state.error}
-        </p>
+        <div style={{ color: '#b1b3b4', textAlign: 'center', padding: '2rem' }}>
+          <p>{this.state.error}</p>
+          <button
+            onClick={() => window.location.reload()}
+            style={{
+              marginTop: '1rem',
+              padding: '0.5rem 1.25rem',
+              background: 'transparent',
+              color: '#b1b3b4',
+              border: '1px solid #b1b3b4',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '1rem',
+            }}
+          >
+            Retry
+          </button>
+        </div>
       )
     }
     return this.props.children
