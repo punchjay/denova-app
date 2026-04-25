@@ -18,6 +18,7 @@ const CardTwo = ({ appData }: Props) => {
           <ToolGallery
             alt={img.name}
             key={img.name}
+            loading="lazy"
             src={require(`../AppData/Img/${img.image}.png`)}
             title={img.name}
           />

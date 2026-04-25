@@ -19,6 +19,8 @@ const Footer = ({ appData }: Props) => {
           alt="GitHub profile"
           src={require(`../AppData/Img/${appData.IMG_ICON}.png`)}
           title="GitHub profile"
+          loading="lazy"
+
         />
       </LinkFooter>
     </ParagraphFooter>
