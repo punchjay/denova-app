@@ -40,7 +40,6 @@ npm test
 ```
 Runs the test suite once with Vitest.
 
-
 ```bash
 npm run test:watch
 ```
