@@ -11,6 +11,9 @@ src/Tests/__snapshots__/
 # production
 /dist
 
+# vite cache
+/.vite
+
 # misc
 .DS_Store
 .env.local
