@@ -34,7 +34,6 @@ npm start
 ```
 Runs the app in development mode at [http://localhost:5173](http://localhost:5173)  
 <br>
-<br>
 ```bash
 npm test
 ```
