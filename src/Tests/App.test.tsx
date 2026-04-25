@@ -1,11 +1,20 @@
 import { render } from '@testing-library/react'
+import { act } from 'react'
 import App from '../Components/App'
+import type { AppData } from '../AppData/types'
 
-it('renders without crashing', () => {
-  render(<App />)
+vi.mock('../AppData/Api', async () => {
+  const { default: appData } = await vi.importActual<{ default: AppData }>('../AppData/AppData')
+  return { default: () => Promise.resolve(appData) }
 })
 
-it('renders correctly', () => {
-  const { asFragment } = render(<App />)
+it('renders without crashing', async () => {
+  await act(async () => {
+    render(<App />)
+  })
+})
+
+it('renders correctly', async () => {
+  const { asFragment } = await act(async () => render(<App />))
   expect(asFragment()).toMatchSnapshot()
 })
