@@ -8,6 +8,7 @@ Portfolio App built with **React 19** and **Styled Components**, showcasing proj
 
 - **React 19** — UI library with concurrent features and the new compiler
 - **Vite** — Build tool and dev server
+- **TypeScript** — Static typing
 - **Styled Components** — Styling 
 
 ## Getting Started
