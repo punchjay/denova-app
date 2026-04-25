@@ -1,8 +1,31 @@
 # Denova React App
 
-Portfolio App built with React 19 and Styled Components.
+Portfolio App built with **React 19** and **Styled Components**, showcasing projects, skills, and experience.
 
 [https://punchjay.github.io/denova-app](https://punchjay.github.io/denova-app)
+
+## Tech Stack
+
+- **React 19** — UI library with concurrent features and the new compiler
+- **Vite** — Build tool and dev server
+- **Styled Components** — Styling 
+- **Framer Motion** — Animations and page transitions
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- npm or pnpm
+
+### Installation
+
+```bash
+git clone https://github.com/punchjay/denova-app
+cd denova-app
+npm install
+npm start
+```
 
 ## Available Scripts
 
