@@ -47,10 +47,18 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 **ErrorBoundary** — `ErrorBoundary.tsx` is a class component wrapping `<App>`. It shows the error message and a Retry button (which reloads the page) when a child throws. The retry reloads the page because `appDataPromise` is module-level and cannot be re-fetched without a fresh load.
 
+## Accessibility conventions
+
+- All images use descriptive `alt` text — never `alt="Icon"`.
+- `LinkFooter` has `:focus-visible` styles for keyboard navigation.
+- Images below the fold use `loading="lazy"` (`CardTwo`, `CardThree`, `Footer`). The `CardOne` gear icon is above the fold — do not add lazy loading to it.
+
 ## Testing conventions
 
 - Every component has a test in `src/Tests/` with two cases: `renders without crashing` and `renders correctly` (snapshot).
 - `App.test.tsx` mocks `../AppData/Api` via `vi.mock` and wraps renders in `await act()` to handle the Suspense/`use()` hook correctly.
+- `Api.test.ts` tests `fetchApi` directly using `vi.stubGlobal('fetch', ...)` — covers happy path, HTTP error, and network failure.
+- `ErrorBoundary.test.tsx` tests both the no-error and error-thrown render paths.
 - Snapshots are gitignored — run `npx vitest run -u` to update them after UI changes.
 
 ## Vite config notes
