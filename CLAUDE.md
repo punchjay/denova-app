@@ -58,7 +58,8 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 - Every component has a test in `src/Tests/` with two cases: `renders without crashing` and `renders correctly` (snapshot).
 - `App.test.tsx` mocks `../AppData/Api` via `vi.mock` and wraps renders in `await act()` to handle the Suspense/`use()` hook correctly.
 - `Api.test.ts` tests `fetchApi` directly using `vi.stubGlobal('fetch', ...)` — covers happy path, HTTP error, and network failure.
-- `ErrorBoundary.test.tsx` tests both the no-error and error-thrown render paths.
+- `ErrorBoundary.test.tsx` tests the no-error path, error-thrown path, and verifies the Retry button calls `window.location.reload()`.
+- `App.test.tsx` includes a content assertion test verifying all four sections render expected text from mock data.
 - Snapshots are gitignored — run `npx vitest run -u` to update them after UI changes.
 
 ## Vite config notes
