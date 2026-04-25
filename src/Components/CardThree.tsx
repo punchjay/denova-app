@@ -18,8 +18,10 @@ const CardThree = ({ appData }: Props) => {
           <ImageGallery
             alt={img.name}
             key={img.name}
+            loading="lazy"
             src={require(`../AppData/Img/${img.image}.png`)}
             title={img.name}
+
           />
         ))}
       </GalleryContainer>

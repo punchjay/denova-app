@@ -18,6 +18,7 @@ const CardOne = ({ appData }: Props) => {
         alt="Skills gear icon"
         src={require(`../AppData/Img/${appData.IMG_ICON}.png`)}
         title="Skills gear icon"
+
       />
     </Card>
   )
