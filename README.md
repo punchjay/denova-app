@@ -9,7 +9,6 @@ Portfolio App built with **React 19** and **Styled Components**, showcasing proj
 - **React 19** — UI library with concurrent features and the new compiler
 - **Vite** — Build tool and dev server
 - **Styled Components** — Styling 
-- **Framer Motion** — Animations and page transitions
 
 ## Getting Started
 
@@ -29,7 +28,9 @@ npm start
 
 ## Available Scripts
 
+```bash
 ### `npm start`
+```
 
 Runs the app in development mode at [http://localhost:5173](http://localhost:5173).
 
