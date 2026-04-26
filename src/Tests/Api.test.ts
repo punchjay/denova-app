@@ -8,7 +8,7 @@ const mockFetch = (ok: boolean, payload?: unknown, status = 200) => {
       ok,
       status,
       json: () => Promise.resolve(payload),
-    })
+    }),
   )
 }
 
@@ -25,7 +25,7 @@ it('resolves with parsed data on a successful response', async () => {
 it('throws an HTTP error message when the response is not ok', async () => {
   mockFetch(false, null, 500)
   await expect(fetchApi()).rejects.toThrow(
-    'This is an HTTP error: The status is 500'
+    'This is an HTTP error: The status is 500',
   )
 })
 

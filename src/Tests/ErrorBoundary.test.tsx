@@ -19,7 +19,7 @@ it('renders children when there is no error', () => {
   const { getByText } = render(
     <ErrorBoundary>
       <p>Hello</p>
-    </ErrorBoundary>
+    </ErrorBoundary>,
   )
   expect(getByText('Hello')).toBeInTheDocument()
 })
@@ -28,7 +28,7 @@ it('renders the error message when a child throws', () => {
   const { getByText } = render(
     <ErrorBoundary>
       <Throws message="Something went wrong" />
-    </ErrorBoundary>
+    </ErrorBoundary>,
   )
   expect(getByText('Something went wrong')).toBeInTheDocument()
 })
@@ -37,7 +37,7 @@ it('renders correctly with no error', () => {
   const { asFragment } = render(
     <ErrorBoundary>
       <p>Hello</p>
-    </ErrorBoundary>
+    </ErrorBoundary>,
   )
   expect(asFragment()).toMatchSnapshot()
 })
@@ -46,7 +46,7 @@ it('renders correctly with an error', () => {
   const { asFragment } = render(
     <ErrorBoundary>
       <Throws message="Something went wrong" />
-    </ErrorBoundary>
+    </ErrorBoundary>,
   )
   expect(asFragment()).toMatchSnapshot()
 })
@@ -58,7 +58,7 @@ it('calls window.location.reload when Retry is clicked', () => {
   const { getByText } = render(
     <ErrorBoundary>
       <Throws message="Something went wrong" />
-    </ErrorBoundary>
+    </ErrorBoundary>,
   )
 
   getByText('Retry').click()

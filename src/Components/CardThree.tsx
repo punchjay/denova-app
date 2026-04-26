@@ -21,7 +21,6 @@ const CardThree = ({ appData }: Props) => {
             loading="lazy"
             src={require(`../AppData/Img/${img.image}.png`)}
             title={img.name}
-
           />
         ))}
       </GalleryContainer>
