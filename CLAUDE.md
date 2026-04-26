@@ -9,6 +9,8 @@ npm start          # dev server (Vite, localhost:5173)
 npm run build      # production build → dist/
 npm test           # run all tests once (Vitest)
 npm run test:watch # watch mode
+npm run lint       # run ESLint
+npm run format     # format all files with Prettier
 npm run deploy     # build + push to GitHub Pages (gh-pages -d dist)
 ```
 
@@ -61,6 +63,12 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 - `ErrorBoundary.test.tsx` tests the no-error path, error-thrown path, and verifies the Retry button calls `window.location.reload()`.
 - `App.test.tsx` includes a content assertion test verifying all four sections render expected text from mock data.
 - Snapshots are gitignored — run `npx vitest run -u` to update them after UI changes.
+
+## Code quality
+
+**Prettier** — formats all `src/` files. Config in `.prettierrc`. VS Code formats on save via `.vscode/settings.json` (requires the Prettier extension: `esbenp.prettier-vscode`). Run manually with `npm run format`.
+
+**ESLint** — lints all `src/` files. Config in `eslint.config.js` using the modern flat config format. Uses `typescript-eslint` and `eslint-plugin-react-hooks`. The `no-require-imports` rule is disabled because the dynamic `require()` image pattern is intentional. VS Code shows errors inline via `.vscode/settings.json` (requires the ESLint extension: `dbaeumer.vscode-eslint`). Run manually with `npm run lint`.
 
 ## Vite config notes
 
