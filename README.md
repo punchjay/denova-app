@@ -35,9 +35,9 @@ npm start
 
 Runs the app in development mode at [http://localhost:5173](http://localhost:5173)
 
-```bash
-npm test
-```
+````bash
+npm ```texttest```
+````
 
 Runs the test suite once with Vitest.
 
