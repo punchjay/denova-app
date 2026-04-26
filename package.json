@@ -3,21 +3,27 @@
   "homepage": "https://punchjay.github.io/denova-app",
   "version": "1.1.0",
   "private": false,
+  "type": "module",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^16.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^10.2.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "gh-pages": "^3.2.3",
+    "globals": "^17.5.0",
     "jsdom": "^29.0.2",
     "prettier": "^3.8.3",
     "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.0",
     "vite": "^5.0.0",
     "vitest": "^2.1.9"
   },
@@ -28,6 +34,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write src/",
+    "lint": "eslint src/",
     "test": "vitest run",
     "test:watch": "vitest"
   }
