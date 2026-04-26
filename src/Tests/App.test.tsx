@@ -4,7 +4,9 @@ import App from '../Components/App'
 import type { AppData } from '../AppData/types'
 
 vi.mock('../AppData/Api', async () => {
-  const { default: appData } = await vi.importActual<{ default: AppData }>('../AppData/AppData')
+  const { default: appData } = await vi.importActual<{ default: AppData }>(
+    '../AppData/AppData',
+  )
   return { default: () => Promise.resolve(appData) }
 })
 
