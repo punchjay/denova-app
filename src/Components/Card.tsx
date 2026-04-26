@@ -1,7 +1,16 @@
 import styled from 'styled-components'
 
 const Card = styled.div`
-  padding: 0 1.6rem 10rem;
+  background: rgba(34, 38, 43, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.5),
+    0 1px 4px rgba(0, 0, 0, 0.3);
+  max-width: 720px;
+  width: calc(100% - 4rem);
+  margin: 0 auto 2rem;
+  padding: 2.5rem 2rem 3rem;
 `
 
 export default Card

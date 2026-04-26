@@ -7,13 +7,13 @@ const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 7rem 0 3rem;
+  padding: 4rem 3rem;
   background: transparent;
   color: #b1b3b4;
   text-align: center;
   animation: ${fadeIn} 0.4s both 0.9s ease-out;
   @media (min-width: 768px) {
-    padding-top: 9rem;
+    padding-top: 6rem;
   }
 `
 
