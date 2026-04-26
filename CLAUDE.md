@@ -31,6 +31,10 @@ Portfolio single-page app. `App.tsx` fetches from a Postman mock API on mount vi
 
 `App.tsx` wraps content in `<Suspense>` (shows `<Loader />` while fetching) and `<ErrorBoundary>` (handles fetch errors). All UI is built with Styled Components. No routing.
 
+`StarBackground` renders a fixed-position star field behind all content. It is mounted as a sibling to `<ErrorBoundary>` in `App.tsx` so it is visible even during loading. Stars are generated at module level (stable across re-renders) using the CSS box-shadow technique, split into five groups that twinkle independently via a styled-components `keyframes` animation. `AppContainer` has `background: transparent` and `z-index: 1` so the star field shows through.
+
+`Card` is a Styled Component used by `CardOne`, `CardTwo`, and `CardThree` to give each section an elevated card appearance (semi-transparent background, border, border-radius, box-shadow, max-width, centered with `margin: 0 auto`).
+
 ## Key conventions
 
 **TypeScript types** — shared data-shape interfaces live in `src/AppData/types.ts`. Components use these instead of prop-types.
