@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 
 const COLORS = [
@@ -18,12 +19,6 @@ const buildShadows = (count: number, opacity: number): string => {
   return values.join(',')
 }
 
-// Five groups with different star counts — each animates independently
-const groupA = buildShadows(800, 0.65)
-const groupB = buildShadows(400, 0.65)
-const groupC = buildShadows(300, 0.8)
-const groupD = buildShadows(200, 0.8)
-const groupE = buildShadows(200, 1.0)
 
 const twinkle = keyframes`
   0%, 100% { opacity: 1; }
@@ -55,14 +50,26 @@ const StarLayer = styled.div<{
   animation: ${twinkle} ${({ $duration }) => $duration} ${({ $delay }) => $delay} ease-in-out infinite;
 `
 
-const StarBackground = () => (
-  <Backdrop>
-    <StarLayer $size="1px" $shadows={groupA} $duration="2.8s" $delay="0s" />
-    <StarLayer $size="1px" $shadows={groupB} $duration="5s" $delay="0.8s" />
-    <StarLayer $size="1.5px" $shadows={groupC} $duration="3.5s" $delay="0.4s" />
-    <StarLayer $size="1.5px" $shadows={groupD} $duration="5.5s" $delay="1.4s" />
-    <StarLayer $size="2px" $shadows={groupE} $duration="4.2s" $delay="0.7s" />
-  </Backdrop>
-)
+const StarBackground = () => {
+  // useState lazy initializer runs once per mount — stable across re-renders,
+  // and mockable in tests via vi.spyOn(Math, 'random')
+  const [groups] = useState(() => ({
+    a: buildShadows(800, 0.65),
+    b: buildShadows(400, 0.65),
+    c: buildShadows(300, 0.8),
+    d: buildShadows(200, 0.8),
+    e: buildShadows(200, 1.0),
+  }))
+
+  return (
+    <Backdrop>
+      <StarLayer $size="1px" $shadows={groups.a} $duration="2.8s" $delay="0s" />
+      <StarLayer $size="1px" $shadows={groups.b} $duration="5s" $delay="0.8s" />
+      <StarLayer $size="1.5px" $shadows={groups.c} $duration="3.5s" $delay="0.4s" />
+      <StarLayer $size="1.5px" $shadows={groups.d} $duration="5.5s" $delay="1.4s" />
+      <StarLayer $size="2px" $shadows={groups.e} $duration="4.2s" $delay="0.7s" />
+    </Backdrop>
+  )
+}
 
 export default StarBackground

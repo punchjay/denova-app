@@ -3,6 +3,14 @@ import { act } from 'react'
 import App from '../Components/App'
 import type { AppData } from '../AppData/types'
 
+beforeEach(() => {
+  vi.spyOn(Math, 'random').mockReturnValue(0.5)
+})
+
+afterEach(() => {
+  vi.restoreAllMocks()
+})
+
 vi.mock('../AppData/Api', async () => {
   const { default: appData } = await vi.importActual<{ default: AppData }>(
     '../AppData/AppData',
