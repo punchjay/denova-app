@@ -2,11 +2,13 @@ import styled from 'styled-components'
 import { fadeIn } from './keyFrames.style'
 
 const AppContainer = styled.div`
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 7rem 0 3rem;
-  background: #1b1e22;
+  background: transparent;
   color: #b1b3b4;
   text-align: center;
   animation: ${fadeIn} 0.4s both 0.9s ease-out;

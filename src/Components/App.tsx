@@ -6,6 +6,7 @@ import CardTwo from './CardTwo'
 import CardThree from './CardThree'
 import Footer from './Footer'
 import ErrorBoundary from './ErrorBoundary'
+import StarBackground from './StarBackground'
 import fetchApi from '../AppData/Api'
 
 const appDataPromise = fetchApi()
@@ -23,11 +24,14 @@ const AppContent = () => {
 }
 
 const App = () => (
-  <ErrorBoundary>
-    <Suspense fallback={<Loader />}>
-      <AppContent />
-    </Suspense>
-  </ErrorBoundary>
+  <>
+    <StarBackground />
+    <ErrorBoundary>
+      <Suspense fallback={<Loader />}>
+        <AppContent />
+      </Suspense>
+    </ErrorBoundary>
+  </>
 )
 
 export default App
