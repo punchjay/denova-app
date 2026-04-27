@@ -35,6 +35,8 @@ Portfolio single-page app. `App.tsx` fetches from a Postman mock API on mount vi
 
 `Card` is a Styled Component used by `CardOne`, `CardTwo`, and `CardThree` to give each section an elevated card appearance (semi-transparent background, border, border-radius, box-shadow, max-width, centered with `margin: 0 auto`).
 
+`ScrollReveal` wraps each card section in `App.tsx` and uses `IntersectionObserver` to trigger a fade-in/slide-up animation when the section enters the viewport. It accepts an optional `delay` prop (ms) for staggering. The observer disconnects after firing once. `CardTwo` uses `delay={150}` for a slight stagger after `CardOne`.
+
 ## Key conventions
 
 **TypeScript types** — shared data-shape interfaces live in `src/AppData/types.ts`. Components use these instead of prop-types.
@@ -68,6 +70,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 - `App.test.tsx` includes a content assertion test verifying all four sections render expected text from mock data.
 - Snapshots are gitignored — run `npx vitest run -u` to update them after UI changes.
 - `StarBackground.test.tsx` and `App.test.tsx` mock `Math.random` via `vi.spyOn(Math, 'random').mockReturnValue(0.5)` so star positions are deterministic and snapshots are stable across runs.
+- `setupTests.ts` stubs `IntersectionObserver` with a plain class (not `vi.fn()`) that fires the callback immediately on `observe()`. Using a plain class prevents `vi.restoreAllMocks()` from clearing the implementation between tests.
 
 ## Code quality
 
