@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Card from './Card'
 import HeaderOne from './HeaderOne'
 import ParagraphOne from './ParagraphOne'
@@ -9,6 +10,7 @@ interface Props {
 }
 
 const CardOne = ({ appData }: Props) => {
+  const [imgLoaded, setImgLoaded] = useState(false)
   return (
     <Card>
       <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
@@ -16,8 +18,10 @@ const CardOne = ({ appData }: Props) => {
       <ParagraphOne>{appData.PAR_TWO}</ParagraphOne>
       <ImageIcon
         alt={appData.PROFILE_NAME}
-        src={appData.PROFILE_IMG}
+        src={require(`../AppData/Img/${appData.PROFILE_IMG}.png`)}
         title={appData.PROFILE_NAME}
+        $loaded={imgLoaded}
+        onLoad={() => setImgLoaded(true)}
       />
     </Card>
   )

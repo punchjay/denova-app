@@ -35,7 +35,7 @@ Portfolio single-page app. `App.tsx` fetches from a Postman mock API on mount vi
 
 `Card` is a Styled Component used by `CardOne`, `CardTwo`, and `CardThree` to give each section an elevated card appearance (semi-transparent background, border, border-radius, box-shadow, max-width, centered with `margin: 0 auto`).
 
-`ImageIcon` displays the profile photo in `CardOne`. It uses a direct URL (`https://github.com/punchjay.png`) rather than a local `require()` since it is an external asset. Styled as a circle (`border-radius: 50%`) with a `#20bbfc` blue border.
+`ImageIcon` displays the profile photo in `CardOne`. The image is stored locally at `src/AppData/Img/profile.png` and loaded via the dynamic `require()` pattern like other images. Styled as a circle (`border-radius: 50%`) with a `#20bbfc` blue border. `CardOne` tracks `imgLoaded` state via `onLoad` and passes `$loaded` to `ImageIcon`, which fades the photo in over 1.2s once the image is ready.
 
 `ScrollReveal` wraps each card section in `App.tsx` and uses `IntersectionObserver` to trigger a fade-in/slide-up animation when the section enters the viewport. It accepts an optional `delay` prop (ms) for staggering. The observer disconnects after firing once. `CardTwo` uses `delay={150}` for a slight stagger after `CardOne`.
 
@@ -61,7 +61,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 - All images use descriptive `alt` text — never `alt="Icon"`.
 - `LinkFooter` has `:focus-visible` styles for keyboard navigation.
-- Images below the fold use `loading="lazy"` (`CardTwo`, `CardThree`, `Footer`). The `CardOne` gear icon is above the fold — do not add lazy loading to it.
+- Images below the fold use `loading="lazy"` (`CardTwo`, `CardThree`, `Footer`). The `CardOne` profile photo is above the fold — do not add lazy loading to it.
 
 ## Testing conventions
 
