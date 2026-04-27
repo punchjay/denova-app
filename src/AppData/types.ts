@@ -8,7 +8,8 @@ export interface CardOneData {
   PAR_ONE: string
   LEAD_IN: boolean
   PAR_TWO: string
-  IMG_ICON: string
+  PROFILE_IMG: string
+  PROFILE_NAME: string
 }
 
 export interface CardTwoData {
