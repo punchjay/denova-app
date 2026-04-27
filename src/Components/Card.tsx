@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 const Card = styled.div`
-  background: rgba(34, 38, 43, 0.6);
+  background: rgba(34, 38, 43, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.5),
-    0 1px 4px rgba(0, 0, 0, 0.3);
+    0 4px 24px rgba(0, 0, 0, 0.1),
+    0 1px 4px rgba(0, 0, 0, 0.1);
   max-width: 720px;
   width: calc(100% - 4rem);
   margin: 0 auto 2rem;
