@@ -10,7 +10,7 @@ const Card = styled.div`
   max-width: 720px;
   width: calc(100% - 4rem);
   margin: 0 auto 2rem;
-  padding: 2.5rem 2rem 3rem;
+  padding: 1.5rem 2rem 2rem;
 `
 
 export default Card
