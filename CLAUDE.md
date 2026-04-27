@@ -31,7 +31,7 @@ Portfolio single-page app. `App.tsx` fetches from a Postman mock API on mount vi
 
 `App.tsx` wraps content in `<Suspense>` (shows `<Loader />` while fetching) and `<ErrorBoundary>` (handles fetch errors). All UI is built with Styled Components. No routing.
 
-`StarBackground` renders a fixed-position star field behind all content. It is mounted as a sibling to `<ErrorBoundary>` in `App.tsx` so it is visible even during loading. Stars are generated at module level (stable across re-renders) using the CSS box-shadow technique, split into five groups that twinkle independently via a styled-components `keyframes` animation. `AppContainer` has `background: transparent` and `z-index: 1` so the star field shows through.
+`StarBackground` renders a fixed-position star field behind all content. It is mounted as a sibling to `<ErrorBoundary>` in `App.tsx` so it is visible even during loading. Stars are generated once per mount via a `useState` lazy initializer using the CSS box-shadow technique, split into five groups that twinkle independently via a styled-components `keyframes` animation. `AppContainer` has `background: transparent` and `z-index: 1` so the star field shows through.
 
 `Card` is a Styled Component used by `CardOne`, `CardTwo`, and `CardThree` to give each section an elevated card appearance (semi-transparent background, border, border-radius, box-shadow, max-width, centered with `margin: 0 auto`).
 
@@ -67,6 +67,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 - `ErrorBoundary.test.tsx` tests the no-error path, error-thrown path, and verifies the Retry button calls `window.location.reload()`.
 - `App.test.tsx` includes a content assertion test verifying all four sections render expected text from mock data.
 - Snapshots are gitignored — run `npx vitest run -u` to update them after UI changes.
+- `StarBackground.test.tsx` and `App.test.tsx` mock `Math.random` via `vi.spyOn(Math, 'random').mockReturnValue(0.5)` so star positions are deterministic and snapshots are stable across runs.
 
 ## Code quality
 
