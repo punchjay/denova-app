@@ -35,6 +35,8 @@ Portfolio single-page app. `App.tsx` fetches from a Postman mock API on mount vi
 
 `Card` is a Styled Component used by `CardOne`, `CardTwo`, and `CardThree` to give each section an elevated card appearance (semi-transparent background, border, border-radius, box-shadow, max-width, centered with `margin: 0 auto`).
 
+`ImageIcon` displays the profile photo in `CardOne`. It uses a direct URL (`https://github.com/punchjay.png`) rather than a local `require()` since it is an external asset. Styled as a circle (`border-radius: 50%`) with a `#20bbfc` blue border.
+
 `ScrollReveal` wraps each card section in `App.tsx` and uses `IntersectionObserver` to trigger a fade-in/slide-up animation when the section enters the viewport. It accepts an optional `delay` prop (ms) for staggering. The observer disconnects after firing once. `CardTwo` uses `delay={150}` for a slight stagger after `CardOne`.
 
 ## Key conventions
@@ -49,7 +51,7 @@ src={require(`../AppData/Img/${variable}.png`)}
 
 These are intentionally kept as `require()`. A custom Vite plugin in `vite.config.mjs` (`dynamicRequirePlugin`) transforms them to `import.meta.glob` at build time. The `require` function is declared as a global in `src/vite-env.d.ts`. Do not convert them to static imports.
 
-**Lazy loading** — images below the fold (`CardTwo`, `CardThree`, `Footer`) use `loading="lazy"`. The `CardOne` gear icon is above the fold and must not be lazy loaded.
+**Lazy loading** — images below the fold (`CardTwo`, `CardThree`, `Footer`) use `loading="lazy"`. The `CardOne` profile photo is above the fold and must not be lazy loaded.
 
 **Data sources** — `src/AppData/AppData.ts` is local mock data used only in tests. The live app fetches from `src/AppData/Api.ts` (Postman mock API). The two sources have slightly different content; the API response is authoritative.
 
