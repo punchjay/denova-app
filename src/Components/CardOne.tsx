@@ -15,9 +15,9 @@ const CardOne = ({ appData }: Props) => {
       <ParagraphOne $leadIn={appData.LEAD_IN}>{appData.PAR_ONE}</ParagraphOne>
       <ParagraphOne>{appData.PAR_TWO}</ParagraphOne>
       <ImageIcon
-        alt="Jay Gibble GitHub profile photo"
-        src="https://github.com/punchjay.png"
-        title="Jay Gibble"
+        alt={appData.PROFILE_NAME}
+        src={appData.PROFILE_IMG}
+        title={appData.PROFILE_NAME}
       />
     </Card>
   )

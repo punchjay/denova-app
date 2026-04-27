@@ -7,7 +7,8 @@ export const appData: AppData = [
     LEAD_IN: true,
     PAR_TWO:
       'Building reusable React user interfaces and shared component libraries. Closely collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile Teams.  Pair Programing with Humans and Claude.ai.',
-    IMG_ICON: 'gear',
+    PROFILE_IMG: 'https://github.com/punchjay.png',
+    PROFILE_NAME: 'Jay Gibble GitHub profile photo',
   },
   {
     HEADER_ONE: 'Tools & Stuff',
