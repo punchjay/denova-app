@@ -22,7 +22,7 @@ it('renders correctly', () => {
 
 it('calls onClose when backdrop is clicked', () => {
   render(<Lightbox {...props} />)
-  fireEvent.click(screen.getByRole('dialog'))
+  fireEvent.click(screen.getByTestId('lightbox-backdrop'))
   expect(props.onClose).toHaveBeenCalledTimes(1)
 })
 

@@ -32,10 +32,8 @@ export const appData: AppData = [
     GALLERY_DATA: [
       { name: 'Xbox', image: 'xbox-ss' },
       { name: 'JCrew', image: 'jcrew-ss' },
-      { name: 'Second Step', image: 'secs02-ss' },
       { name: 'Second Step Dashboard', image: 'secs02-ss' },
       { name: 'Agilent', image: 'ion-ss' },
-      { name: 'Yahoo!', image: 'yahoo02-ss' },
     ],
   },
   {

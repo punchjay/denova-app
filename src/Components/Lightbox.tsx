@@ -81,11 +81,11 @@ const Lightbox = ({ src, alt, onClose }: Props) => {
   }, [onClose])
 
   return createPortal(
-    <Backdrop onClick={onClose} role="dialog" aria-modal="true" aria-label={alt}>
+    <Backdrop onClick={onClose} data-testid="lightbox-backdrop">
       <CloseButton onClick={onClose} aria-label="Close lightbox">
         &times;
       </CloseButton>
-      <Modal onClick={(e) => e.stopPropagation()}>
+      <Modal onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={alt}>
         <Img src={src} alt={alt} />
         <Caption>{alt}</Caption>
       </Modal>
