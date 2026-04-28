@@ -7,7 +7,7 @@ const ImageFooter = styled.img`
   vertical-align: middle;
   transition: filter 0.2s ease;
   &:hover {
-    filter: drop-shadow(0 0 6px #8b5cf6);
+    filter: drop-shadow(0 0 2px #8b5cf6);
   }
 `
 
