@@ -1,4 +1,4 @@
-import type { AppData } from './types'
+import type { AppData, NotFoundData } from './types'
 
 export const appData: AppData = [
   {
@@ -43,5 +43,11 @@ export const appData: AppData = [
     IMG_ICON: 'github-icon',
   },
 ]
+
+export const notFoundData: NotFoundData = {
+  HEADER_ONE: '404',
+  ALT: 'Mr. T pities the fool who got a 404',
+  IMAGE: 'mrt',
+}
 
 export default appData
