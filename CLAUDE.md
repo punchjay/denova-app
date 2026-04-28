@@ -43,6 +43,10 @@ The project accent palette: `#20bbfc` (cyan — star field, `HeaderOne`, `LinkFo
 
 `ScrollReveal` wraps each card section in `App.tsx` and uses `IntersectionObserver` to trigger a fade-in/slide-up animation when the section enters the viewport. It accepts an optional `delay` prop (ms) for staggering. The observer disconnects after firing once. `CardTwo` uses `delay={150}` for a slight stagger after `CardOne`.
 
+`CardTwo` wraps each tool icon in a `ToolWrapper` + `Tooltip` pair. `ToolWrapper` is a `position: relative` flex container; `Tooltip` is an absolutely-positioned `span` that fades in below the icon on hover via CSS only (no JS state). The tooltip uses a cyan border (`rgba(32, 187, 252, 0.3)`) to match the accent palette.
+
+`CardThree` manages a `active` state (`{ src, alt } | null`) to drive a `Lightbox`. Clicking any project screenshot sets `active` and opens the lightbox; clicking the backdrop, the close button, or pressing `Escape` closes it. `Lightbox` renders via `createPortal` into `document.body` so it layers above the star field and all cards.
+
 ## Key conventions
 
 **TypeScript types** — shared data-shape interfaces live in `src/AppData/types.ts`. Components use these instead of prop-types.
@@ -68,6 +72,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 - All images use descriptive `alt` text — never `alt="Icon"`.
 - `LinkFooter` has `:hover` (cyan blue glow via `filter: drop-shadow`) and `:focus-visible` outline for keyboard navigation.
 - Images below the fold use `loading="lazy"` (`CardTwo`, `CardThree`, `Footer`). The `CardOne` profile photo is above the fold — do not add lazy loading to it.
+- `Lightbox` uses `role="dialog"` and `aria-modal="true"` with `aria-label` set to the image name. It closes on `Escape` keydown.
 
 ## Testing conventions
 
