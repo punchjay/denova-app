@@ -1,13 +1,13 @@
 import { use, Suspense } from 'react'
 import AppContainer from './AppContainer'
-import Loader from './Loader'
 import CardOne from './CardOne'
 import CardTwo from './CardTwo'
 import CardThree from './CardThree'
-import Footer from './Footer'
 import ErrorBoundary from './ErrorBoundary'
-import StarBackground from './StarBackground'
+import Footer from './Footer'
+import Loader from './Loader'
 import ScrollReveal from './ScrollReveal'
+import StarBackground from './StarBackground'
 import fetchApi from '../AppData/Api'
 
 const appDataPromise = fetchApi()

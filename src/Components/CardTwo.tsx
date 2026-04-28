@@ -1,7 +1,7 @@
 import Card from './Card'
+import GalleryContainer from './GalleryContainer'
 import HeaderOne from './HeaderOne'
 import ParagraphOne from './ParagraphOne'
-import GalleryContainer from './GalleryContainer'
 import ToolGallery from './ToolGallery'
 import type { CardTwoData } from '../AppData/types'
 

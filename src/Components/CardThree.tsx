@@ -1,8 +1,8 @@
 import Card from './Card'
-import HeaderOne from './HeaderOne'
-import ParagraphOne from './ParagraphOne'
 import GalleryContainer from './GalleryContainer'
+import HeaderOne from './HeaderOne'
 import ImageGallery from './ImageGallery'
+import ParagraphOne from './ParagraphOne'
 import type { CardThreeData } from '../AppData/types'
 
 interface Props {

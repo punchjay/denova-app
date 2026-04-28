@@ -1,6 +1,6 @@
-import ParagraphFooter from './ParagraphFooter'
-import LinkFooter from './LinkFooter'
 import ImageFooter from './ImageFooter'
+import LinkFooter from './LinkFooter'
+import ParagraphFooter from './ParagraphFooter'
 import type { FooterData } from '../AppData/types'
 
 interface Props {
