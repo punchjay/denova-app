@@ -11,7 +11,7 @@ const AppContainer = styled.div`
   color: #b1b3b4;
   text-align: center;
   @media (min-width: 768px) {
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
 `
 
