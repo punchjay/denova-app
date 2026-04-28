@@ -59,6 +59,8 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 **Data sources** — `src/AppData/AppData.ts` is local mock data used only in tests. The live app fetches from `src/AppData/Api.ts` (Postman mock API). The two sources have slightly different content; the API response is authoritative.
 
+**IMPORTANT: Whenever `AppData.ts` is changed, `AppData.json` must also be updated to match.** Both files must stay in sync — `AppData.ts` drives tests, `AppData.json` is the reference for the live API data shape.
+
 **ErrorBoundary** — `ErrorBoundary.tsx` is a class component wrapping `<App>`. It shows the error message and a Retry button (which reloads the page) when a child throws. The retry reloads the page because `appDataPromise` is module-level and cannot be re-fetched without a fresh load.
 
 ## Accessibility conventions

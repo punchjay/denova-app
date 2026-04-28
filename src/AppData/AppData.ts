@@ -18,8 +18,8 @@ export const appData: AppData = [
     GALLERY_DATA: [
       { name: 'React', image: 'react', url: 'https://react.dev' },
       { name: 'Styled Components', image: 'styled', url: 'https://styled-components.com' },
-      { name: 'Redux', image: 'redux', url: 'https://redux.js.org' },
-      { name: 'JavaScript', image: 'js', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+      { name: 'Figma', image: 'figma', url: 'https://figma.com' },
+      { name: 'Claude.ai', image: 'claude', url: 'https://claude.ai' },
       { name: 'VS Code', image: 'vscode', url: 'https://code.visualstudio.com' },
       { name: 'Git', image: 'git', url: 'https://git-scm.com' },
       { name: '.Net', image: 'net', url: 'https://dotnet.microsoft.com' },
