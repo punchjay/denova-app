@@ -23,13 +23,15 @@ const CardOne = ({ appData }: Props) => {
           </ParagraphOne>
           <ParagraphOne>{appData.PAR_TWO}</ParagraphOne>
         </TextContent>
-        <ImageIcon
-          alt={appData.PROFILE_NAME}
-          src={require(`../AppData/Img/${appData.PROFILE_IMG}.png`)}
-          title={appData.PROFILE_NAME}
-          $loaded={imgLoaded}
-          onLoad={() => setImgLoaded(true)}
-        />
+        <a href={appData.GITHUB_LINK} target="_blank" rel="noreferrer" aria-label="GitHub profile">
+          <ImageIcon
+            alt={appData.PROFILE_NAME}
+            src={require(`../AppData/Img/${appData.PROFILE_IMG}.png`)}
+            title={appData.PROFILE_NAME}
+            $loaded={imgLoaded}
+            onLoad={() => setImgLoaded(true)}
+          />
+        </a>
       </HeroLayout>
     </Card>
   )

@@ -35,9 +35,11 @@ Portfolio single-page app. `App.tsx` fetches from a Postman mock API on mount vi
 
 `Card` is a Styled Component used by `CardOne`, `CardTwo`, and `CardThree` to give each section an elevated card appearance (semi-transparent background, border, border-radius, box-shadow, max-width, centered with `margin: 0 auto`).
 
+The project accent palette: `#20bbfc` (cyan — star field, `HeaderOne`), `#8b5cf6` / `#a78bfa` (purple — star field, `ImageIcon` border, tool icon glow), `#d8b4fe` (lavender — `LinkFooter` hover), `#b1b3b4` (grey — body text).
+
 `HeroLayout` and `TextContent` are Styled Components used by `CardOne` for a responsive two-column layout. On mobile they stack vertically (centered). At `576px+` they switch to a row with text on the left and the profile photo on the right, with left-aligned text.
 
-`ImageIcon` displays the profile photo in `CardOne`. The image is stored locally at `src/AppData/Img/profile.png` and loaded via the dynamic `require()` pattern like other images. Styled as a circle (`border-radius: 50%`) with a `#20bbfc` blue border. `CardOne` tracks `imgLoaded` state via `onLoad` and passes `$loaded` to `ImageIcon`, which fades the photo in over 1.2s once the image is ready.
+`ImageIcon` displays the profile photo in `CardOne`. The image is stored locally at `src/AppData/Img/profile.png` and loaded via the dynamic `require()` pattern like other images. Styled as a circle (`border-radius: 50%`) with a `#20bbfc` blue border. `CardOne` tracks `imgLoaded` state via `onLoad` and passes `$loaded` to `ImageIcon`, which fades the photo in over 1.2s once the image is ready. The photo links to the GitHub profile URL (`GITHUB_LINK` in `CardOneData`) and has a purple glow on hover.
 
 `ScrollReveal` wraps each card section in `App.tsx` and uses `IntersectionObserver` to trigger a fade-in/slide-up animation when the section enters the viewport. It accepts an optional `delay` prop (ms) for staggering. The observer disconnects after firing once. `CardTwo` uses `delay={150}` for a slight stagger after `CardOne`.
 
@@ -62,7 +64,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 ## Accessibility conventions
 
 - All images use descriptive `alt` text — never `alt="Icon"`.
-- `LinkFooter` has `:focus-visible` styles for keyboard navigation.
+- `LinkFooter` has `:hover` (purple `#d8b4fe`) and `:focus-visible` styles for keyboard navigation.
 - Images below the fold use `loading="lazy"` (`CardTwo`, `CardThree`, `Footer`). The `CardOne` profile photo is above the fold — do not add lazy loading to it.
 
 ## Testing conventions

@@ -5,6 +5,7 @@ const COLORS = [
   'rgba(177,179,180,{a})', // #b1b3b4
   'rgba(32,187,252,{a})', //  #20bbfc
   'rgba(255,255,255,{a})', // #fff
+  'rgba(167,139,250,{a})', // #a78bfa
 ]
 
 const buildShadows = (count: number, opacity: number): string => {
