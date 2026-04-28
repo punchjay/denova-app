@@ -5,6 +5,10 @@ const ImageIcon = styled.img<{ $loaded?: boolean }>`
   border-radius: 50%;
   border: 3px solid #20bbfc;
   opacity: ${({ $loaded }) => ($loaded ? 1 : 0)};
-  transition: opacity 1.2s ease;
+  cursor: pointer;
+  transition: opacity 1.2s ease, filter 0.2s ease;
+  &:hover {
+    filter: drop-shadow(0 0 6px #8b5cf6);
+  }
 `
 export default ImageIcon

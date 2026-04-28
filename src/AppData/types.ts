@@ -1,6 +1,7 @@
 export interface GalleryItem {
   name: string
   image: string
+  url?: string
 }
 
 export interface CardOneData {
@@ -10,6 +11,7 @@ export interface CardOneData {
   PAR_TWO: string
   PROFILE_IMG: string
   PROFILE_NAME: string
+  GITHUB_LINK: string
 }
 
 export interface CardTwoData {

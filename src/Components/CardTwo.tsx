@@ -15,13 +15,20 @@ const CardTwo = ({ appData }: Props) => {
       <HeaderOne>{appData.HEADER_ONE}</HeaderOne>
       <GalleryContainer>
         {appData.GALLERY_DATA.map((img) => (
-          <ToolGallery
-            alt={img.name}
+          <a
             key={img.name}
-            loading="lazy"
-            src={require(`../AppData/Img/${img.image}.png`)}
-            title={img.name}
-          />
+            href={img.url}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={img.name}
+          >
+            <ToolGallery
+              alt={img.name}
+              loading="lazy"
+              src={require(`../AppData/Img/${img.image}.png`)}
+              title={img.name}
+            />
+          </a>
         ))}
       </GalleryContainer>
       <ParagraphOne>{appData.PAR_ONE}</ParagraphOne>
