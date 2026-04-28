@@ -1,5 +1,7 @@
+import { notFoundData } from '../AppData/AppData'
 import AppContainer from './AppContainer'
 import Card from './Card'
+import FourOFourImage from './FourOFourImage'
 import HeaderOne from './HeaderOne'
 import HomeLink from './HomeLink'
 import ParagraphOne from './ParagraphOne'
@@ -12,8 +14,12 @@ const NotFound = () => (
     <AppContainer>
       <ScrollReveal>
         <Card>
-          <HeaderOne>404</HeaderOne>
-          <ParagraphOne>Page not found.</ParagraphOne>
+          <FourOFourImage
+            alt={notFoundData.ALT}
+            src={require(`../AppData/Img/${notFoundData.IMAGE}.png`)}
+          />
+          <HeaderOne>{notFoundData.HEADER_ONE}</HeaderOne>
+          <ParagraphOne>{notFoundData.ALT}</ParagraphOne>
           <HomeLink to="/">← Back to home</HomeLink>
         </Card>
       </ScrollReveal>

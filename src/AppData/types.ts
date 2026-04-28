@@ -33,4 +33,10 @@ export interface FooterData {
   IMG_ICON: string
 }
 
+export interface NotFoundData {
+  HEADER_ONE: string
+  ALT: string
+  IMAGE: string
+}
+
 export type AppData = [CardOneData, CardTwoData, CardThreeData, FooterData]
