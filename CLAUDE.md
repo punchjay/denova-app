@@ -35,7 +35,7 @@ Portfolio single-page app. `App.tsx` fetches from a Postman mock API on mount vi
 
 `Card` is a Styled Component used by `CardOne`, `CardTwo`, and `CardThree` to give each section an elevated card appearance (semi-transparent background, border, border-radius, box-shadow, max-width, centered with `margin: 0 auto`).
 
-The project accent palette: `#20bbfc` (cyan — star field, `HeaderOne`), `#8b5cf6` / `#a78bfa` (purple — star field, `ImageIcon` border, tool icon glow), `#d8b4fe` (lavender — `LinkFooter` hover), `#b1b3b4` (grey — body text).
+The project accent palette: `#20bbfc` (cyan — star field, `HeaderOne`, `LinkFooter` hover glow), `#8b5cf6` (purple — `ImageIcon` border, tool icon glow, loader icon glow, `ImageFooter` hover), `#a78bfa` (light purple — star field), `#b1b3b4` / `#c1cfd7` (grey — body text).
 
 `HeroLayout` and `TextContent` are Styled Components used by `CardOne` for a responsive two-column layout. On mobile they stack vertically (centered). At `576px+` they switch to a row with text on the left and the profile photo on the right, with left-aligned text.
 
@@ -64,7 +64,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 ## Accessibility conventions
 
 - All images use descriptive `alt` text — never `alt="Icon"`.
-- `LinkFooter` has `:hover` (purple `#d8b4fe`) and `:focus-visible` styles for keyboard navigation.
+- `LinkFooter` has `:hover` (cyan blue glow via `filter: drop-shadow`) and `:focus-visible` outline for keyboard navigation.
 - Images below the fold use `loading="lazy"` (`CardTwo`, `CardThree`, `Footer`). The `CardOne` profile photo is above the fold — do not add lazy loading to it.
 
 ## Testing conventions

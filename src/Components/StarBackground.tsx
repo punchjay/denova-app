@@ -6,6 +6,7 @@ const COLORS = [
   'rgba(32,187,252,{a})', //  #20bbfc
   'rgba(255,255,255,{a})', // #fff
   'rgba(167,139,250,{a})', // #a78bfa
+  'rgba(167,139,250,{a})', // #a78bfa
 ]
 
 const buildShadows = (count: number, opacity: number): string => {
@@ -19,7 +20,6 @@ const buildShadows = (count: number, opacity: number): string => {
   }
   return values.join(',')
 }
-
 
 const twinkle = keyframes`
   0%, 100% { opacity: 1; }
@@ -48,7 +48,8 @@ const StarLayer = styled.div<{
   border-radius: 50%;
   background: transparent;
   box-shadow: ${({ $shadows }) => $shadows};
-  animation: ${twinkle} ${({ $duration }) => $duration} ${({ $delay }) => $delay} ease-in-out infinite;
+  animation: ${twinkle} ${({ $duration }) => $duration}
+    ${({ $delay }) => $delay} ease-in-out infinite;
 `
 
 const StarBackground = () => {
@@ -66,9 +67,24 @@ const StarBackground = () => {
     <Backdrop>
       <StarLayer $size="1px" $shadows={groups.a} $duration="2.8s" $delay="0s" />
       <StarLayer $size="1px" $shadows={groups.b} $duration="5s" $delay="0.8s" />
-      <StarLayer $size="1.5px" $shadows={groups.c} $duration="3.5s" $delay="0.4s" />
-      <StarLayer $size="1.5px" $shadows={groups.d} $duration="5.5s" $delay="1.4s" />
-      <StarLayer $size="2px" $shadows={groups.e} $duration="4.2s" $delay="0.7s" />
+      <StarLayer
+        $size="1.5px"
+        $shadows={groups.c}
+        $duration="3.5s"
+        $delay="0.4s"
+      />
+      <StarLayer
+        $size="1.5px"
+        $shadows={groups.d}
+        $duration="5.5s"
+        $delay="1.4s"
+      />
+      <StarLayer
+        $size="2px"
+        $shadows={groups.e}
+        $duration="4.2s"
+        $delay="0.7s"
+      />
     </Backdrop>
   )
 }

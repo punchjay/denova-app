@@ -7,7 +7,7 @@ const ParagraphOne = styled.p<{ $leadIn?: boolean }>`
   font-size: 1.11rem;
   font-weight: 300;
   line-height: 1.67rem;
-  color: ${(props) => (props.$leadIn ? '#fff' : '#b1b3b4')};
+  color: ${(props) => (props.$leadIn ? '#fff' : '#c1cfd7')};
 `
 
 export default ParagraphOne
