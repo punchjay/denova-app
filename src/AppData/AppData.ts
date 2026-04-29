@@ -52,8 +52,4 @@ export const appData: AppData = [
   },
 ]
 
-export const notFoundData: NotFoundData = {
-  HEADER_ONE: '404',
-}
-
 export default appData
