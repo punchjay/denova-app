@@ -56,6 +56,8 @@ The project accent palette: `#20bbfc` (cyan — star field, `HeaderOne`, `LinkFo
 
 `ScrollReveal` wraps each card section in `App.tsx` and the card in `NotFound.tsx`. It uses `IntersectionObserver` to trigger a fade-in/slide-up animation when the section enters the viewport. It accepts an optional `delay` prop (ms) for staggering. The observer disconnects after firing once. `CardTwo` uses `delay={150}` for a slight stagger after `CardOne`.
 
+`TypeWriter` is a component used by `CardOne` to animate `HEADER_ONE` ("Hello! I'm a...") with a character-by-character typing effect. It accepts a `text` prop and an optional `speed` prop (ms per character, default 80). It renders the text incrementally via `useState` + `useEffect` with `setTimeout`, and displays a blinking `|` cursor (CSS `step-end` animation) alongside the text throughout.
+
 `CardTwo` wraps each tool icon in a `ToolWrapper` + `Tooltip` pair. `ToolWrapper` is a `position: relative` flex container; `Tooltip` is an absolutely-positioned `span` that fades in below the icon on hover via CSS only (no JS state). The tooltip uses a cyan border (`rgba(32, 187, 252, 0.3)`) to match the accent palette.
 
 `CardThree` manages a `active` state (`{ src, alt } | null`) to drive a `Lightbox`. Clicking any project screenshot sets `active` and opens the lightbox; clicking the backdrop, the close button, or pressing `Escape` closes it. `Lightbox` renders via `createPortal` into `document.body` so it layers above the star field and all cards.
@@ -93,7 +95,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 - `App.test.tsx` mocks `../AppData/Api` via `vi.mock` and wraps renders in `await act()` to handle the Suspense/`use()` hook correctly.
 - `Api.test.ts` tests `fetchApi` directly using `vi.stubGlobal('fetch', ...)` — covers happy path, HTTP error, and network failure.
 - `ErrorBoundary.test.tsx` tests the no-error path, error-thrown path, and verifies the Retry button calls `window.location.reload()`.
-- `App.test.tsx` includes a content assertion test verifying all four sections render expected text from mock data.
+- `App.test.tsx` includes a content assertion test verifying all four sections render expected text from mock data. `CardOne`'s assertion uses `PAR_ONE` (not `HEADER_ONE`) because `HEADER_ONE` is typed out by `TypeWriter` and starts empty.
 - Snapshots are gitignored — run `npx vitest run -u` to update them after UI changes.
 - `StarBackground.test.tsx` and `App.test.tsx` mock `Math.random` via `vi.spyOn(Math, 'random').mockReturnValue(0.5)` so star positions are deterministic and snapshots are stable across runs.
 - `setupTests.ts` stubs `IntersectionObserver` with a plain class (not `vi.fn()`) that fires the callback immediately on `observe()`. Using a plain class prevents `vi.restoreAllMocks()` from clearing the implementation between tests.
