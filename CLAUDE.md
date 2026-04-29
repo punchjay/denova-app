@@ -40,7 +40,7 @@ Portfolio app with React Router v7. `src/router.tsx` defines two routes using `c
 
 `App.tsx` wraps content in `<Suspense>` (shows `<Loader />` while fetching) and `<ErrorBoundary>` (handles fetch errors). All UI is built with Styled Components.
 
-`NotFound` is the 404 page. It uses `StarBackground`, `AppContainer`, `ScrollReveal`, `GhostCard`, and `HeaderOne`, and links back to `/` via `HomeLink` (a `styled(Link)` from React Router). `GhostCard` is a minimal styled div used only by `NotFound` — unlike `Card`, it has no border or background. The card fades in on load via `ScrollReveal`.
+`NotFound` is the 404 page. It uses `StarBackground`, `AppContainer`, `ScrollReveal`, `GhostCard`, `NotFoundHeader`, and `HomeLink` (a `styled(Link)` from React Router). `GhostCard` is a minimal styled div used only by `NotFound` — unlike `Card`, it has no border or background. `NotFoundHeader` is a `styled(HeaderOne)` override with `font-size: 4.5rem`. The card fades in on load via `ScrollReveal`.
 
 `HomeLink` is a styled React Router `Link` using the cyan accent (`#20bbfc`) with hover glow and `:focus-visible` outline, matching the `LinkFooter` accessibility pattern.
 
@@ -56,7 +56,7 @@ The project accent palette: `#20bbfc` (cyan — star field, `HeaderOne`, `LinkFo
 
 `ScrollReveal` wraps each card section in `App.tsx` and the card in `NotFound.tsx`. It uses `IntersectionObserver` to trigger a fade-in/slide-up animation when the section enters the viewport. It accepts an optional `delay` prop (ms) for staggering. The observer disconnects after firing once. `CardTwo` uses `delay={150}` for a slight stagger after `CardOne`.
 
-`TypeWriter` is a component used by `CardOne` to animate `HEADER_ONE` ("Hello! I'm a...") with a character-by-character typing effect. It accepts a `text` prop and an optional `speed` prop (ms per character, default 80). It renders the text incrementally via `useState` + `useEffect` with `setTimeout`, and displays a blinking `|` cursor (CSS `step-end` animation) alongside the text throughout.
+`TypeWriter` is a component used by `CardOne` to animate `HEADER_ONE` ("Hello! I'm a...") with a character-by-character typing effect. It accepts a `text` prop, an optional `speed` prop (ms per character, default 80), and an optional `delay` prop (ms before typing starts, default 500). It renders the text incrementally via `useState` + `useEffect` with `setTimeout`, and displays a blinking `|` cursor (CSS `step-end` animation) alongside the text throughout.
 
 `CardTwo` wraps each tool icon in a `ToolWrapper` + `Tooltip` pair. `ToolWrapper` is a `position: relative` flex container; `Tooltip` is an absolutely-positioned `span` that fades in below the icon on hover via CSS only (no JS state). The tooltip uses a cyan border (`rgba(32, 187, 252, 0.3)`) to match the accent palette.
 
