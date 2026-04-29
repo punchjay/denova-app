@@ -1,4 +1,3 @@
-import { notFoundData } from '../AppData/AppData'
 import AppContainer from './AppContainer'
 import GhostCard from './GhostCard'
 import HomeLink from './HomeLink'
@@ -12,7 +11,7 @@ const NotFound = () => (
     <AppContainer>
       <ScrollReveal>
         <GhostCard>
-          <NotFoundHeader>{notFoundData.HEADER_ONE}</NotFoundHeader>
+          <NotFoundHeader>404</NotFoundHeader>
           <HomeLink to="/">← Back to home</HomeLink>
         </GhostCard>
       </ScrollReveal>
