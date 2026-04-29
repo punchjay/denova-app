@@ -57,8 +57,6 @@
     }
   ],
   "notFoundData": {
-    "HEADER_ONE": "404",
-    "ALT": "Mr. T pities the fool who got a 404",
-    "IMAGE": "mrt"
+    "HEADER_ONE": "404"
   }
 }

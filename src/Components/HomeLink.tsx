@@ -7,6 +7,7 @@ const HomeLink = styled(Link)`
   font-size: 1rem;
   font-weight: 300;
   transition: filter 0.2s ease;
+  filter: drop-shadow(0 0 6px #8b5cf6);
   &:hover {
     filter: drop-shadow(0 0 6px #20bbfc);
   }

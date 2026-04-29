@@ -35,8 +35,6 @@ export interface FooterData {
 
 export interface NotFoundData {
   HEADER_ONE: string
-  ALT: string
-  IMAGE: string
 }
 
 export type AppData = [CardOneData, CardTwoData, CardThreeData, FooterData]

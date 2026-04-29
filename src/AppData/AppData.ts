@@ -17,9 +17,17 @@ export const appData: AppData = [
       'React, Styled Components, Redux, JavaScript, Git, Jest, Azure, DevOps, SQL, Mongo DB, and pair programming .NET',
     GALLERY_DATA: [
       { name: 'React', image: 'react', url: 'https://react.dev' },
-      { name: 'Styled Components', image: 'styled', url: 'https://styled-components.com' },
+      {
+        name: 'Styled Components',
+        image: 'styled',
+        url: 'https://styled-components.com',
+      },
       { name: 'Git', image: 'git', url: 'https://git-scm.com' },
-      { name: 'VS Code', image: 'vscode', url: 'https://code.visualstudio.com' },
+      {
+        name: 'VS Code',
+        image: 'vscode',
+        url: 'https://code.visualstudio.com',
+      },
       { name: '.Net', image: 'net', url: 'https://dotnet.microsoft.com' },
       { name: 'Azure', image: 'azure', url: 'https://azure.microsoft.com' },
       { name: 'Claude.ai', image: 'claude', url: 'https://claude.ai' },
@@ -46,8 +54,6 @@ export const appData: AppData = [
 
 export const notFoundData: NotFoundData = {
   HEADER_ONE: '404',
-  ALT: 'Mr. T pities the fool who got a 404',
-  IMAGE: 'mrt',
 }
 
 export default appData
