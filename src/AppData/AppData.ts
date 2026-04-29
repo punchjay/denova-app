@@ -6,7 +6,7 @@ export const appData: AppData = [
     PAR_ONE: 'Front End Developer, Building and Maintaining React Apps',
     LEAD_IN: true,
     PAR_TWO:
-      'Building reusable React user interfaces and shared component libraries. Closely collaborating with Back End Engineers and Designers, as a sole Front End Developer or in high velocity Agile Teams.  Pair Programing with Humans and Claude.ai.',
+      'Building reusable interfaces and component libraries in close collaboration with Back End Engineers and Designers — as a solo Front End Developer or within high-velocity Agile teams — pair programming with humans and Claude.ai',
     PROFILE_IMG: 'profile',
     PROFILE_NAME: 'Jay Gibble GitHub profile photo',
     GITHUB_LINK: 'https://github.com/punchjay',
@@ -14,7 +14,7 @@ export const appData: AppData = [
   {
     HEADER_ONE: 'Tools & Stuff',
     PAR_ONE:
-      'React, Styled Components, Redux, JavaScript, Git, Jest, Azure, DevOps, SQL, Mongo DB, and pair programming .NET',
+      'My stack includes React, Styled Components, Git, Azure, SQL, and MongoDB. I work closely with Figma for design handoffs, write thorough tests, and use Claude.ai as a pair programming partner to move faster and think sharper.',
     GALLERY_DATA: [
       { name: 'React', image: 'react', url: 'https://react.dev' },
       {
