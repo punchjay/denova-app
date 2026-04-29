@@ -40,7 +40,7 @@ Portfolio app with React Router v7. `src/router.tsx` defines two routes using `c
 
 `App.tsx` wraps content in `<Suspense>` (shows `<Loader />` while fetching) and `<ErrorBoundary>` (handles fetch errors). All UI is built with Styled Components.
 
-`NotFound` is the 404 page. It reuses `StarBackground`, `AppContainer`, `ScrollReveal`, `Card`, `HeaderOne`, and `ParagraphOne` from the home page, and links back to `/` via `HomeLink` (a `styled(Link)` from React Router). The card fades in on load via `ScrollReveal`.
+`NotFound` is the 404 page. It uses `StarBackground`, `AppContainer`, `ScrollReveal`, `GhostCard`, and `HeaderOne`, and links back to `/` via `HomeLink` (a `styled(Link)` from React Router). `GhostCard` is a minimal styled div used only by `NotFound` — unlike `Card`, it has no border or background. The card fades in on load via `ScrollReveal`.
 
 `HomeLink` is a styled React Router `Link` using the cyan accent (`#20bbfc`) with hover glow and `:focus-visible` outline, matching the `LinkFooter` accessibility pattern.
 
