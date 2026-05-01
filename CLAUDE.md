@@ -62,6 +62,29 @@ The project accent palette: `#20bbfc` (cyan — star field, `HeaderOne`, `LinkFo
 
 `CardThree` manages a `active` state (`{ src, alt } | null`) to drive a `Lightbox`. Clicking any project screenshot sets `active` and opens the lightbox; clicking the backdrop, the close button, or pressing `Escape` closes it. `Lightbox` renders via `createPortal` into `document.body` so it layers above the star field and all cards.
 
+## Design system
+
+**Color palette**
+
+| Token | Hex | Usage |
+|---|---|---|
+| Cyan | `#20bbfc` | Primary accent — `HeaderOne`, links, star field, hover glows |
+| Purple | `#8b5cf6` | Secondary accent — icon glows, loader, `ImageIcon` border, `ImageFooter` hover |
+| Light purple | `#a78bfa` | Star field only |
+| Grey light | `#c1cfd7` | Primary body text |
+| Grey mid | `#b1b3b4` | Muted / secondary text |
+| Card bg | `rgba(34, 38, 43, 0.10)` | Semi-transparent card background |
+| Base bg | `#222630` | Page background (behind star field) |
+
+**Typography**
+
+- Font weight: 300 (thin) throughout — headers and body alike
+- `HeaderOne`: 2.4rem, cyan (`#20bbfc`), purple drop-shadow for glow effect
+- `NotFoundHeader`: 4.5rem override of `HeaderOne`
+- Body text: 1.11rem, `#c1cfd7`
+- Footer/meta: 0.85rem, `#b1b3b4`
+- Tooltip labels: 0.72rem
+
 ## Key conventions
 
 **TypeScript types** — shared data-shape interfaces live in `src/AppData/types.ts`. Components use these instead of prop-types.
