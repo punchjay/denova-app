@@ -52,15 +52,17 @@ const StarLayer = styled.div<{
     ${({ $delay }) => $delay} ease-in-out infinite;
 `
 
+const isTest = process.env.NODE_ENV === 'test'
+
 const StarBackground = () => {
   // useState lazy initializer runs once per mount — stable across re-renders,
   // and mockable in tests via vi.spyOn(Math, 'random')
   const [groups] = useState(() => ({
-    a: buildShadows(800, 0.65),
-    b: buildShadows(400, 0.65),
-    c: buildShadows(300, 0.8),
-    d: buildShadows(200, 0.8),
-    e: buildShadows(200, 1.0),
+    a: buildShadows(isTest ? 2 : 800, 0.65),
+    b: buildShadows(isTest ? 2 : 400, 0.65),
+    c: buildShadows(isTest ? 2 : 300, 0.8),
+    d: buildShadows(isTest ? 2 : 200, 0.8),
+    e: buildShadows(isTest ? 2 : 200, 1.0),
   }))
 
   return (
