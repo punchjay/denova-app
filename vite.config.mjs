@@ -22,6 +22,9 @@ function dynamicRequirePlugin() {
 
 export default defineConfig({
   base: '/denova-app/',
+  server: {
+    open: true,
+  },
   plugins: [
     react(),
     dynamicRequirePlugin(),
