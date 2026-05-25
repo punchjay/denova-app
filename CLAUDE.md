@@ -11,6 +11,7 @@ npm test           # run all tests once (Vitest)
 npm run test:watch # watch mode
 npm run lint       # run ESLint
 npm run format     # format all files with Prettier
+npx tsc --noEmit   # type check without emitting files
 ```
 
 To run a single test file:
@@ -51,7 +52,7 @@ Portfolio app with React Router v7. `src/router.tsx` defines two routes using `c
 
 `ImageIcon` displays the profile photo in `CardOne`. The image is stored locally at `src/AppData/Img/profile.png` and loaded via the dynamic `require()` pattern like other images. Styled as a circle (`border-radius: 50%`) with a `#20bbfc` blue border. `CardOne` tracks `imgLoaded` state via `onLoad` and passes `$loaded` to `ImageIcon`, which fades the photo in over 1.2s once the image is ready. The photo links to the GitHub profile URL (`GITHUB_LINK` in `CardOneData`) and has a purple glow on hover.
 
-`ScrollReveal` wraps each card section in `App.tsx` and the card in `NotFound.tsx`. It uses `IntersectionObserver` to trigger a fade-in/slide-up animation when the section enters the viewport. It accepts an optional `delay` prop (ms) for staggering. The observer disconnects after firing once. `CardTwo` uses `delay={150}` for a slight stagger after `CardOne`.
+`ScrollReveal` wraps `CardOne`, `CardTwo`, and `CardThree` in `App.tsx`, and the card in `NotFound.tsx`. It uses `IntersectionObserver` to trigger a fade-in/slide-up animation when the section enters the viewport. It accepts an optional `delay` prop (ms) for staggering. The observer disconnects after firing once. `CardTwo` uses `delay={150}` for a slight stagger after `CardOne`. `Footer` renders without `ScrollReveal` — it appears immediately.
 
 `TypeWriter` is a component used by `CardOne` to animate `HEADER_ONE` ("Hello! I'm a...") with a character-by-character typing effect. It accepts a `text` prop, an optional `speed` prop (ms per character, default 80), and an optional `delay` prop (ms before typing starts, default 500). It renders the text incrementally via `useState` + `useEffect` with `setTimeout`, and displays a blinking `|` cursor (CSS `step-end` animation) alongside the text throughout.
 
@@ -127,6 +128,15 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 **Prettier** — formats all `src/` files. Config in `.prettierrc`. VS Code formats on save via `.vscode/settings.json` (requires the Prettier extension: `esbenp.prettier-vscode`). Run manually with `npm run format`.
 
 **ESLint** — lints all `src/` files. Config in `eslint.config.js` using the modern flat config format. Uses `typescript-eslint` and `eslint-plugin-react-hooks`. The `no-require-imports` rule is disabled because the dynamic `require()` image pattern is intentional. VS Code shows errors inline via `.vscode/settings.json` (requires the ESLint extension: `dbaeumer.vscode-eslint`). Run manually with `npm run lint`.
+
+## CI / Deployment
+
+`.github/workflows/deploy.yml` runs on every push to `master` with two jobs:
+
+1. **`ci`** — runs `npm test`, `npm run lint`, and `npx tsc --noEmit`
+2. **`deploy`** — only runs if `ci` passes; builds with `npm run build` and pushes `dist/` to the `gh-pages` branch via `peaceiris/actions-gh-pages`
+
+GitHub Pages is configured to serve from the `gh-pages` branch. Do not delete that branch — CI owns it.
 
 ## Vite config notes
 
