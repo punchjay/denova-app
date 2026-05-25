@@ -52,7 +52,7 @@ const StarLayer = styled.div<{
     ${({ $delay }) => $delay} ease-in-out infinite;
 `
 
-const isTest = process.env.NODE_ENV === 'test'
+const isTest = !!import.meta.env.VITEST
 
 const StarBackground = () => {
   // useState lazy initializer runs once per mount — stable across re-renders,

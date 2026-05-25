@@ -1,8 +1,7 @@
-import type { AppData, NotFoundData } from './types'
+import type { AppData } from './types'
 
 interface ApiResponse {
   appData: AppData
-  notFoundData: NotFoundData
 }
 
 const baseApiAddress =
