@@ -25,9 +25,7 @@ const AppContent = () => {
       <ScrollReveal>
         <CardThree appData={appData[2]} />
       </ScrollReveal>
-      <ScrollReveal>
-        <Footer appData={appData[3]} />
-      </ScrollReveal>
+      <Footer appData={appData[3]} />
     </AppContainer>
   )
 }
