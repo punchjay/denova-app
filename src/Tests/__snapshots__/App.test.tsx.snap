@@ -1,0 +1,350 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-kfzzyY gJUKhL"
+  >
+    <div
+      class="sc-fKFxPF kcQjmb"
+    />
+    <div
+      class="sc-fKFxPF inUIJQ"
+    />
+    <div
+      class="sc-fKFxPF hXflUp"
+    />
+    <div
+      class="sc-fKFxPF hsYbxu"
+    />
+    <div
+      class="sc-fKFxPF zdDa"
+    />
+  </div>
+  <div
+    class="sc-bdfDLd iGuegS"
+  >
+    <div
+      class="sc-dmlpFL ekBZUV"
+    >
+      <div
+        class="sc-gsTDHW fzKByI"
+      >
+        <div
+          class="sc-dlfnOL dqyobA"
+        >
+          <div
+            class="sc-gKscir ewPdXR"
+          >
+            <h1
+              class="sc-hKgHXU ctyzIR"
+            >
+              <span
+                class="sc-iBPUmU dTgczz"
+              >
+                |
+              </span>
+            </h1>
+            <p
+              class="sc-jSgsbC iJZpFS"
+            >
+              Front End Developer, Building and Maintaining React Apps
+            </p>
+            <p
+              class="sc-jSgsbC kuVhNU"
+            >
+              Building reusable interfaces and component libraries in close collaboration with Back End Engineers and Designers — as a solo Front End Developer or within high-velocity Agile teams — pair programming with humans and Claude.ai
+            </p>
+          </div>
+          <a
+            aria-label="GitHub profile"
+            href="https://github.com/punchjay"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Jay Gibble GitHub profile photo"
+              class="sc-eCsseJ dMzXmg"
+              src="/denova-app/src/AppData/Img/profile.png"
+              title="Jay Gibble GitHub profile photo"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-dmlpFL jLMOxN"
+    >
+      <div
+        class="sc-gsTDHW fzKByI"
+      >
+        <h1
+          class="sc-hKgHXU ctyzIR"
+        >
+          Tools & Stuff
+        </h1>
+        <div
+          class="sc-fubEtJ hQCYho"
+        >
+          <div
+            class="sc-kEjckD RKhqL"
+          >
+            <a
+              aria-label="React"
+              href="https://react.dev"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="React"
+                class="sc-jrAIFA dAMQxn"
+                loading="lazy"
+                src="/denova-app/src/AppData/Img/react.png"
+              />
+            </a>
+            <span
+              class="sc-pGbXd jrIVzj"
+            >
+              React
+            </span>
+          </div>
+          <div
+            class="sc-kEjckD RKhqL"
+          >
+            <a
+              aria-label="Styled Components"
+              href="https://styled-components.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Styled Components"
+                class="sc-jrAIFA dAMQxn"
+                loading="lazy"
+                src="/denova-app/src/AppData/Img/styled.png"
+              />
+            </a>
+            <span
+              class="sc-pGbXd jrIVzj"
+            >
+              Styled Components
+            </span>
+          </div>
+          <div
+            class="sc-kEjckD RKhqL"
+          >
+            <a
+              aria-label="Git"
+              href="https://git-scm.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Git"
+                class="sc-jrAIFA dAMQxn"
+                loading="lazy"
+                src="/denova-app/src/AppData/Img/git.png"
+              />
+            </a>
+            <span
+              class="sc-pGbXd jrIVzj"
+            >
+              Git
+            </span>
+          </div>
+          <div
+            class="sc-kEjckD RKhqL"
+          >
+            <a
+              aria-label="VS Code"
+              href="https://code.visualstudio.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="VS Code"
+                class="sc-jrAIFA dAMQxn"
+                loading="lazy"
+                src="/denova-app/src/AppData/Img/vscode.png"
+              />
+            </a>
+            <span
+              class="sc-pGbXd jrIVzj"
+            >
+              VS Code
+            </span>
+          </div>
+          <div
+            class="sc-kEjckD RKhqL"
+          >
+            <a
+              aria-label=".Net"
+              href="https://dotnet.microsoft.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt=".Net"
+                class="sc-jrAIFA dAMQxn"
+                loading="lazy"
+                src="/denova-app/src/AppData/Img/net.png"
+              />
+            </a>
+            <span
+              class="sc-pGbXd jrIVzj"
+            >
+              .Net
+            </span>
+          </div>
+          <div
+            class="sc-kEjckD RKhqL"
+          >
+            <a
+              aria-label="Azure"
+              href="https://azure.microsoft.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Azure"
+                class="sc-jrAIFA dAMQxn"
+                loading="lazy"
+                src="/denova-app/src/AppData/Img/azure.png"
+              />
+            </a>
+            <span
+              class="sc-pGbXd jrIVzj"
+            >
+              Azure
+            </span>
+          </div>
+          <div
+            class="sc-kEjckD RKhqL"
+          >
+            <a
+              aria-label="Claude.ai"
+              href="https://claude.ai"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Claude.ai"
+                class="sc-jrAIFA dAMQxn"
+                loading="lazy"
+                src="/denova-app/src/AppData/Img/claude.png"
+              />
+            </a>
+            <span
+              class="sc-pGbXd jrIVzj"
+            >
+              Claude.ai
+            </span>
+          </div>
+          <div
+            class="sc-kEjckD RKhqL"
+          >
+            <a
+              aria-label="Figma"
+              href="https://figma.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Figma"
+                class="sc-jrAIFA dAMQxn"
+                loading="lazy"
+                src="/denova-app/src/AppData/Img/figma.png"
+              />
+            </a>
+            <span
+              class="sc-pGbXd jrIVzj"
+            >
+              Figma
+            </span>
+          </div>
+        </div>
+        <p
+          class="sc-jSgsbC kuVhNU"
+        >
+          My stack includes React, Styled Components, Git, Azure, SQL, and MongoDB. I work closely with Figma for design handoffs, write thorough tests, and use Claude.ai as a pair programming partner to move faster and think sharper.
+        </p>
+      </div>
+    </div>
+    <div
+      class="sc-dmlpFL ekBZUV"
+    >
+      <div
+        class="sc-gsTDHW fzKByI"
+      >
+        <h1
+          class="sc-hKgHXU ctyzIR"
+        >
+          Projects
+        </h1>
+        <div
+          class="sc-fubEtJ hQCYho"
+        >
+          <img
+            alt="Xbox"
+            class="sc-jrAIFA sc-iqHZue sc-fodXMg dAMQxn fjeTQs hOPsPq"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/xbox-ss.png"
+            title="Xbox"
+          />
+          <img
+            alt="JCrew"
+            class="sc-jrAIFA sc-iqHZue sc-fodXMg dAMQxn fjeTQs hOPsPq"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/jcrew-ss.png"
+            title="JCrew"
+          />
+          <img
+            alt="Second Step Dashboard"
+            class="sc-jrAIFA sc-iqHZue sc-fodXMg dAMQxn fjeTQs hOPsPq"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/secs02-ss.png"
+            title="Second Step Dashboard"
+          />
+          <img
+            alt="Agilent"
+            class="sc-jrAIFA sc-iqHZue sc-fodXMg dAMQxn fjeTQs hOPsPq"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/ion-ss.png"
+            title="Agilent"
+          />
+        </div>
+        <p
+          class="sc-jSgsbC kuVhNU"
+        >
+          Project portfolio available upon request.
+        </p>
+      </div>
+    </div>
+    <p
+      class="sc-idOkdQ hOHLDM"
+    >
+      © 2026 Denova | 
+      <a
+        class="sc-bkAakD bWahJQ"
+        href="mailto:edwardgibble@gmail.com?Subject=Hello!"
+      >
+        edwardgibble@gmail.com
+      </a>
+      <a
+        class="sc-bkAakD bWahJQ"
+        href="https://github.com/punchjay"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="GitHub profile"
+          class="sc-fFubTW keRILV"
+          loading="lazy"
+          src="/denova-app/src/AppData/Img/github-icon.png"
+          title="GitHub profile"
+        />
+      </a>
+    </p>
+  </div>
+</DocumentFragment>
+`;

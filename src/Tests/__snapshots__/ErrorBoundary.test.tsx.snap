@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly with an error 1`] = `
+<DocumentFragment>
+  <div
+    style="color: rgb(177, 179, 180); text-align: center; padding: 2rem;"
+  >
+    <p>
+      Something went wrong
+    </p>
+    <button
+      style="margin-top: 1rem; padding: 0.5rem 1.25rem; background: transparent; color: rgb(177, 179, 180); border: 1px solid rgb(177, 179, 180); border-radius: 4px; cursor: pointer; font-size: 1rem;"
+    >
+      Retry
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders correctly with no error 1`] = `
+<DocumentFragment>
+  <p>
+    Hello
+  </p>
+</DocumentFragment>
+`;

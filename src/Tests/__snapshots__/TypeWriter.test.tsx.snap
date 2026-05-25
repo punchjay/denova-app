@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <span
+    class="sc-bdfDLd dZytfJ"
+  >
+    |
+  </span>
+</DocumentFragment>
+`;

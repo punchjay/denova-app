@@ -1,0 +1,50 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdfDLd jJiyLH"
+  >
+    <div
+      class="sc-gsTDHW dJjEnY"
+    >
+      <div
+        class="sc-jSgsbC hWDQPW"
+      >
+        <h1
+          class="sc-dlfnOL bFdcUP"
+        >
+          <span
+            class="sc-gKscir eSyvha"
+          >
+            |
+          </span>
+        </h1>
+        <p
+          class="sc-eCsseJ inxzXj"
+        >
+          Front End Developer, Building and Maintaining React Apps
+        </p>
+        <p
+          class="sc-eCsseJ hpTLbl"
+        >
+          Building reusable interfaces and component libraries in close collaboration with Back End Engineers and Designers — as a solo Front End Developer or within high-velocity Agile teams — pair programming with humans and Claude.ai
+        </p>
+      </div>
+      <a
+        aria-label="GitHub profile"
+        href="https://github.com/punchjay"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Jay Gibble GitHub profile photo"
+          class="sc-hKgHXU dmtUYg"
+          src="/denova-app/src/AppData/Img/profile.png"
+          title="Jay Gibble GitHub profile photo"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
