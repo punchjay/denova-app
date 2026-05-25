@@ -48,8 +48,6 @@ Portfolio app with React Router v7. `src/router.tsx` defines two routes using `c
 
 `Card` is a Styled Component used by `CardOne`, `CardTwo`, and `CardThree` to give each section an elevated card appearance (semi-transparent background, border, border-radius, box-shadow, max-width, centered with `margin: 0 auto`).
 
-The project accent palette: `#20bbfc` (cyan — star field, `HeaderOne`, `LinkFooter` hover glow), `#8b5cf6` (purple — `ImageIcon` border, tool icon glow, loader icon glow, `ImageFooter` hover), `#a78bfa` (light purple — star field), `#b1b3b4` / `#c1cfd7` (grey — body text).
-
 `HeroLayout` and `TextContent` are Styled Components used by `CardOne` for a responsive two-column layout. On mobile they stack vertically (centered). At `576px+` they switch to a row with text on the left and the profile photo on the right, with left-aligned text.
 
 `ImageIcon` displays the profile photo in `CardOne`. The image is stored locally at `src/AppData/Img/profile.png` and loaded via the dynamic `require()` pattern like other images. Styled as a circle (`border-radius: 50%`) with a `#20bbfc` blue border. `CardOne` tracks `imgLoaded` state via `onLoad` and passes `$loaded` to `ImageIcon`, which fades the photo in over 1.2s once the image is ready. The photo links to the GitHub profile URL (`GITHUB_LINK` in `CardOneData`) and has a purple glow on hover.
@@ -109,7 +107,6 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 - All images use descriptive `alt` text — never `alt="Icon"`.
 - `LinkFooter` and `HomeLink` have `:hover` (cyan blue glow via `filter: drop-shadow`) and `:focus-visible` outline for keyboard navigation.
-- Images below the fold use `loading="lazy"` (`CardTwo`, `CardThree`, `Footer`). The `CardOne` profile photo is above the fold — do not add lazy loading to it.
 - `Lightbox` uses `role="dialog"` and `aria-modal="true"` with `aria-label` set to the image name. It closes on `Escape` keydown.
 
 ## Testing conventions
