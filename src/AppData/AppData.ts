@@ -1,4 +1,4 @@
-import type { AppData, NotFoundData } from './types'
+import type { AppData } from './types'
 
 export const appData: AppData = [
   {

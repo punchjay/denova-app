@@ -18,7 +18,12 @@ const CardTwo = ({ appData }: Props) => {
       <GalleryContainer>
         {appData.GALLERY_DATA.map((img) => (
           <ToolWrapper key={img.name}>
-            <a href={img.url} target="_blank" rel="noreferrer" aria-label={img.name}>
+            <a
+              href={img.url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={img.name}
+            >
               <ToolGallery
                 alt={img.name}
                 loading="lazy"

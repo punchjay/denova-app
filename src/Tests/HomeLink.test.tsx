@@ -6,6 +6,8 @@ it('renders without crashing', () => {
 })
 
 it('renders correctly', () => {
-  const { asFragment } = renderWithRouter(<HomeLink to="/">← Back to home</HomeLink>)
+  const { asFragment } = renderWithRouter(
+    <HomeLink to="/">← Back to home</HomeLink>,
+  )
   expect(asFragment()).toMatchSnapshot()
 })

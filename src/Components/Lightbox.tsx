@@ -85,7 +85,12 @@ const Lightbox = ({ src, alt, onClose }: Props) => {
       <CloseButton onClick={onClose} aria-label="Close lightbox">
         &times;
       </CloseButton>
-      <Modal onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={alt}>
+      <Modal
+        onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-label={alt}
+      >
         <Img src={src} alt={alt} />
         <Caption>{alt}</Caption>
       </Modal>

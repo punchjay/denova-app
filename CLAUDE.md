@@ -11,7 +11,7 @@ npm test           # run all tests once (Vitest)
 npm run test:watch # watch mode
 npm run lint       # run ESLint
 npm run format     # format all files with Prettier
-npm run deploy     # build + push to GitHub Pages (gh-pages -d dist)
+npm run deploy     # build + push to GitHub Pages manually (CI deploys automatically on merge to master)
 ```
 
 To run a single test file:
@@ -124,6 +124,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 - `setupTests.ts` stubs `IntersectionObserver` with a plain class (not `vi.fn()`) that fires the callback immediately on `observe()`. Using a plain class prevents `vi.restoreAllMocks()` from clearing the implementation between tests.
 - Components that use React Router (`NotFound`, `HomeLink`) must be wrapped in a router for tests. Use the shared `renderWithRouter` helper from `src/Tests/test-utils.tsx` rather than wrapping in `MemoryRouter` inline.
 - `NotFound.test.tsx` mocks `Math.random` (same as `StarBackground.test.tsx`) because `NotFound` mounts a `StarBackground`.
+- `smoke.test.tsx` covers router-level integration using `createMemoryRouter` + `RouterProvider` (not `renderWithRouter`). It tests both routes, the `HomeLink` href, and the full lightbox open/close flow through the live app. Note: React Router v7 has an `AbortSignal` incompatibility with jsdom that prevents navigation assertions — link `href` is verified instead; navigation belongs in E2E tests.
 
 ## Code quality
 

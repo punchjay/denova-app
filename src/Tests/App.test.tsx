@@ -31,7 +31,9 @@ it('renders correctly', async () => {
 
 it('renders content from all four sections', async () => {
   const { getByText } = await act(async () => render(<App />))
-  expect(getByText('Front End Developer, Building and Maintaining React Apps')).toBeInTheDocument()
+  expect(
+    getByText('Front End Developer, Building and Maintaining React Apps'),
+  ).toBeInTheDocument()
   expect(getByText('Tools & Stuff')).toBeInTheDocument()
   expect(getByText('Projects')).toBeInTheDocument()
   expect(getByText('edwardgibble@gmail.com')).toBeInTheDocument()

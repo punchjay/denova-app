@@ -20,7 +20,9 @@ interface Props {
 }
 
 const CardThree = ({ appData }: Props) => {
-  const [active, setActive] = useState<{ src: string; alt: string } | null>(null)
+  const [active, setActive] = useState<{ src: string; alt: string } | null>(
+    null,
+  )
 
   return (
     <Card>
@@ -41,7 +43,13 @@ const CardThree = ({ appData }: Props) => {
         })}
       </GalleryContainer>
       <ParagraphOne>{appData.PAR_ONE}</ParagraphOne>
-      {active && <Lightbox src={active.src} alt={active.alt} onClose={() => setActive(null)} />}
+      {active && (
+        <Lightbox
+          src={active.src}
+          alt={active.alt}
+          onClose={() => setActive(null)}
+        />
+      )}
     </Card>
   )
 }
