@@ -1,5 +1,5 @@
 import fetchApi from '../AppData/Api'
-import appData, { notFoundData } from '../AppData/AppData'
+import appData from '../AppData/AppData'
 
 const mockFetch = (ok: boolean, payload?: unknown, status = 200) => {
   vi.stubGlobal(
@@ -17,7 +17,7 @@ afterEach(() => {
 })
 
 it('resolves with parsed data on a successful response', async () => {
-  mockFetch(true, { appData, notFoundData })
+  mockFetch(true, { appData })
   const result = await fetchApi()
   expect(result).toEqual(appData)
 })
