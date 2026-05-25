@@ -11,7 +11,6 @@ npm test           # run all tests once (Vitest)
 npm run test:watch # watch mode
 npm run lint       # run ESLint
 npm run format     # format all files with Prettier
-npm run deploy     # build + push to GitHub Pages manually (CI deploys automatically on merge to master)
 ```
 
 To run a single test file:

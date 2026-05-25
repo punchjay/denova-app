@@ -59,8 +59,4 @@ npm run preview
 
 Serves the production build locally for preview.
 
-```bash
-npm run deploy
-```
-
-Builds and deploys to GitHub Pages manually. Merging to `master` triggers an automatic deploy via GitHub Actions.
+Merging to `master` triggers an automatic deploy to GitHub Pages via GitHub Actions.
