@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <p
+    class="sc-dlfnOL jtTnqv"
+  >
+    © 2026 Denova | 
+    <a
+      class="sc-gsTDHW dDinXN"
+      href="mailto:edwardgibble@gmail.com?Subject=Hello!"
+    >
+      edwardgibble@gmail.com
+    </a>
+    <a
+      class="sc-gsTDHW dDinXN"
+      href="https://github.com/punchjay"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="GitHub profile"
+        class="sc-bdfDLd itodLx"
+        loading="lazy"
+        src="/denova-app/src/AppData/Img/github-icon.png"
+        title="GitHub profile"
+      />
+    </a>
+  </p>
+</DocumentFragment>
+`;

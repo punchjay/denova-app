@@ -1,0 +1,200 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdfDLd jJiyLH"
+  >
+    <h1
+      class="sc-dlfnOL bFdcUP"
+    >
+      Tools & Stuff
+    </h1>
+    <div
+      class="sc-gsTDHW fVVSwZ"
+    >
+      <div
+        class="sc-gKscir epDvPw"
+      >
+        <a
+          aria-label="React"
+          href="https://react.dev"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="React"
+            class="sc-jSgsbC hrQsro"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/react.png"
+          />
+        </a>
+        <span
+          class="sc-eCsseJ ipduOT"
+        >
+          React
+        </span>
+      </div>
+      <div
+        class="sc-gKscir epDvPw"
+      >
+        <a
+          aria-label="Styled Components"
+          href="https://styled-components.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Styled Components"
+            class="sc-jSgsbC hrQsro"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/styled.png"
+          />
+        </a>
+        <span
+          class="sc-eCsseJ ipduOT"
+        >
+          Styled Components
+        </span>
+      </div>
+      <div
+        class="sc-gKscir epDvPw"
+      >
+        <a
+          aria-label="Git"
+          href="https://git-scm.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Git"
+            class="sc-jSgsbC hrQsro"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/git.png"
+          />
+        </a>
+        <span
+          class="sc-eCsseJ ipduOT"
+        >
+          Git
+        </span>
+      </div>
+      <div
+        class="sc-gKscir epDvPw"
+      >
+        <a
+          aria-label="VS Code"
+          href="https://code.visualstudio.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="VS Code"
+            class="sc-jSgsbC hrQsro"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/vscode.png"
+          />
+        </a>
+        <span
+          class="sc-eCsseJ ipduOT"
+        >
+          VS Code
+        </span>
+      </div>
+      <div
+        class="sc-gKscir epDvPw"
+      >
+        <a
+          aria-label=".Net"
+          href="https://dotnet.microsoft.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt=".Net"
+            class="sc-jSgsbC hrQsro"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/net.png"
+          />
+        </a>
+        <span
+          class="sc-eCsseJ ipduOT"
+        >
+          .Net
+        </span>
+      </div>
+      <div
+        class="sc-gKscir epDvPw"
+      >
+        <a
+          aria-label="Azure"
+          href="https://azure.microsoft.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Azure"
+            class="sc-jSgsbC hrQsro"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/azure.png"
+          />
+        </a>
+        <span
+          class="sc-eCsseJ ipduOT"
+        >
+          Azure
+        </span>
+      </div>
+      <div
+        class="sc-gKscir epDvPw"
+      >
+        <a
+          aria-label="Claude.ai"
+          href="https://claude.ai"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Claude.ai"
+            class="sc-jSgsbC hrQsro"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/claude.png"
+          />
+        </a>
+        <span
+          class="sc-eCsseJ ipduOT"
+        >
+          Claude.ai
+        </span>
+      </div>
+      <div
+        class="sc-gKscir epDvPw"
+      >
+        <a
+          aria-label="Figma"
+          href="https://figma.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Figma"
+            class="sc-jSgsbC hrQsro"
+            loading="lazy"
+            src="/denova-app/src/AppData/Img/figma.png"
+          />
+        </a>
+        <span
+          class="sc-eCsseJ ipduOT"
+        >
+          Figma
+        </span>
+      </div>
+    </div>
+    <p
+      class="sc-hKgHXU jNzhmN"
+    >
+      My stack includes React, Styled Components, Git, Azure, SQL, and MongoDB. I work closely with Figma for design handoffs, write thorough tests, and use Claude.ai as a pair programming partner to move faster and think sharper.
+    </p>
+  </div>
+</DocumentFragment>
+`;

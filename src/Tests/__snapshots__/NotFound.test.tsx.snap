@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gKscir kjSvBV"
+  >
+    <div
+      class="sc-iBPUmU lnEjOc"
+    />
+    <div
+      class="sc-iBPUmU kcPTOL"
+    />
+    <div
+      class="sc-iBPUmU dALBjG"
+    />
+    <div
+      class="sc-iBPUmU iGBlPF"
+    />
+    <div
+      class="sc-iBPUmU Igkbt"
+    />
+  </div>
+  <div
+    class="sc-bdfDLd iGuegS"
+  >
+    <div
+      class="sc-jSgsbC fgzBAm"
+    >
+      <div
+        class="sc-gsTDHW dUdzWc"
+      >
+        <h1
+          class="sc-hKgHXU sc-eCsseJ ctyzIR gejKxb"
+        >
+          404
+        </h1>
+        <a
+          class="sc-dlfnOL hmepom"
+          data-discover="true"
+          href="/"
+        >
+          ← Back to home
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

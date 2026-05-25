@@ -6,7 +6,6 @@
 .pnp.js
 # testing
 /coverage
-src/Tests/__snapshots__/
 # production
 /dist
 
