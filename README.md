@@ -63,4 +63,4 @@ Serves the production build locally for preview.
 npm run deploy
 ```
 
-Builds and deploys to GitHub Pages.
+Builds and deploys to GitHub Pages manually. Merging to `master` triggers an automatic deploy via GitHub Actions.
