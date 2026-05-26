@@ -28,7 +28,7 @@ exports[`renders correctly 1`] = `
       class="sc-dmlpFL ekBZUV"
     >
       <div
-        class="sc-gsTDHW hSJekP"
+        class="sc-gsTDHW fzKByI"
       >
         <div
           class="sc-dlfnOL dqyobA"
@@ -76,7 +76,7 @@ exports[`renders correctly 1`] = `
       class="sc-dmlpFL jLMOxN"
     >
       <div
-        class="sc-gsTDHW hSJekP"
+        class="sc-gsTDHW fzKByI"
       >
         <h1
           class="sc-hKgHXU ctyzIR"
@@ -274,7 +274,7 @@ exports[`renders correctly 1`] = `
       class="sc-dmlpFL ekBZUV"
     >
       <div
-        class="sc-gsTDHW hSJekP"
+        class="sc-gsTDHW fzKByI"
       >
         <h1
           class="sc-hKgHXU ctyzIR"
