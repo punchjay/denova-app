@@ -3,47 +3,47 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdfDLd jJiyLH"
+    class="sc-bdDsCe fQhgAv"
   >
     <h1
-      class="sc-dlfnOL bFdcUP"
+      class="sc-dkXsAU gJMsgz"
     >
       Projects
     </h1>
     <div
-      class="sc-gsTDHW fVVSwZ"
+      class="sc-gtcBCx eCIMgc"
     >
       <img
         alt="Xbox"
-        class="sc-hKgHXU sc-eCsseJ sc-kEjckD gJmMRZ grcVLL cEDshN"
+        class="sc-hKVpXn sc-eCQgVK sc-kEbgWM hlatc vVabQ ikfGFD"
         loading="lazy"
         src="/denova-app/src/AppData/Img/xbox-ss.png"
         title="Xbox"
       />
       <img
         alt="JCrew"
-        class="sc-hKgHXU sc-eCsseJ sc-kEjckD gJmMRZ grcVLL cEDshN"
+        class="sc-hKVpXn sc-eCQgVK sc-kEbgWM hlatc vVabQ ikfGFD"
         loading="lazy"
         src="/denova-app/src/AppData/Img/jcrew-ss.png"
         title="JCrew"
       />
       <img
         alt="Second Step Dashboard"
-        class="sc-hKgHXU sc-eCsseJ sc-kEjckD gJmMRZ grcVLL cEDshN"
+        class="sc-hKVpXn sc-eCQgVK sc-kEbgWM hlatc vVabQ ikfGFD"
         loading="lazy"
         src="/denova-app/src/AppData/Img/secs02-ss.png"
         title="Second Step Dashboard"
       />
       <img
         alt="Agilent"
-        class="sc-hKgHXU sc-eCsseJ sc-kEjckD gJmMRZ grcVLL cEDshN"
+        class="sc-hKVpXn sc-eCQgVK sc-kEbgWM hlatc vVabQ ikfGFD"
         loading="lazy"
         src="/denova-app/src/AppData/Img/ion-ss.png"
         title="Agilent"
       />
     </div>
     <p
-      class="sc-jrAIFA ewQtgP"
+      class="sc-jrIDTr cPoZyg"
     >
       Projects available upon request.
     </p>
