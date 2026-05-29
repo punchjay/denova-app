@@ -3,18 +3,18 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdfDLd jJiyLH"
+    class="sc-bdDsCe fQhgAv"
   >
     <h1
-      class="sc-dlfnOL bFdcUP"
+      class="sc-dkXsAU gJMsgz"
     >
       Tools & Stuff
     </h1>
     <div
-      class="sc-gsTDHW fVVSwZ"
+      class="sc-gtcBCx eCIMgc"
     >
       <div
-        class="sc-gKscir epDvPw"
+        class="sc-gKkgUA eseNcY"
       >
         <a
           aria-label="React"
@@ -24,19 +24,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="React"
-            class="sc-jSgsbC hrQsro"
+            class="sc-jSppWd iKuXAp"
             loading="lazy"
             src="/denova-app/src/AppData/Img/react.png"
           />
         </a>
         <span
-          class="sc-eCsseJ ipduOT"
+          class="sc-eCQgVK hEMmZU"
         >
           React
         </span>
       </div>
       <div
-        class="sc-gKscir epDvPw"
+        class="sc-gKkgUA eseNcY"
       >
         <a
           aria-label="Styled Components"
@@ -46,19 +46,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Styled Components"
-            class="sc-jSgsbC hrQsro"
+            class="sc-jSppWd iKuXAp"
             loading="lazy"
             src="/denova-app/src/AppData/Img/styled.png"
           />
         </a>
         <span
-          class="sc-eCsseJ ipduOT"
+          class="sc-eCQgVK hEMmZU"
         >
           Styled Components
         </span>
       </div>
       <div
-        class="sc-gKscir epDvPw"
+        class="sc-gKkgUA eseNcY"
       >
         <a
           aria-label="Git"
@@ -68,19 +68,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Git"
-            class="sc-jSgsbC hrQsro"
+            class="sc-jSppWd iKuXAp"
             loading="lazy"
             src="/denova-app/src/AppData/Img/git.png"
           />
         </a>
         <span
-          class="sc-eCsseJ ipduOT"
+          class="sc-eCQgVK hEMmZU"
         >
           Git
         </span>
       </div>
       <div
-        class="sc-gKscir epDvPw"
+        class="sc-gKkgUA eseNcY"
       >
         <a
           aria-label="VS Code"
@@ -90,19 +90,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="VS Code"
-            class="sc-jSgsbC hrQsro"
+            class="sc-jSppWd iKuXAp"
             loading="lazy"
             src="/denova-app/src/AppData/Img/vscode.png"
           />
         </a>
         <span
-          class="sc-eCsseJ ipduOT"
+          class="sc-eCQgVK hEMmZU"
         >
           VS Code
         </span>
       </div>
       <div
-        class="sc-gKscir epDvPw"
+        class="sc-gKkgUA eseNcY"
       >
         <a
           aria-label=".Net"
@@ -112,19 +112,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt=".Net"
-            class="sc-jSgsbC hrQsro"
+            class="sc-jSppWd iKuXAp"
             loading="lazy"
             src="/denova-app/src/AppData/Img/net.png"
           />
         </a>
         <span
-          class="sc-eCsseJ ipduOT"
+          class="sc-eCQgVK hEMmZU"
         >
           .Net
         </span>
       </div>
       <div
-        class="sc-gKscir epDvPw"
+        class="sc-gKkgUA eseNcY"
       >
         <a
           aria-label="Azure"
@@ -134,19 +134,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Azure"
-            class="sc-jSgsbC hrQsro"
+            class="sc-jSppWd iKuXAp"
             loading="lazy"
             src="/denova-app/src/AppData/Img/azure.png"
           />
         </a>
         <span
-          class="sc-eCsseJ ipduOT"
+          class="sc-eCQgVK hEMmZU"
         >
           Azure
         </span>
       </div>
       <div
-        class="sc-gKscir epDvPw"
+        class="sc-gKkgUA eseNcY"
       >
         <a
           aria-label="Claude.ai"
@@ -156,19 +156,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Claude.ai"
-            class="sc-jSgsbC hrQsro"
+            class="sc-jSppWd iKuXAp"
             loading="lazy"
             src="/denova-app/src/AppData/Img/claude.png"
           />
         </a>
         <span
-          class="sc-eCsseJ ipduOT"
+          class="sc-eCQgVK hEMmZU"
         >
           Claude.ai
         </span>
       </div>
       <div
-        class="sc-gKscir epDvPw"
+        class="sc-gKkgUA eseNcY"
       >
         <a
           aria-label="Figma"
@@ -178,20 +178,20 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Figma"
-            class="sc-jSgsbC hrQsro"
+            class="sc-jSppWd iKuXAp"
             loading="lazy"
             src="/denova-app/src/AppData/Img/figma.png"
           />
         </a>
         <span
-          class="sc-eCsseJ ipduOT"
+          class="sc-eCQgVK hEMmZU"
         >
           Figma
         </span>
       </div>
     </div>
     <p
-      class="sc-hKgHXU jNzhmN"
+      class="sc-hKVpXn gISiNk"
     >
       My stack includes React, Styled Components, Git, Azure, SQL, and MongoDB. I work closely with Figma for design handoffs, write thorough tests, and use Claude.ai as a pair programming partner to move faster and think sharper.
     </p>

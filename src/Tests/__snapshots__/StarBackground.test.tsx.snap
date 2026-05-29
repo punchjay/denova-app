@@ -3,22 +3,22 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdfDLd iaRoua"
+    class="sc-bdDsCe rHExC"
   >
     <div
-      class="sc-gsTDHW imNzKF"
+      class="sc-gtcBCx cYijCU"
     />
     <div
-      class="sc-gsTDHW gqcAeO"
+      class="sc-gtcBCx cKLZIX"
     />
     <div
-      class="sc-gsTDHW cjpgiP"
+      class="sc-gtcBCx qeraO"
     />
     <div
-      class="sc-gsTDHW haYtbk"
+      class="sc-gtcBCx bnhVwx"
     />
     <div
-      class="sc-gsTDHW bexoWk"
+      class="sc-gtcBCx joGCjN"
     />
   </div>
 </DocumentFragment>
