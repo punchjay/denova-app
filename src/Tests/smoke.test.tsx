@@ -3,7 +3,6 @@ import { act } from 'react'
 import { createMemoryRouter, RouterProvider } from 'react-router-dom'
 import App from '../Components/App'
 import NotFound from '../Components/NotFound'
-import type { AppData } from '../AppData/types'
 
 beforeEach(() => {
   vi.spyOn(Math, 'random').mockReturnValue(0.5)
@@ -11,13 +10,6 @@ beforeEach(() => {
 
 afterEach(() => {
   vi.restoreAllMocks()
-})
-
-vi.mock('../AppData/Api', async () => {
-  const { default: appData } = await vi.importActual<{ default: AppData }>(
-    '../AppData/AppData',
-  )
-  return { default: () => Promise.resolve(appData) }
 })
 
 const routes = [

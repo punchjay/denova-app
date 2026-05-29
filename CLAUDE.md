@@ -31,14 +31,14 @@ Portfolio app with React Router v7. `src/router.tsx` defines two routes using `c
 
 **GitHub Pages SPA routing** — `public/404.html` encodes the requested path as a query param and redirects to `index.html`. A script at the top of `index.html` restores the real path via `history.replaceState` before the app boots, so React Router sees the correct URL.
 
-`App.tsx` fetches from a Postman mock API on mount via React 19's `use()` hook and passes the response array by index to four section components:
+`App.tsx` loads bundled local data (`src/AppData/AppData.ts`, wrapped in a module-level `Promise.resolve`) via React 19's `use()` hook and passes the array by index to four section components:
 
 - `appData[0]` → `CardOne` (intro/hero)
 - `appData[1]` → `CardTwo` (tools & skills gallery)
 - `appData[2]` → `CardThree` (projects gallery)
 - `appData[3]` → `Footer` (contact/link)
 
-`App.tsx` wraps content in `<Suspense>` (shows `<Loader />` while fetching) and `<ErrorBoundary>` (handles fetch errors). All UI is built with Styled Components.
+`App.tsx` wraps content in `<Suspense>` (shows `<Loader />` while the data promise is pending) and `<ErrorBoundary>`. Because the data is bundled locally, the promise resolves immediately — these are effectively instant but kept for structure. All UI is built with Styled Components.
 
 `NotFound` is the 404 page. It uses `StarBackground`, `AppContainer`, `ScrollReveal`, `GhostCard`, `NotFoundHeader`, and `HomeLink` (a `styled(Link)` from React Router). `GhostCard` is a minimal styled div used only by `NotFound` — unlike `Card`, it has no border or background. `NotFoundHeader` is a `styled(HeaderOne)` override with `font-size: 4.5rem`. The card fades in on load via `ScrollReveal`.
 
@@ -98,11 +98,11 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 **Lazy loading** — images below the fold (`CardTwo`, `CardThree`, `Footer`) use `loading="lazy"`. The `CardOne` profile photo is above the fold and must not be lazy loaded.
 
-**Data sources** — `src/AppData/AppData.ts` is local mock data used only in tests. The live app fetches from `src/AppData/Api.ts` (Postman mock API). The two sources have slightly different content; the API response is authoritative.
+**Data sources** — `src/AppData/AppData.ts` is the app's data source, loaded directly with no network request (the app previously fetched a Postman mock API; that fetch layer was removed for instant loads). `AppData.json` mirrors it as a reference for the data shape.
 
-**IMPORTANT: Whenever `AppData.ts` is changed, `AppData.json` must also be updated to match.** Both files must stay in sync — `AppData.ts` drives tests, `AppData.json` is the reference for the live API data shape.
+**IMPORTANT: Whenever `AppData.ts` is changed, `AppData.json` must also be updated to match.** Both files must stay in sync.
 
-**ErrorBoundary** — `ErrorBoundary.tsx` is a class component wrapping `<App>`. It shows the error message and a Retry button (which reloads the page) when a child throws. The retry reloads the page because `appDataPromise` is module-level and cannot be re-fetched without a fresh load.
+**ErrorBoundary** — `ErrorBoundary.tsx` is a class component wrapping `<App>`. It shows the error message and a Retry button (which reloads the page) when a child throws. Retained as a safety net even though the local data load no longer throws; the retry reloads because `appDataPromise` is module-level.
 
 **Claude model** — any Claude API / Anthropic SDK code added to this project must use `claude-opus-4-8`.
 
@@ -116,10 +116,9 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 ## Testing conventions
 
 - Every component has a test in `src/Tests/` with two cases: `renders without crashing` and `renders correctly` (snapshot).
-- `App.test.tsx` mocks `../AppData/Api` via `vi.mock` and wraps renders in `await act()` to handle the Suspense/`use()` hook correctly.
-- `Api.test.ts` tests `fetchApi` directly using `vi.stubGlobal('fetch', ...)` — covers happy path, HTTP error, and network failure.
+- `App.test.tsx` wraps renders in `await act()` to handle the `use()` hook correctly. It renders the real bundled `AppData` (no mock needed since the app loads local data).
 - `ErrorBoundary.test.tsx` tests the no-error path, error-thrown path, and verifies the Retry button calls `window.location.reload()`.
-- `App.test.tsx` includes a content assertion test verifying all four sections render expected text from mock data. `CardOne`'s assertion uses `PAR_ONE` (not `HEADER_ONE`) because `HEADER_ONE` is typed out by `TypeWriter` and starts empty.
+- `App.test.tsx` includes a content assertion test verifying all four sections render expected text from the local data. `CardOne`'s assertion uses `PAR_ONE` (not `HEADER_ONE`) because `HEADER_ONE` is typed out by `TypeWriter` and starts empty.
 - Snapshots are committed. Run `npx vitest run -u` to update them after UI changes, then commit the updated files.
 - `StarBackground.test.tsx` and `App.test.tsx` mock `Math.random` via `vi.spyOn(Math, 'random').mockReturnValue(0.5)` so star positions are deterministic and snapshots are stable across runs.
 - `setupTests.ts` stubs `IntersectionObserver` with a plain class (not `vi.fn()`) that fires the callback immediately on `observe()`. Using a plain class prevents `vi.restoreAllMocks()` from clearing the implementation between tests.

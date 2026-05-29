@@ -8,9 +8,9 @@ import Footer from './Footer'
 import Loader from './Loader'
 import ScrollReveal from './ScrollReveal'
 import StarBackground from './StarBackground'
-import fetchApi from '../AppData/Api'
+import appData from '../AppData/AppData'
 
-const appDataPromise = fetchApi()
+const appDataPromise = Promise.resolve(appData)
 
 const AppContent = () => {
   const appData = use(appDataPromise)
