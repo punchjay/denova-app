@@ -135,10 +135,10 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 ## CI / Deployment
 
-`.github/workflows/deploy.yml` runs on every push to `master` with two jobs:
+`.github/workflows/deploy.yml` runs on every push to `master` and on every pull request targeting `master`, with two jobs:
 
-1. **`ci`** — runs `npm test`, `npm run lint`, and `npx tsc --noEmit`
-2. **`deploy`** — only runs if `ci` passes; builds with `npm run build` and pushes `dist/` to the `gh-pages` branch via `peaceiris/actions-gh-pages`
+1. **`ci`** — runs `npm test`, `npm run lint`, and `npx tsc --noEmit`. Runs for both pushes and PRs, so PRs are validated before merge.
+2. **`deploy`** — gated by `if: github.event_name == 'push'` so it only runs on push to `master` (never on PRs); also `needs: ci`, so it only runs if `ci` passes. Builds with `npm run build` and pushes `dist/` to the `gh-pages` branch via `peaceiris/actions-gh-pages`
 
 GitHub Pages is configured to serve from the `gh-pages` branch. Do not delete that branch — CI owns it.
 
