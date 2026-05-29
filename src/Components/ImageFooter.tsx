@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from './colors'
 
 const ImageFooter = styled.img`
   margin: 0 0 0.15rem 0.5rem;
@@ -7,7 +8,7 @@ const ImageFooter = styled.img`
   vertical-align: middle;
   transition: filter 0.2s ease;
   &:hover {
-    filter: drop-shadow(0 0 2px #8b5cf6);
+    filter: drop-shadow(0 0 2px ${colors.purple});
   }
 `
 

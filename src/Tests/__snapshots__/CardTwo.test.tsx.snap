@@ -19,7 +19,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label="React"
           href="https://react.dev"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -41,7 +41,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label="Styled Components"
           href="https://styled-components.com"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -63,7 +63,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label="Git"
           href="https://git-scm.com"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label="VS Code"
           href="https://code.visualstudio.com"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -107,7 +107,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label=".Net"
           href="https://dotnet.microsoft.com"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -129,7 +129,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label="Azure"
           href="https://azure.microsoft.com"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -151,7 +151,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label="Claude.ai"
           href="https://claude.ai"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img
@@ -173,7 +173,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label="Figma"
           href="https://figma.com"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <img

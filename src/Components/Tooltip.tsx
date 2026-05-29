@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from './colors'
 
 const Tooltip = styled.span`
   position: absolute;
@@ -8,7 +9,7 @@ const Tooltip = styled.span`
   background: rgba(20, 23, 28, 0.92);
   border: 1px solid rgba(32, 187, 252, 0.3);
   border-radius: 5px;
-  color: #c1cfd7;
+  color: ${colors.greyLight};
   font-size: 0.72rem;
   white-space: nowrap;
   padding: 3px 8px;

@@ -62,17 +62,18 @@ Portfolio app with React Router v7. `src/router.tsx` defines two routes using `c
 
 ## Design system
 
-**Color palette**
+**Color palette** — the solid palette lives in `src/Components/colors.ts` (the `colors` object) and is imported into styled-components rather than hardcoded. Use the token, not the hex literal. One-off `rgba()` overlays, borders, and shadows (and `StarBackground`'s alpha-templated star colors) stay inline at their usage sites. `Base bg` lives in `index.css` (CSS can't import the TS token).
 
-| Token | Hex | Usage |
-|---|---|---|
-| Cyan | `#20bbfc` | Primary accent — `HeaderOne`, links, star field, hover glows |
-| Purple | `#8b5cf6` | Secondary accent — icon glows, loader, `ImageIcon` border, `ImageFooter` hover |
-| Light purple | `#a78bfa` | Star field only |
-| Grey light | `#c1cfd7` | Primary body text |
-| Grey mid | `#b1b3b4` | Muted / secondary text |
-| Card bg | `rgba(34, 38, 43, 0.10)` | Semi-transparent card background |
-| Base bg | `#222630` | Page background (behind star field) |
+| Token | `colors` key | Hex | Usage |
+|---|---|---|---|
+| Cyan | `cyan` | `#20bbfc` | Primary accent — `HeaderOne`, links, star field, hover glows |
+| Purple | `purple` | `#8b5cf6` | Secondary accent — icon glows, loader, `ImageIcon` border, `ImageFooter` hover |
+| Light purple | `lightPurple` | `#a78bfa` | Star field only |
+| Grey light | `greyLight` | `#c1cfd7` | Primary body text |
+| Grey mid | `greyMid` | `#b1b3b4` | Muted / secondary text |
+| White | `white` | `#fff` | `ParagraphOne` lead-in text |
+| Card bg | `cardBg` | `rgba(34, 38, 43, 0.10)` | Semi-transparent card background |
+| Base bg | — | `#222630` | Page background (behind star field), in `index.css` |
 
 **Typography**
 
@@ -108,6 +109,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 ## Accessibility conventions
 
 - All images use descriptive `alt` text — never `alt="Icon"`.
+- External links (`target="_blank"`) use `rel="noopener noreferrer"` — `CardOne`, `CardTwo`, and `Footer`.
 - `LinkFooter` and `HomeLink` have `:hover` (cyan blue glow via `filter: drop-shadow`) and `:focus-visible` outline for keyboard navigation.
 - `Lightbox` uses `role="dialog"` and `aria-modal="true"` with `aria-label` set to the image name. It closes on `Escape` keydown.
 
@@ -133,10 +135,10 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 ## CI / Deployment
 
-`.github/workflows/deploy.yml` runs on every push to `master` with two jobs:
+`.github/workflows/deploy.yml` runs on every push to `master` and on every pull request targeting `master`, with two jobs:
 
-1. **`ci`** — runs `npm test`, `npm run lint`, and `npx tsc --noEmit`
-2. **`deploy`** — only runs if `ci` passes; builds with `npm run build` and pushes `dist/` to the `gh-pages` branch via `peaceiris/actions-gh-pages`
+1. **`ci`** — runs `npm test`, `npm run lint`, and `npx tsc --noEmit`. Runs for both pushes and PRs, so PRs are validated before merge.
+2. **`deploy`** — gated by `if: github.event_name == 'push'` so it only runs on push to `master` (never on PRs); also `needs: ci`, so it only runs if `ci` passes. Builds with `npm run build` and pushes `dist/` to the `gh-pages` branch via `peaceiris/actions-gh-pages`
 
 GitHub Pages is configured to serve from the `gh-pages` branch. Do not delete that branch — CI owns it.
 

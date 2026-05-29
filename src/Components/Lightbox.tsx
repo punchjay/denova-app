@@ -1,11 +1,8 @@
 import { useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import styled, { keyframes } from 'styled-components'
-
-const fadeIn = keyframes`
-  from { opacity: 0 }
-  to   { opacity: 1 }
-`
+import { fadeInOpacity } from './keyFrames.style'
+import { colors } from './colors'
 
 const scaleIn = keyframes`
   from { opacity: 0; transform: scale(0.92) }
@@ -20,7 +17,7 @@ const Backdrop = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  animation: ${fadeIn} 0.18s ease;
+  animation: ${fadeInOpacity} 0.18s ease;
   padding: 1.5rem;
 `
 
@@ -43,7 +40,7 @@ const Img = styled.img`
 `
 
 const Caption = styled.p`
-  color: #c1cfd7;
+  color: ${colors.greyLight};
   font-size: 0.95rem;
   margin: 0;
 `
@@ -54,14 +51,14 @@ const CloseButton = styled.button`
   right: 1.5rem;
   background: none;
   border: none;
-  color: #b1b3b4;
+  color: ${colors.greyMid};
   font-size: 2rem;
   line-height: 1;
   cursor: pointer;
   padding: 0.25rem 0.5rem;
   transition: color 0.15s ease;
   &:hover {
-    color: #20bbfc;
+    color: ${colors.cyan};
   }
 `
 

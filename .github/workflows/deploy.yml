@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   ci:
@@ -27,6 +30,7 @@ jobs:
 
   deploy:
     needs: ci
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
       contents: write
