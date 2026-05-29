@@ -40,7 +40,7 @@ exports[`renders correctly 1`] = `
         <img
           alt="Jay Gibble GitHub profile photo"
           class="sc-hKVpXn kVjrLR"
-          src="/denova-app/src/AppData/Img/profile.png"
+          src="/src/AppData/Img/profile.png"
           title="Jay Gibble GitHub profile photo"
         />
       </a>
