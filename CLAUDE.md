@@ -138,9 +138,9 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 `.github/workflows/deploy.yml` runs on every push to `master` and on every pull request targeting `master`, with two jobs:
 
 1. **`ci`** — runs `npm test`, `npm run lint`, and `npx tsc --noEmit`. Runs for both pushes and PRs, so PRs are validated before merge.
-2. **`deploy`** — gated by `if: github.event_name == 'push'` so it only runs on push to `master` (never on PRs); also `needs: ci`, so it only runs if `ci` passes. Builds with `npm run build` and pushes `dist/` to the `gh-pages` branch via `peaceiris/actions-gh-pages`
+2. **`deploy`** — gated by `if: github.event_name == 'push'` so it only runs on push to `master` (never on PRs); also `needs: ci`, so it only runs if `ci` passes. Builds with `npm run build`, then publishes `dist/` via the official GitHub Pages Actions flow: `actions/configure-pages` → `actions/upload-pages-artifact` (`path: ./dist`) → `actions/deploy-pages`. It uses the `github-pages` environment, a `pages` concurrency group, and `pages: write` + `id-token: write` permissions.
 
-GitHub Pages is configured to serve from the `gh-pages` branch. Do not delete that branch — CI owns it.
+GitHub Pages is configured to serve from **GitHub Actions** (Settings → Pages → Source: "GitHub Actions"), not from a branch. There is no longer a `gh-pages` branch — the site is published directly from the build artifact, so nothing needs to be committed to a branch.
 
 ## Vite config notes
 
