@@ -65,7 +65,7 @@ exports[`renders correctly 1`] = `
             <img
               alt="Jay Gibble GitHub profile photo"
               class="sc-eCQgVK bTzfir"
-              src="/denova-app/src/AppData/Img/profile.png"
+              src="/src/AppData/Img/profile.png"
               title="Jay Gibble GitHub profile photo"
             />
           </a>
@@ -99,7 +99,7 @@ exports[`renders correctly 1`] = `
                 alt="React"
                 class="sc-jrIDTr fXuFGo"
                 loading="lazy"
-                src="/denova-app/src/AppData/Img/react.png"
+                src="/src/AppData/Img/react.png"
               />
             </a>
             <span
@@ -121,7 +121,7 @@ exports[`renders correctly 1`] = `
                 alt="Styled Components"
                 class="sc-jrIDTr fXuFGo"
                 loading="lazy"
-                src="/denova-app/src/AppData/Img/styled.png"
+                src="/src/AppData/Img/styled.png"
               />
             </a>
             <span
@@ -143,7 +143,7 @@ exports[`renders correctly 1`] = `
                 alt="Git"
                 class="sc-jrIDTr fXuFGo"
                 loading="lazy"
-                src="/denova-app/src/AppData/Img/git.png"
+                src="/src/AppData/Img/git.png"
               />
             </a>
             <span
@@ -165,7 +165,7 @@ exports[`renders correctly 1`] = `
                 alt="VS Code"
                 class="sc-jrIDTr fXuFGo"
                 loading="lazy"
-                src="/denova-app/src/AppData/Img/vscode.png"
+                src="/src/AppData/Img/vscode.png"
               />
             </a>
             <span
@@ -187,7 +187,7 @@ exports[`renders correctly 1`] = `
                 alt=".Net"
                 class="sc-jrIDTr fXuFGo"
                 loading="lazy"
-                src="/denova-app/src/AppData/Img/net.png"
+                src="/src/AppData/Img/net.png"
               />
             </a>
             <span
@@ -209,7 +209,7 @@ exports[`renders correctly 1`] = `
                 alt="Azure"
                 class="sc-jrIDTr fXuFGo"
                 loading="lazy"
-                src="/denova-app/src/AppData/Img/azure.png"
+                src="/src/AppData/Img/azure.png"
               />
             </a>
             <span
@@ -231,7 +231,7 @@ exports[`renders correctly 1`] = `
                 alt="Claude.ai"
                 class="sc-jrIDTr fXuFGo"
                 loading="lazy"
-                src="/denova-app/src/AppData/Img/claude.png"
+                src="/src/AppData/Img/claude.png"
               />
             </a>
             <span
@@ -253,7 +253,7 @@ exports[`renders correctly 1`] = `
                 alt="Figma"
                 class="sc-jrIDTr fXuFGo"
                 loading="lazy"
-                src="/denova-app/src/AppData/Img/figma.png"
+                src="/src/AppData/Img/figma.png"
               />
             </a>
             <span
@@ -288,28 +288,28 @@ exports[`renders correctly 1`] = `
             alt="Xbox"
             class="sc-jrIDTr sc-iqkkDd sc-folSZX fXuFGo jRpAtV jJOQpa"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/xbox-ss.png"
+            src="/src/AppData/Img/xbox-ss.png"
             title="Xbox"
           />
           <img
             alt="JCrew"
             class="sc-jrIDTr sc-iqkkDd sc-folSZX fXuFGo jRpAtV jJOQpa"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/jcrew-ss.png"
+            src="/src/AppData/Img/jcrew-ss.png"
             title="JCrew"
           />
           <img
             alt="Second Step Dashboard"
             class="sc-jrIDTr sc-iqkkDd sc-folSZX fXuFGo jRpAtV jJOQpa"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/secs02-ss.png"
+            src="/src/AppData/Img/secs02-ss.png"
             title="Second Step Dashboard"
           />
           <img
             alt="Agilent"
             class="sc-jrIDTr sc-iqkkDd sc-folSZX fXuFGo jRpAtV jJOQpa"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/ion-ss.png"
+            src="/src/AppData/Img/ion-ss.png"
             title="Agilent"
           />
         </div>
@@ -340,7 +340,7 @@ exports[`renders correctly 1`] = `
           alt="GitHub profile"
           class="sc-fFCZOx jkKngI"
           loading="lazy"
-          src="/denova-app/src/AppData/Img/github-icon.png"
+          src="/src/AppData/Img/github-icon.png"
           title="GitHub profile"
         />
       </a>

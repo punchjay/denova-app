@@ -17,28 +17,28 @@ exports[`renders correctly 1`] = `
         alt="Xbox"
         class="sc-hKVpXn sc-eCQgVK sc-kEbgWM hlatc vVabQ ikfGFD"
         loading="lazy"
-        src="/denova-app/src/AppData/Img/xbox-ss.png"
+        src="/src/AppData/Img/xbox-ss.png"
         title="Xbox"
       />
       <img
         alt="JCrew"
         class="sc-hKVpXn sc-eCQgVK sc-kEbgWM hlatc vVabQ ikfGFD"
         loading="lazy"
-        src="/denova-app/src/AppData/Img/jcrew-ss.png"
+        src="/src/AppData/Img/jcrew-ss.png"
         title="JCrew"
       />
       <img
         alt="Second Step Dashboard"
         class="sc-hKVpXn sc-eCQgVK sc-kEbgWM hlatc vVabQ ikfGFD"
         loading="lazy"
-        src="/denova-app/src/AppData/Img/secs02-ss.png"
+        src="/src/AppData/Img/secs02-ss.png"
         title="Second Step Dashboard"
       />
       <img
         alt="Agilent"
         class="sc-hKVpXn sc-eCQgVK sc-kEbgWM hlatc vVabQ ikfGFD"
         loading="lazy"
-        src="/denova-app/src/AppData/Img/ion-ss.png"
+        src="/src/AppData/Img/ion-ss.png"
         title="Agilent"
       />
     </div>

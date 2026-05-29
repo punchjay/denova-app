@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
         alt="GitHub profile"
         class="sc-bdDsCe jDEDCt"
         loading="lazy"
-        src="/denova-app/src/AppData/Img/github-icon.png"
+        src="/src/AppData/Img/github-icon.png"
         title="GitHub profile"
       />
     </a>

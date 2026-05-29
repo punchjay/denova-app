@@ -26,7 +26,7 @@ exports[`renders correctly 1`] = `
             alt="React"
             class="sc-jSppWd iKuXAp"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/react.png"
+            src="/src/AppData/Img/react.png"
           />
         </a>
         <span
@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
             alt="Styled Components"
             class="sc-jSppWd iKuXAp"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/styled.png"
+            src="/src/AppData/Img/styled.png"
           />
         </a>
         <span
@@ -70,7 +70,7 @@ exports[`renders correctly 1`] = `
             alt="Git"
             class="sc-jSppWd iKuXAp"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/git.png"
+            src="/src/AppData/Img/git.png"
           />
         </a>
         <span
@@ -92,7 +92,7 @@ exports[`renders correctly 1`] = `
             alt="VS Code"
             class="sc-jSppWd iKuXAp"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/vscode.png"
+            src="/src/AppData/Img/vscode.png"
           />
         </a>
         <span
@@ -114,7 +114,7 @@ exports[`renders correctly 1`] = `
             alt=".Net"
             class="sc-jSppWd iKuXAp"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/net.png"
+            src="/src/AppData/Img/net.png"
           />
         </a>
         <span
@@ -136,7 +136,7 @@ exports[`renders correctly 1`] = `
             alt="Azure"
             class="sc-jSppWd iKuXAp"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/azure.png"
+            src="/src/AppData/Img/azure.png"
           />
         </a>
         <span
@@ -158,7 +158,7 @@ exports[`renders correctly 1`] = `
             alt="Claude.ai"
             class="sc-jSppWd iKuXAp"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/claude.png"
+            src="/src/AppData/Img/claude.png"
           />
         </a>
         <span
@@ -180,7 +180,7 @@ exports[`renders correctly 1`] = `
             alt="Figma"
             class="sc-jSppWd iKuXAp"
             loading="lazy"
-            src="/denova-app/src/AppData/Img/figma.png"
+            src="/src/AppData/Img/figma.png"
           />
         </a>
         <span

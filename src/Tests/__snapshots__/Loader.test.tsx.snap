@@ -8,7 +8,7 @@ exports[`renders correctly 1`] = `
     <img
       alt="Loading"
       class="sc-gtcBCx kjptXM"
-      src="/denova-app/src/AppData/Img/gear.png"
+      src="/src/AppData/Img/gear.png"
       title="Loading"
     />
     <p
