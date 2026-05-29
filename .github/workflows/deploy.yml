@@ -10,6 +10,11 @@ on:
     branches:
       - master
 
+# Run all JavaScript actions on Node 24 (mandatory from 2026-06-02).
+# Opts in early so the official Pages actions don't emit Node 20 warnings.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   ci:
     runs-on: ubuntu-latest
