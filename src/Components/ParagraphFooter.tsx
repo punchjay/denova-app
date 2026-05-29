@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { colors } from './colors'
 
 const ParagraphFooter = styled.p`
   display: inline-block;
   text-align: center;
-  color: #b1b3b4;
+  color: ${colors.greyMid};
   font-size: 0.85rem;
   margin: 0 auto;
   opacity: 0.8;

@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { colors } from './colors'
 
 const Card = styled.div`
-  background: rgba(34, 38, 43, 0.1);
+  background: ${colors.cardBg};
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   box-shadow:

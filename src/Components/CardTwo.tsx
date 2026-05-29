@@ -21,7 +21,7 @@ const CardTwo = ({ appData }: Props) => {
             <a
               href={img.url}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               aria-label={img.name}
             >
               <ToolGallery

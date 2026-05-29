@@ -29,7 +29,7 @@ const CardOne = ({ appData }: Props) => {
         <a
           href={appData.GITHUB_LINK}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           aria-label="GitHub profile"
         >
           <ImageIcon

@@ -1,4 +1,5 @@
 import { Component, type ReactNode } from 'react'
+import { colors } from './colors'
 
 interface Props {
   children: ReactNode
@@ -18,7 +19,9 @@ class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.error) {
       return (
-        <div style={{ color: '#b1b3b4', textAlign: 'center', padding: '2rem' }}>
+        <div
+          style={{ color: colors.greyMid, textAlign: 'center', padding: '2rem' }}
+        >
           <p>{this.state.error}</p>
           <button
             onClick={() => window.location.reload()}
@@ -26,8 +29,8 @@ class ErrorBoundary extends Component<Props, State> {
               marginTop: '1rem',
               padding: '0.5rem 1.25rem',
               background: 'transparent',
-              color: '#b1b3b4',
-              border: '1px solid #b1b3b4',
+              color: colors.greyMid,
+              border: `1px solid ${colors.greyMid}`,
               borderRadius: '4px',
               cursor: 'pointer',
               fontSize: '1rem',

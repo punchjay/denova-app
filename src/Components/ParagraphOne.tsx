@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from './colors'
 
 const ParagraphOne = styled.p<{ $leadIn?: boolean }>`
   margin: 0 auto;
@@ -7,7 +8,7 @@ const ParagraphOne = styled.p<{ $leadIn?: boolean }>`
   font-size: 1.11rem;
   font-weight: 300;
   line-height: 1.67rem;
-  color: ${(props) => (props.$leadIn ? '#fff' : '#c1cfd7')};
+  color: ${(props) => (props.$leadIn ? colors.white : colors.greyLight)};
 `
 
 export default ParagraphOne

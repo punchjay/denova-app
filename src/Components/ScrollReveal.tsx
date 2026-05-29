@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
-import { fadeIn } from './keyFrames.style'
+import { fadeIn, FADE_IN_OFFSET } from './keyFrames.style'
 
 const Wrapper = styled.div<{ $visible: boolean; $delay: number }>`
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(${FADE_IN_OFFSET});
   ${({ $visible, $delay }) =>
     $visible &&
     css`

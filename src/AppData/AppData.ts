@@ -36,7 +36,7 @@ export const appData: AppData = [
   },
   {
     HEADER_ONE: 'Projects',
-    PAR_ONE: 'Project portfolio available upon request.',
+    PAR_ONE: 'Projects available upon request.',
     GALLERY_DATA: [
       { name: 'Xbox', image: 'xbox-ss' },
       { name: 'JCrew', image: 'jcrew-ss' },

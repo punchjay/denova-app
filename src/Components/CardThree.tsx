@@ -6,12 +6,13 @@ import HeaderOne from './HeaderOne'
 import ImageGallery from './ImageGallery'
 import Lightbox from './Lightbox'
 import ParagraphOne from './ParagraphOne'
+import { colors } from './colors'
 import type { CardThreeData } from '../AppData/types'
 
 const ClickableImage = styled(ImageGallery)`
   cursor: pointer;
   &:hover {
-    filter: drop-shadow(0 0 8px #20bbfc);
+    filter: drop-shadow(0 0 8px ${colors.cyan});
   }
 `
 
