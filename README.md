@@ -61,16 +61,8 @@ Serves the production build locally for preview.
 
 ## Deployment & Releases
 
-Merging to `master` triggers an automatic deploy to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`). Both deploy and release run CI first — `npm test`, `npm run lint`, and `npx tsc --noEmit` — and only proceed if it passes.
+Merging to `master` triggers an automatic deploy to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`), which runs CI first — `npm test`, `npm run lint`, and `npx tsc --noEmit` — and only deploys if it passes.
 
-To cut a release:
+Releases are automated with [release-please](https://github.com/googleapis/release-please-action) (`.github/workflows/release-please.yml`). It reads [Conventional Commits](https://www.conventionalcommits.org/) on `master` and keeps an open **release PR** that bumps the version, updates `CHANGELOG.md`, and tags + publishes the GitHub Release when you merge it. There's no manual tagging — just merge the release PR when you're ready to ship.
 
-1. Bump `version` in `package.json` and land it on `master` (so the deployed build and the tag agree).
-2. Push a version tag:
-
-   ```bash
-   git tag vX.Y.Z
-   git push origin vX.Y.Z
-   ```
-
-The tag push triggers `.github/workflows/release.yml`, which publishes a GitHub Release with notes auto-generated from the merged PRs since the previous tag. Deployment (branch push) and releases (tag push) are independent and don't trigger each other.
+Commit messages should follow Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`, …) so release-please can version and categorize changes correctly.

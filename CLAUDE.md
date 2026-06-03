@@ -141,12 +141,13 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 GitHub Pages is configured to serve from **GitHub Actions** (Settings → Pages → Source: "GitHub Actions"), not from a branch. There is no longer a `gh-pages` branch — the site is published directly from the build artifact, so nothing needs to be committed to a branch.
 
-`.github/workflows/release.yml` is a separate workflow triggered by pushing a `v*.*.*` tag (not by a branch push). It has the same two-stage shape and the same `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24` env opt-in:
+`.github/workflows/release-please.yml` automates releases with [release-please](https://github.com/googleapis/release-please-action). It runs on every push to `master`, with `contents: write` + `pull-requests: write` permissions and the same `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24` env opt-in. Config lives in `release-please-config.json` (`release-type: node`, `package-name: denova-app`, `include-component-in-tag: false` so tags stay `vX.Y.Z`) and the current released version is tracked in `.release-please-manifest.json`.
 
-1. **`ci`** — identical `npm test` / `npm run lint` / `npx tsc --noEmit` gate.
-2. **`release`** — `needs: ci`, `contents: write`; runs `gh release create "$GITHUB_REF_NAME" --generate-notes`, which publishes a GitHub Release with notes auto-built from the merged PRs/commits since the previous tag.
+How it works: release-please reads [Conventional Commits](https://www.conventionalcommits.org/) merged to `master` and maintains an open **release PR** that bumps `version` in `package.json`, updates `.release-please-manifest.json`, and regenerates `CHANGELOG.md`. Merging that PR tags the commit (`vX.Y.Z`) and publishes the GitHub Release automatically — no manual tagging. `fix:` commits bump patch, `feat:` bump minor, and `feat!:`/`BREAKING CHANGE` bump major; `chore:`/`docs:`/`ci:` etc. don't trigger a release on their own.
 
-Deploy and release are decoupled: a **branch push** to `master` deploys the site (`deploy.yml`); a **tag push** publishes a release (`release.yml`). They never trigger each other. To cut a release: bump `version` in `package.json` (land it on `master` first so the deployed build and the tag agree), then `git tag vX.Y.Z && git push origin vX.Y.Z`. The merge of the version bump deploys the site; the tag push publishes the release.
+**Commits must follow Conventional Commits** (`feat:`, `fix:`, `chore:`, `docs:`, `ci:`, …) for release-please to detect changes and categorize the changelog.
+
+Deploy and release are decoupled but both ride branch pushes to `master`: `deploy.yml` publishes the site on every non-Markdown push, while `release-please.yml` manages the release PR / release. When the release PR merges, that push both deploys the version-bumped build and triggers release-please to tag and release.
 
 ## Vite config notes
 
