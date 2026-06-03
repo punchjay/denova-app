@@ -1,7 +1,7 @@
 {
   "name": "denova-app",
   "homepage": "https://punchjay.github.io/denova-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": false,
   "type": "module",
   "dependencies": {
