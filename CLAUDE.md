@@ -141,6 +141,13 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 GitHub Pages is configured to serve from **GitHub Actions** (Settings → Pages → Source: "GitHub Actions"), not from a branch. There is no longer a `gh-pages` branch — the site is published directly from the build artifact, so nothing needs to be committed to a branch.
 
+`.github/workflows/release.yml` is a separate workflow triggered by pushing a `v*.*.*` tag (not by a branch push). It has the same two-stage shape and the same `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24` env opt-in:
+
+1. **`ci`** — identical `npm test` / `npm run lint` / `npx tsc --noEmit` gate.
+2. **`release`** — `needs: ci`, `contents: write`; runs `gh release create "$GITHUB_REF_NAME" --generate-notes`, which publishes a GitHub Release with notes auto-built from the merged PRs/commits since the previous tag.
+
+Deploy and release are decoupled: a **branch push** to `master` deploys the site (`deploy.yml`); a **tag push** publishes a release (`release.yml`). They never trigger each other. To cut a release: bump `version` in `package.json` (land it on `master` first so the deployed build and the tag agree), then `git tag vX.Y.Z && git push origin vX.Y.Z`. The merge of the version bump deploys the site; the tag push publishes the release.
+
 ## Vite config notes
 
 `vite.config.mjs` contains two plugins:

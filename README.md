@@ -59,4 +59,18 @@ npm run preview
 
 Serves the production build locally for preview.
 
-Merging to `master` triggers an automatic deploy to GitHub Pages via GitHub Actions.
+## Deployment & Releases
+
+Merging to `master` triggers an automatic deploy to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`). Both deploy and release run CI first — `npm test`, `npm run lint`, and `npx tsc --noEmit` — and only proceed if it passes.
+
+To cut a release:
+
+1. Bump `version` in `package.json` and land it on `master` (so the deployed build and the tag agree).
+2. Push a version tag:
+
+   ```bash
+   git tag vX.Y.Z
+   git push origin vX.Y.Z
+   ```
+
+The tag push triggers `.github/workflows/release.yml`, which publishes a GitHub Release with notes auto-generated from the merged PRs since the previous tag. Deployment (branch push) and releases (tag push) are independent and don't trigger each other.
