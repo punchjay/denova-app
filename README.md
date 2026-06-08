@@ -59,6 +59,24 @@ npm run preview
 
 Serves the production build locally for preview.
 
+```bash
+npm run lint
+```
+
+Lints all `src/` files with ESLint.
+
+```bash
+npm run format
+```
+
+Formats all `src/` files with Prettier.
+
+```bash
+npx tsc --noEmit
+```
+
+Type-checks the project without emitting files.
+
 ## Deployment & Releases
 
 Merging to `master` triggers an automatic deploy to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`), which runs CI first — `npm test`, `npm run lint`, and `npx tsc --noEmit` — and only deploys if it passes.
