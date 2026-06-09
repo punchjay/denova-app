@@ -24,16 +24,16 @@ Portfolio App built with **React 19** using **TypeScript** and **Styled Componen
 git clone https://github.com/punchjay/denova-app
 cd denova-app
 npm install
-npm start
+npm run dev
 ```
 
 ## Available Scripts
 
 ```bash
-npm start
+npm run dev
 ```
 
-Runs the app in development mode at [http://localhost:5173](http://localhost:5173)
+Runs the app in development mode at [http://localhost:5273](http://localhost:5273)
 
 ```bash
 npm test
@@ -72,7 +72,7 @@ npm run format
 Formats all `src/` files with Prettier.
 
 ```bash
-npx tsc --noEmit
+npm run typecheck
 ```
 
 Type-checks the project without emitting files.
