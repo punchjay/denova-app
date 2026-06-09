@@ -27,55 +27,18 @@ npm install
 npm run dev
 ```
 
-## Available Scripts
+## Commands
 
 ```bash
-npm run dev
+npm run dev        # dev server (localhost:5273)
+npm run build      # type-check + production build → dist/
+npm run preview    # preview the production build (localhost:4273)
+npm run typecheck  # tsc over src/ and src/Tests/ (no emit)
+npm run lint       # ESLint
+npm run format     # Prettier
+npm test           # run tests once
+npm run test:watch # tests in watch mode
 ```
-
-Runs the app in development mode at [http://localhost:5273](http://localhost:5273)
-
-```bash
-npm test
-```
-
-Runs the test suite once with Vitest.
-
-```bash
-npm run test:watch
-```
-
-Runs tests in watch mode.
-
-```bash
-npm run build
-```
-
-Builds the app for production to the `dist` folder.
-
-```bash
-npm run preview
-```
-
-Serves the production build locally for preview.
-
-```bash
-npm run lint
-```
-
-Lints all `src/` files with ESLint.
-
-```bash
-npm run format
-```
-
-Formats all `src/` files with Prettier.
-
-```bash
-npm run typecheck
-```
-
-Type-checks the project without emitting files.
 
 ## Deployment & Releases
 
