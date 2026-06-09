@@ -23,7 +23,11 @@ function dynamicRequirePlugin() {
 export default defineConfig({
   base: '/denova-app/',
   server: {
+    port: 5273,
     open: true,
+  },
+  preview: {
+    port: 4273,
   },
   plugins: [
     react(),

@@ -28,5 +28,5 @@ it('renders content from all four sections', async () => {
   ).toBeInTheDocument()
   expect(getByText('Tools & Stuff')).toBeInTheDocument()
   expect(getByText('Projects')).toBeInTheDocument()
-  expect(getByText('edwardgibble@gmail.com')).toBeInTheDocument()
+  expect(getByText('Get in touch')).toBeInTheDocument()
 })

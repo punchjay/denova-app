@@ -5,13 +5,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm start          # dev server (Vite, localhost:5173)
-npm run build      # production build → dist/
-npm test           # run all tests once (Vitest)
-npm run test:watch # watch mode
-npm run lint       # run ESLint
-npm run format     # format all files with Prettier
-npx tsc --noEmit   # type check without emitting files
+npm run dev        # dev server (localhost:5273)
+npm run build      # type-check + production build → dist/
+npm run preview    # preview the production build (localhost:4273)
+npm run typecheck  # tsc over src/ and src/Tests/ (no emit)
+npm run lint       # ESLint
+npm run format     # Prettier
+npm test           # run tests once
+npm run test:watch # tests in watch mode
 ```
 
 To run a single test file:
