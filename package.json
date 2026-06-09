@@ -23,16 +23,17 @@
     "jsdom": "^29.0.2",
     "prettier": "^3.8.3",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.0",
+    "typescript-eslint": "^8.61.0",
     "vite": "^8.0.14",
     "vitest": "^4.1.7"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "format": "prettier --write src/",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
+    "format": "prettier --write src/",
     "test": "vitest run",
     "test:watch": "vitest"
   }
