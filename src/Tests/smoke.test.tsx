@@ -29,7 +29,7 @@ it('home route renders all four sections', async () => {
   ).toBeInTheDocument()
   expect(screen.getByText('Tools & Stuff')).toBeInTheDocument()
   expect(screen.getByText('Projects')).toBeInTheDocument()
-  expect(screen.getByText('edwardgibble@gmail.com')).toBeInTheDocument()
+  expect(screen.getByText('Get in touch')).toBeInTheDocument()
 })
 
 it('unknown route renders the 404 page', () => {

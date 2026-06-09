@@ -11,8 +11,8 @@ const Footer = ({ appData }: Props) => {
   return (
     <ParagraphFooter>
       {'©'} {new Date().getFullYear()} {appData.APP_NAME} |{' '}
-      <LinkFooter href={`mailto:${appData.EMAIL}?Subject=Hello!`}>
-        {appData.EMAIL}
+      <LinkFooter href={`mailto:${appData.EMAIL}?subject=Hello!`}>
+        Get in touch
       </LinkFooter>
       <LinkFooter href={appData.LINK} target="_blank" rel="noopener noreferrer">
         <ImageFooter

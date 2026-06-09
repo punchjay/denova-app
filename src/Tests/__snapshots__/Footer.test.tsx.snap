@@ -8,9 +8,9 @@ exports[`renders correctly 1`] = `
     © 2026 Denova | 
     <a
       class="sc-gtcBCx pEPQI"
-      href="mailto:edwardgibble@gmail.com?Subject=Hello!"
+      href="mailto:punchjay@gmail.com?subject=Hello!"
     >
-      edwardgibble@gmail.com
+      Get in touch
     </a>
     <a
       class="sc-gtcBCx pEPQI"

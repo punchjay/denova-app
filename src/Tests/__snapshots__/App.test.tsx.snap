@@ -326,9 +326,9 @@ exports[`renders correctly 1`] = `
       © 2026 Denova | 
       <a
         class="sc-bjLslk hbRcPp"
-        href="mailto:edwardgibble@gmail.com?Subject=Hello!"
+        href="mailto:punchjay@gmail.com?subject=Hello!"
       >
-        edwardgibble@gmail.com
+        Get in touch
       </a>
       <a
         class="sc-bjLslk hbRcPp"
