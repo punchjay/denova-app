@@ -45,7 +45,7 @@ export const appData: AppData = [
     ],
   },
   {
-    APP_NAME: 'Denova',
+    APP_NAME: 'Denova LLC',
     EMAIL: 'punchjay@gmail.com',
     LINK: 'https://github.com/punchjay',
     IMG_ICON: 'github-icon',
