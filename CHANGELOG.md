@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/punchjay/denova-app/compare/v1.1.0...v1.2.0) (2026-06-25)
+
+
+### Features
+
+* update app name from Denova to Denova LLC ([#72](https://github.com/punchjay/denova-app/issues/72)) ([dfd4457](https://github.com/punchjay/denova-app/commit/dfd4457acd04268eca5f1f5e380b1c3b371c6e79))
+
 ## [1.1.0](https://github.com/punchjay/denova-app/compare/v1.0.0...v1.1.0) (2026-06-09)
 
 
