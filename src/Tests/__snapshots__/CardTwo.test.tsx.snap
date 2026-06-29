@@ -3,18 +3,18 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdDsCe fQhgAv"
+    class="sc-bdvvNz jqrBGP"
   >
     <h1
-      class="sc-dkXsAU gJMsgz"
+      class="sc-dkPvMp fuyKvq"
     >
       Tools & Stuff
     </h1>
     <div
-      class="sc-gtcBCx eCIMgc"
+      class="sc-gsDLFA kbXWKz"
     >
       <div
-        class="sc-gKkgUA eseNcY"
+        class="sc-gKckfV eBGAeB"
       >
         <a
           aria-label="React"
@@ -24,19 +24,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="React"
-            class="sc-jSppWd iKuXAp"
+            class="sc-jRQzZg dWrtmI"
             loading="lazy"
             src="/src/AppData/Img/react.png"
           />
         </a>
         <span
-          class="sc-eCQgVK hEMmZU"
+          class="sc-eCIkhf dIEuNa"
         >
           React
         </span>
       </div>
       <div
-        class="sc-gKkgUA eseNcY"
+        class="sc-gKckfV eBGAeB"
       >
         <a
           aria-label="Styled Components"
@@ -46,19 +46,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Styled Components"
-            class="sc-jSppWd iKuXAp"
+            class="sc-jRQzZg dWrtmI"
             loading="lazy"
             src="/src/AppData/Img/styled.png"
           />
         </a>
         <span
-          class="sc-eCQgVK hEMmZU"
+          class="sc-eCIkhf dIEuNa"
         >
           Styled Components
         </span>
       </div>
       <div
-        class="sc-gKkgUA eseNcY"
+        class="sc-gKckfV eBGAeB"
       >
         <a
           aria-label="Git"
@@ -68,19 +68,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Git"
-            class="sc-jSppWd iKuXAp"
+            class="sc-jRQzZg dWrtmI"
             loading="lazy"
             src="/src/AppData/Img/git.png"
           />
         </a>
         <span
-          class="sc-eCQgVK hEMmZU"
+          class="sc-eCIkhf dIEuNa"
         >
           Git
         </span>
       </div>
       <div
-        class="sc-gKkgUA eseNcY"
+        class="sc-gKckfV eBGAeB"
       >
         <a
           aria-label="VS Code"
@@ -90,19 +90,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="VS Code"
-            class="sc-jSppWd iKuXAp"
+            class="sc-jRQzZg dWrtmI"
             loading="lazy"
             src="/src/AppData/Img/vscode.png"
           />
         </a>
         <span
-          class="sc-eCQgVK hEMmZU"
+          class="sc-eCIkhf dIEuNa"
         >
           VS Code
         </span>
       </div>
       <div
-        class="sc-gKkgUA eseNcY"
+        class="sc-gKckfV eBGAeB"
       >
         <a
           aria-label=".Net"
@@ -112,19 +112,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt=".Net"
-            class="sc-jSppWd iKuXAp"
+            class="sc-jRQzZg dWrtmI"
             loading="lazy"
             src="/src/AppData/Img/net.png"
           />
         </a>
         <span
-          class="sc-eCQgVK hEMmZU"
+          class="sc-eCIkhf dIEuNa"
         >
           .Net
         </span>
       </div>
       <div
-        class="sc-gKkgUA eseNcY"
+        class="sc-gKckfV eBGAeB"
       >
         <a
           aria-label="Azure"
@@ -134,19 +134,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Azure"
-            class="sc-jSppWd iKuXAp"
+            class="sc-jRQzZg dWrtmI"
             loading="lazy"
             src="/src/AppData/Img/azure.png"
           />
         </a>
         <span
-          class="sc-eCQgVK hEMmZU"
+          class="sc-eCIkhf dIEuNa"
         >
           Azure
         </span>
       </div>
       <div
-        class="sc-gKkgUA eseNcY"
+        class="sc-gKckfV eBGAeB"
       >
         <a
           aria-label="Claude.ai"
@@ -156,19 +156,19 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Claude.ai"
-            class="sc-jSppWd iKuXAp"
+            class="sc-jRQzZg dWrtmI"
             loading="lazy"
             src="/src/AppData/Img/claude.png"
           />
         </a>
         <span
-          class="sc-eCQgVK hEMmZU"
+          class="sc-eCIkhf dIEuNa"
         >
           Claude.ai
         </span>
       </div>
       <div
-        class="sc-gKkgUA eseNcY"
+        class="sc-gKckfV eBGAeB"
       >
         <a
           aria-label="Figma"
@@ -178,20 +178,20 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="Figma"
-            class="sc-jSppWd iKuXAp"
+            class="sc-jRQzZg dWrtmI"
             loading="lazy"
             src="/src/AppData/Img/figma.png"
           />
         </a>
         <span
-          class="sc-eCQgVK hEMmZU"
+          class="sc-eCIkhf dIEuNa"
         >
           Figma
         </span>
       </div>
     </div>
     <p
-      class="sc-hKVpXn gISiNk"
+      class="sc-hKwAaq GMiZf"
     >
       My stack includes React, Styled Components, Git, Azure, SQL, and MongoDB. I work closely with Figma for design handoffs, write thorough tests, and use Claude.ai as a pair programming partner to move faster and think sharper.
     </p>
