@@ -3,47 +3,47 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdvvNz jqrBGP"
+    class="sc-bcHNtg fZSZAa"
   >
     <h1
-      class="sc-dkPvMp fuyKvq"
+      class="sc-dkHxwO gynIzS"
     >
       Projects
     </h1>
     <div
-      class="sc-gsDLFA kbXWKz"
+      class="sc-gsMGyr kgKdyW"
     >
       <img
         alt="Xbox"
-        class="sc-hKwAaq sc-eCIkhf sc-kDTkih jMTbNT iKZeOy kDRifK"
+        class="sc-hLllbt sc-eDgbZQ sc-kDLlSG imGUob byMuOA kDyATb"
         loading="lazy"
         src="/src/AppData/Img/xbox-ss.png"
         title="Xbox"
       />
       <img
         alt="JCrew"
-        class="sc-hKwAaq sc-eCIkhf sc-kDTkih jMTbNT iKZeOy kDRifK"
+        class="sc-hLllbt sc-eDgbZQ sc-kDLlSG imGUob byMuOA kDyATb"
         loading="lazy"
         src="/src/AppData/Img/jcrew-ss.png"
         title="JCrew"
       />
       <img
         alt="Second Step Dashboard"
-        class="sc-hKwAaq sc-eCIkhf sc-kDTkih jMTbNT iKZeOy kDRifK"
+        class="sc-hLllbt sc-eDgbZQ sc-kDLlSG imGUob byMuOA kDyATb"
         loading="lazy"
         src="/src/AppData/Img/secs02-ss.png"
         title="Second Step Dashboard"
       />
       <img
         alt="Agilent"
-        class="sc-hKwAaq sc-eCIkhf sc-kDTkih jMTbNT iKZeOy kDRifK"
+        class="sc-hLllbt sc-eDgbZQ sc-kDLlSG imGUob byMuOA kDyATb"
         loading="lazy"
         src="/src/AppData/Img/ion-ss.png"
         title="Agilent"
       />
     </div>
     <p
-      class="sc-jrQAHW ewWmHF"
+      class="sc-jqMYKt fhpsbF"
     >
       Projects available upon request.
     </p>
