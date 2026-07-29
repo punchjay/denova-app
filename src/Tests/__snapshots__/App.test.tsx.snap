@@ -3,55 +3,55 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-kfPrBu jjqhfs"
+    class="sc-kgEcCx duasa"
   >
     <div
-      class="sc-fKVpSb fcphcK"
+      class="sc-fKMuZk gpmwSv"
     />
     <div
-      class="sc-fKVpSb djnuCR"
+      class="sc-fKMuZk ikZLVM"
     />
     <div
-      class="sc-fKVpSb dvDDCQ"
+      class="sc-fKMuZk dMsVRh"
     />
     <div
-      class="sc-fKVpSb jMftDz"
+      class="sc-fKMuZk fwjfLG"
     />
     <div
-      class="sc-fKVpSb hEhSMX"
+      class="sc-fKMuZk knqTWG"
     />
   </div>
   <div
-    class="sc-bdvvNz hPwInu"
+    class="sc-bcHNtg gvZoLv"
   >
     <div
-      class="sc-dlVxDp ckZvBU"
+      class="sc-dmsmPq gBAAX"
     >
       <div
-        class="sc-gsDLFA eqwcO"
+        class="sc-gsMGyr uIkCP"
       >
         <div
-          class="sc-dkPvMp iFfkgd"
+          class="sc-dkHxwO cuTRCp"
         >
           <div
-            class="sc-gKckfV bdEwmo"
+            class="sc-gLfMdy dcgjqa"
           >
             <h1
-              class="sc-hKwAaq bEOgtj"
+              class="sc-hLllbt izkZtj"
             >
               <span
-                class="sc-iCfMpq bUfrAH"
+                class="sc-iBIXdp iYXope"
               >
                 |
               </span>
             </h1>
             <p
-              class="sc-jRQzZg ihIiai"
+              class="sc-jTkVfb yLVug"
             >
               Front End Developer, Building and Maintaining React Apps
             </p>
             <p
-              class="sc-jRQzZg iGtRDw"
+              class="sc-jTkVfb jUqXMC"
             >
               Building reusable interfaces and component libraries in close collaboration with Back End Engineers and Designers — as a solo Front End Developer or within high-velocity Agile teams — pair programming with humans and Claude.ai
             </p>
@@ -64,7 +64,7 @@ exports[`renders correctly 1`] = `
           >
             <img
               alt="Jay Gibble GitHub profile photo"
-              class="sc-eCIkhf fKPrVl"
+              class="sc-eDgbZQ hHwTbH"
               src="/src/AppData/Img/profile.png"
               title="Jay Gibble GitHub profile photo"
             />
@@ -73,21 +73,21 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-dlVxDp cXwqgM"
+      class="sc-dmsmPq hOtVkf"
     >
       <div
-        class="sc-gsDLFA eqwcO"
+        class="sc-gsMGyr uIkCP"
       >
         <h1
-          class="sc-hKwAaq bEOgtj"
+          class="sc-hLllbt izkZtj"
         >
           Tools & Stuff
         </h1>
         <div
-          class="sc-furwwf bHGnLH"
+          class="sc-ftDObM kGSHFN"
         >
           <div
-            class="sc-kDTkih efMCyo"
+            class="sc-kDLlSG dOpxxh"
           >
             <a
               aria-label="React"
@@ -97,19 +97,19 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="React"
-                class="sc-jrQAHW flbIzN"
+                class="sc-jqMYKt gNYhfh"
                 loading="lazy"
                 src="/src/AppData/Img/react.png"
               />
             </a>
             <span
-              class="sc-pVTZz icOOvW"
+              class="sc-pilFg mIflj"
             >
               React
             </span>
           </div>
           <div
-            class="sc-kDTkih efMCyo"
+            class="sc-kDLlSG dOpxxh"
           >
             <a
               aria-label="Styled Components"
@@ -119,19 +119,19 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="Styled Components"
-                class="sc-jrQAHW flbIzN"
+                class="sc-jqMYKt gNYhfh"
                 loading="lazy"
                 src="/src/AppData/Img/styled.png"
               />
             </a>
             <span
-              class="sc-pVTZz icOOvW"
+              class="sc-pilFg mIflj"
             >
               Styled Components
             </span>
           </div>
           <div
-            class="sc-kDTkih efMCyo"
+            class="sc-kDLlSG dOpxxh"
           >
             <a
               aria-label="Git"
@@ -141,19 +141,19 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="Git"
-                class="sc-jrQAHW flbIzN"
+                class="sc-jqMYKt gNYhfh"
                 loading="lazy"
                 src="/src/AppData/Img/git.png"
               />
             </a>
             <span
-              class="sc-pVTZz icOOvW"
+              class="sc-pilFg mIflj"
             >
               Git
             </span>
           </div>
           <div
-            class="sc-kDTkih efMCyo"
+            class="sc-kDLlSG dOpxxh"
           >
             <a
               aria-label="VS Code"
@@ -163,19 +163,19 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="VS Code"
-                class="sc-jrQAHW flbIzN"
+                class="sc-jqMYKt gNYhfh"
                 loading="lazy"
                 src="/src/AppData/Img/vscode.png"
               />
             </a>
             <span
-              class="sc-pVTZz icOOvW"
+              class="sc-pilFg mIflj"
             >
               VS Code
             </span>
           </div>
           <div
-            class="sc-kDTkih efMCyo"
+            class="sc-kDLlSG dOpxxh"
           >
             <a
               aria-label=".Net"
@@ -185,19 +185,19 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt=".Net"
-                class="sc-jrQAHW flbIzN"
+                class="sc-jqMYKt gNYhfh"
                 loading="lazy"
                 src="/src/AppData/Img/net.png"
               />
             </a>
             <span
-              class="sc-pVTZz icOOvW"
+              class="sc-pilFg mIflj"
             >
               .Net
             </span>
           </div>
           <div
-            class="sc-kDTkih efMCyo"
+            class="sc-kDLlSG dOpxxh"
           >
             <a
               aria-label="Azure"
@@ -207,19 +207,19 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="Azure"
-                class="sc-jrQAHW flbIzN"
+                class="sc-jqMYKt gNYhfh"
                 loading="lazy"
                 src="/src/AppData/Img/azure.png"
               />
             </a>
             <span
-              class="sc-pVTZz icOOvW"
+              class="sc-pilFg mIflj"
             >
               Azure
             </span>
           </div>
           <div
-            class="sc-kDTkih efMCyo"
+            class="sc-kDLlSG dOpxxh"
           >
             <a
               aria-label="Claude.ai"
@@ -229,19 +229,19 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="Claude.ai"
-                class="sc-jrQAHW flbIzN"
+                class="sc-jqMYKt gNYhfh"
                 loading="lazy"
                 src="/src/AppData/Img/claude.png"
               />
             </a>
             <span
-              class="sc-pVTZz icOOvW"
+              class="sc-pilFg mIflj"
             >
               Claude.ai
             </span>
           </div>
           <div
-            class="sc-kDTkih efMCyo"
+            class="sc-kDLlSG dOpxxh"
           >
             <a
               aria-label="Figma"
@@ -251,94 +251,94 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="Figma"
-                class="sc-jrQAHW flbIzN"
+                class="sc-jqMYKt gNYhfh"
                 loading="lazy"
                 src="/src/AppData/Img/figma.png"
               />
             </a>
             <span
-              class="sc-pVTZz icOOvW"
+              class="sc-pilFg mIflj"
             >
               Figma
             </span>
           </div>
         </div>
         <p
-          class="sc-jRQzZg iGtRDw"
+          class="sc-jTkVfb jUqXMC"
         >
           My stack includes React, Styled Components, Git, Azure, SQL, and MongoDB. I work closely with Figma for design handoffs, write thorough tests, and use Claude.ai as a pair programming partner to move faster and think sharper.
         </p>
       </div>
     </div>
     <div
-      class="sc-dlVxDp ckZvBU"
+      class="sc-dmsmPq gBAAX"
     >
       <div
-        class="sc-gsDLFA eqwcO"
+        class="sc-gsMGyr uIkCP"
       >
         <h1
-          class="sc-hKwAaq bEOgtj"
+          class="sc-hLllbt izkZtj"
         >
           Projects
         </h1>
         <div
-          class="sc-furwwf bHGnLH"
+          class="sc-ftDObM kGSHFN"
         >
           <img
             alt="Xbox"
-            class="sc-jrQAHW sc-iqshrI sc-fotPOC flbIzN hRShAs fUCJqi"
+            class="sc-jqMYKt sc-ipUpyX sc-fnqnQZ gNYhfh ezapmi ijGZkk"
             loading="lazy"
             src="/src/AppData/Img/xbox-ss.png"
             title="Xbox"
           />
           <img
             alt="JCrew"
-            class="sc-jrQAHW sc-iqshrI sc-fotPOC flbIzN hRShAs fUCJqi"
+            class="sc-jqMYKt sc-ipUpyX sc-fnqnQZ gNYhfh ezapmi ijGZkk"
             loading="lazy"
             src="/src/AppData/Img/jcrew-ss.png"
             title="JCrew"
           />
           <img
             alt="Second Step Dashboard"
-            class="sc-jrQAHW sc-iqshrI sc-fotPOC flbIzN hRShAs fUCJqi"
+            class="sc-jqMYKt sc-ipUpyX sc-fnqnQZ gNYhfh ezapmi ijGZkk"
             loading="lazy"
             src="/src/AppData/Img/secs02-ss.png"
             title="Second Step Dashboard"
           />
           <img
             alt="Agilent"
-            class="sc-jrQAHW sc-iqshrI sc-fotPOC flbIzN hRShAs fUCJqi"
+            class="sc-jqMYKt sc-ipUpyX sc-fnqnQZ gNYhfh ezapmi ijGZkk"
             loading="lazy"
             src="/src/AppData/Img/ion-ss.png"
             title="Agilent"
           />
         </div>
         <p
-          class="sc-jRQzZg iGtRDw"
+          class="sc-jTkVfb jUqXMC"
         >
           Projects available upon request.
         </p>
       </div>
     </div>
     <p
-      class="sc-ieecgm BsiKu"
+      class="sc-idHmUl cjPnAA"
     >
       © 2026 Denova LLC | 
       <a
-        class="sc-bkkiih fVyFru"
+        class="sc-bjvxhe fxZvTQ"
         href="mailto:punchjay@gmail.com?subject=Hello!"
       >
         Get in touch
       </a>
       <a
-        class="sc-bkkiih fVyFru"
+        class="sc-bjvxhe fxZvTQ"
         href="https://github.com/punchjay"
         rel="noopener noreferrer"
         target="_blank"
       >
         <img
           alt="GitHub profile"
-          class="sc-fFejRA enuzrv"
+          class="sc-fFneKr kaNDhu"
           loading="lazy"
           src="/src/AppData/Img/github-icon.png"
           title="GitHub profile"

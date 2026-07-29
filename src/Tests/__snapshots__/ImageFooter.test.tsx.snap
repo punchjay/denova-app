@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <img
-    class="sc-bdvvNz gNAsjd"
+    class="sc-bcHNtg gWJPgU"
   />
 </DocumentFragment>
 `;
