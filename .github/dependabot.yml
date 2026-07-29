@@ -3,8 +3,7 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-      day: monday
+      interval: monthly
     open-pull-requests-limit: 5
     ignore:
       # typescript-eslint 8.x declares peer typescript ">=4.8.4 <6.1.0", so a
@@ -20,5 +19,4 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
-      day: monday
+      interval: monthly
