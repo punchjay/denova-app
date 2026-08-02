@@ -150,6 +150,8 @@ How it works: release-please reads [Conventional Commits](https://www.convention
 
 Deploy and release are decoupled but both ride branch pushes to `master`: `deploy.yml` publishes the site on every non-Markdown push, while `release-please.yml` manages the release PR / release. When the release PR merges, that push both deploys the version-bumped build and triggers release-please to tag and release.
 
+There is **no Dependabot** in this repo — dependency updates are done by hand (`npm outdated` → bump → PR). It was removed deliberately; don't re-add `.github/dependabot.yml`.
+
 ## Vite config notes
 
 `vite.config.mjs` contains two plugins:
