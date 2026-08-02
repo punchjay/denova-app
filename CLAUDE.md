@@ -133,6 +133,8 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 **ESLint** — lints all `src/` files. Config in `eslint.config.js` using the modern flat config format. Uses `typescript-eslint` and `eslint-plugin-react-hooks`. The `no-require-imports` rule is disabled because the dynamic `require()` image pattern is intentional. VS Code shows errors inline via `.vscode/settings.json` (requires the ESLint extension: `dbaeumer.vscode-eslint`). Run manually with `npm run lint`.
 
+**`typescript` is held at 6.x on purpose — do not bump it to 7.** `typescript-eslint` 8.x declares a peer of `typescript ">=4.8.4 <6.1.0"`, so a major bump makes `npm ci` fail with `ERESOLVE`. This constraint used to live as an `ignore` rule in `.github/dependabot.yml`; that file is gone, so it is recorded here instead. Unblocking it means waiting for `typescript-eslint` to widen the peer range — check `node_modules/@typescript-eslint/eslint-plugin/package.json` → `peerDependencies.typescript` after a minor bump — then raise `typescript` and drop this note. Don't work around it with `--legacy-peer-deps` or `--force`; that installs a combination the linter isn't tested against.
+
 ## CI / Deployment
 
 `.github/workflows/deploy.yml` runs on every push to `master` and on every pull request targeting `master`, with two jobs. The push trigger has `paths-ignore: ['**.md']`, so a push touching only Markdown (README, docs, CLAUDE.md) skips the workflow entirely and does not deploy; PRs are unaffected.
