@@ -20,7 +20,11 @@ class ErrorBoundary extends Component<Props, State> {
     if (this.state.error) {
       return (
         <div
-          style={{ color: colors.greyMid, textAlign: 'center', padding: '2rem' }}
+          style={{
+            color: colors.greyMid,
+            textAlign: 'center',
+            padding: '2rem',
+          }}
         >
           <p>{this.state.error}</p>
           <button
