@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/punchjay/denova-app/compare/v1.2.0...v1.2.1) (2026-09-16)
+
+
+### Bug Fixes
+
+* resolve npm audit vulnerabilities via lockfile update ([#90](https://github.com/punchjay/denova-app/issues/90)) ([3ccf5c4](https://github.com/punchjay/denova-app/commit/3ccf5c4995c4a73e36810332dde02c0f20f04096))
+
 ## [1.2.0](https://github.com/punchjay/denova-app/compare/v1.1.0...v1.2.0) (2026-06-25)
 
 
