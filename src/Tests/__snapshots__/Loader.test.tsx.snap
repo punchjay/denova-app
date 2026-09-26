@@ -3,16 +3,16 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bcHNtg cecwks"
+    class="sc-bdvwhi gElmyo"
   >
     <img
       alt="Loading"
-      class="sc-gsMGyr jXnAFK"
+      class="sc-gsDMPd kyMQsI"
       src="/src/AppData/Img/gear.png"
       title="Loading"
     />
     <p
-      class="sc-dkHxwO fYNAqM"
+      class="sc-dkPwfY cThpYy"
     >
       Loading...
     </p>

@@ -3,30 +3,30 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bcHNtg fZSZAa"
+    class="sc-bdvwhi kaYvzi"
   >
     <div
-      class="sc-gsMGyr dLBKzP"
+      class="sc-gsDMPd ksJqDJ"
     >
       <div
-        class="sc-jTkVfb gBzudU"
+        class="sc-jRQBiJ ixzjKd"
       >
         <h1
-          class="sc-dkHxwO gynIzS"
+          class="sc-dkPwfY kXCYCg"
         >
           <span
-            class="sc-gLfMdy eJxkjp"
+            class="sc-gKckzE bmYPBx"
           >
             |
           </span>
         </h1>
         <p
-          class="sc-eDgbZQ kkbWvk"
+          class="sc-eCIkAO bBxYsL"
         >
           Front End Developer, Building and Maintaining React Apps
         </p>
         <p
-          class="sc-eDgbZQ etTsgu"
+          class="sc-eCIkAO eNopBd"
         >
           Building reusable interfaces and component libraries in close collaboration with Back End Engineers and Designers — as a solo Front End Developer or within high-velocity Agile teams — pair programming with humans and Claude.ai
         </p>
@@ -39,7 +39,7 @@ exports[`renders correctly 1`] = `
       >
         <img
           alt="Jay Gibble GitHub profile photo"
-          class="sc-hLllbt fpwgfu"
+          class="sc-hKwBjT jpYZvq"
           src="/src/AppData/Img/profile.png"
           title="Jay Gibble GitHub profile photo"
         />
