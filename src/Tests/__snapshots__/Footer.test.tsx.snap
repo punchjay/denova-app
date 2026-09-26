@@ -3,24 +3,24 @@
 exports[`renders correctly 1`] = `
 <DocumentFragment>
   <p
-    class="sc-dkHxwO dYcRmK"
+    class="sc-dkPwfY cVhpXo"
   >
     © 2026 Denova LLC | 
     <a
-      class="sc-gsMGyr kUIRSa"
+      class="sc-gsDMPd eJxteA"
       href="mailto:punchjay@gmail.com?subject=Hello!"
     >
       Get in touch
     </a>
     <a
-      class="sc-gsMGyr kUIRSa"
+      class="sc-gsDMPd eJxteA"
       href="https://github.com/punchjay"
       rel="noopener noreferrer"
       target="_blank"
     >
       <img
         alt="GitHub profile"
-        class="sc-bcHNtg gWJPgU"
+        class="sc-bdvwhi buswzU"
         loading="lazy"
         src="/src/AppData/Img/github-icon.png"
         title="GitHub profile"
