@@ -13,6 +13,7 @@ npm run lint       # ESLint
 npm run format     # Prettier
 npm test           # run tests once
 npm run test:watch # tests in watch mode
+npm run test:coverage # tests + v8 coverage report → coverage/ (HTML at coverage/index.html)
 ```
 
 To run a single test file:
