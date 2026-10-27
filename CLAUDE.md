@@ -46,7 +46,7 @@ These are intentionally kept as `require()`. A custom Vite plugin in `vite.confi
 
 **ErrorBoundary** — `ErrorBoundary.tsx` is a class component wrapping `<App>`. It shows the error message and a Retry button (which reloads the page) when a child throws. Retained as a safety net even though the local data load no longer throws; the retry reloads because `appDataPromise` is module-level.
 
-**Claude model** — any Claude API / Anthropic SDK code added to this project must use `claude-opus-4-8`.
+**Claude model** — any Claude API / Anthropic SDK code added to this project must use `claude-opus-5-5`.
 
 ## Accessibility conventions
 
